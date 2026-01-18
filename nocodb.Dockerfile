@@ -24,6 +24,8 @@ RUN apt-get update && apt-get install -y \
     make \
     g++ \
     libssl-dev \
+    libsqlite3-dev \
+    pkg-config \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install pnpm
@@ -37,6 +39,9 @@ RUN echo "node-linker=hoisted" > .npmrc
 
 # Install all dependencies without running scripts
 RUN pnpm install --no-frozen-lockfile --ignore-scripts
+
+# Build sqlite3 bindings for the target Node ABI
+RUN npm_config_build_from_source=true pnpm --filter social-pixl rebuild sqlite3
 
 # Build the SDK first
 WORKDIR /usr/src/app/packages/social-pixl-sdk
@@ -86,10 +91,6 @@ COPY --from=builder /usr/src/app/package.json ./package.json
 COPY --from=builder /usr/src/app/pnpm-workspace.yaml ./pnpm-workspace.yaml
 COPY --from=builder /usr/src/app/pnpm-lock.yaml ./pnpm-lock.yaml
 COPY --from=builder /usr/src/app/.npmrc ./.npmrc
-
-# Rebuild native modules in the runner environment
-ENV npm_config_build_from_source=true
-RUN pnpm rebuild sqlite3
 
 # Setup start script
 WORKDIR /usr/src/app/packages/nocodb
