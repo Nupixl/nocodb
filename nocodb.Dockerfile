@@ -63,8 +63,11 @@ RUN apt-get update && apt-get install -y \
     curl \
     wget \
     python3 \
+    python3-distutils \
     make \
     g++ \
+    libsqlite3-dev \
+    pkg-config \
     && curl -L "https://github.com/TomWright/dasel/releases/download/v2.8.1/dasel_linux_$(dpkg --print-architecture)" -o /usr/local/bin/dasel \
     && chmod +x /usr/local/bin/dasel \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -85,6 +88,7 @@ COPY --from=builder /usr/src/app/pnpm-lock.yaml ./pnpm-lock.yaml
 COPY --from=builder /usr/src/app/.npmrc ./.npmrc
 
 # Rebuild native modules in the runner environment
+ENV npm_config_build_from_source=true
 RUN pnpm rebuild sqlite3
 
 # Setup start script

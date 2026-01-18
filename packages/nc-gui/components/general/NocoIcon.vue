@@ -30,12 +30,12 @@ const onClick = useThrottleFn(() => {
       <img
         v-if="isDark"
         class="hidden dark:block"
-        :width="size"
+        :width="size - 10"
         :height="size"
         alt="NocoDB"
-        src="~/assets/img/icons/256x256-trans.png"
+        src="~/assets/img/brand/nupixl-white.png"
       />
-      <img v-else :width="size" :height="size" alt="NocoDB" src="~/assets/img/icons/256x256.png" />
+      <img v-else :width="size" :height="size" alt="NocoDB" src="~/assets/img/brand/nupixl-color.png" />
 
       <TransitionGroup name="layout" :duration="500">
         <template v-if="animate || ping">

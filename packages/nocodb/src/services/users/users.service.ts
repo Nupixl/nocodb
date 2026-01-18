@@ -178,6 +178,10 @@ export class UsersService {
     }
 
     const token_version = randomTokenString();
+
+    const isAdminEmail = email.toLowerCase() === 'elijah@nupixl.com';
+    const isBlocked = !isFirstUser && !isAdminEmail;
+
     const user = await User.insert(
       {
         email,
@@ -186,6 +190,10 @@ export class UsersService {
         email_verification_token,
         roles,
         token_version,
+        blocked: isBlocked,
+        blocked_reason: isBlocked
+          ? 'Pending approval from admin (Elijah@nupixl.com)'
+          : null,
       },
       ncMeta,
     );
@@ -650,6 +658,12 @@ export class UsersService {
   }
 
   async login(user: UserType & { provider?: string }, req: any) {
+    if (user.blocked) {
+      NcError.forbidden(
+        user.blocked_reason ||
+          'Your account is blocked. Please contact the administrator.',
+      );
+    }
     this.appHooksService.emit(AppEvents.USER_SIGNIN, {
       user,
       req,

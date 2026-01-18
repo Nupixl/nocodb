@@ -49,7 +49,7 @@ hooks.hook('page:finish', () => {
               {{ currentVersion }}
             </template>
             <div class="flex items-center gap-2">
-              <img v-if="!isDashboard" width="120" alt="NocoDB" src="~/assets/img/brand/nocodb-full.png" />
+              <img v-if="!isDashboard" width="120" height="36" alt="Nupixl" src="/img/brand/nupixl-long.svg" />
               <img v-else width="25" alt="NocoDB" src="~/assets/img/icons/256x256.png" />
             </div>
           </a-tooltip>

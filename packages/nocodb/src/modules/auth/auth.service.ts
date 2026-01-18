@@ -35,6 +35,12 @@ export class AuthService {
 
       const hashedPassword = await promisify(bcrypt.hash)(pass, user.salt);
       if (user.password === hashedPassword) {
+        if (user.blocked) {
+          NcError.forbidden(
+            user.blocked_reason ||
+              'Your account is blocked. Please contact the administrator.',
+          );
+        }
         return result;
       }
     }

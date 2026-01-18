@@ -75,6 +75,8 @@ export default class User implements UserType {
       'token_version',
       'is_new_user',
       'meta',
+      'blocked',
+      'blocked_reason',
     ]);
 
     // Set is_new_user to true for new users if not explicitly set
