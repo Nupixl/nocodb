@@ -79,6 +79,10 @@ COPY --link --from=lt-builder /usr/src/lt /usr/local/bin/litestream
 COPY --from=builder /usr/src/app/node_modules ./node_modules
 COPY --from=builder /usr/src/app/packages/nocodb ./packages/nocodb
 COPY --from=builder /usr/src/app/packages/social-pixl-sdk ./packages/social-pixl-sdk
+COPY --from=builder /usr/src/app/package.json ./package.json
+COPY --from=builder /usr/src/app/pnpm-workspace.yaml ./pnpm-workspace.yaml
+COPY --from=builder /usr/src/app/pnpm-lock.yaml ./pnpm-lock.yaml
+COPY --from=builder /usr/src/app/.npmrc ./.npmrc
 
 # Rebuild native modules in the runner environment
 RUN pnpm rebuild sqlite3
