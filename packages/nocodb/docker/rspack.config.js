@@ -6,13 +6,6 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.node$/,
-                loader: 'node-loader',
-                options: {
-                    name: '[path][name].[ext]',
-                },
-            },
-            {
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
                 loader: 'builtin:swc-loader',
