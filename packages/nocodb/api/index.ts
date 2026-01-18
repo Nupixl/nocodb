@@ -5,6 +5,10 @@ import Noco from '../src/Noco';
 
 dns.setDefaultResultOrder('ipv4first');
 
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+});
+
 const app = express();
 app.enable('trust proxy');
 app.use(cors());

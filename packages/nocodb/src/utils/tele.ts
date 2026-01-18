@@ -62,7 +62,15 @@ class Tele {
     try {
       if (!Tele.emitter) {
         Tele.emitter = new Emittery();
-        Tele.machineId = machineIdSync();
+        if (process.env.VERCEL) {
+          Tele.machineId = 'vercel-id';
+        } else {
+          try {
+            Tele.machineId = machineIdSync();
+          } catch (e) {
+            Tele.machineId = 'unknown-id';
+          }
+        }
 
         let package_id = '';
         let xc_version = '';

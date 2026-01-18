@@ -82,7 +82,7 @@ export default class Noco {
     this.router = express.Router();
     this.baseRouter = express.Router();
 
-    clear();
+    // clear();
     /******************* prints : end *******************/
   }
 
@@ -186,10 +186,12 @@ export default class Noco {
     nestApp.use(requestIp.mw());
     nestApp.use(cookieParser());
 
-    const redisIoAdapter = new RedisIoAdapter(httpServer);
-    await redisIoAdapter.connectToRedis();
-    nestApp.useWebSocketAdapter(redisIoAdapter);
-    NcDebug.log('Websocket adapter initialized');
+    if (!process.env.VERCEL) {
+      const redisIoAdapter = new RedisIoAdapter(httpServer);
+      await redisIoAdapter.connectToRedis();
+      nestApp.useWebSocketAdapter(redisIoAdapter);
+      NcDebug.log('Websocket adapter initialized');
+    }
 
     await nestApp.init();
     NcDebug.log('Nest app initialized');

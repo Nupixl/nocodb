@@ -94,12 +94,16 @@
       "@babel/runtime@<7.26.10": ">=7.26.10"
     },
     "onlyBuiltDependencies": [
+      "@biomejs/biome",
       "@nestjs/core",
       "@parcel/watcher",
+      "@sentry/cli",
       "@swc/core",
       "core-js",
       "esbuild",
+      "lz4",
       "msgpackr-extract",
+      "nestjs-pino",
       "nx",
       "sharp",
       "sqlite3",
