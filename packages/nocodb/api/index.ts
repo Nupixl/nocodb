@@ -26,6 +26,8 @@ async function initNoco() {
       console.log('Initializing NocoDB...');
       console.log('Environment:', process.env.NODE_ENV);
       console.log('Vercel Region:', process.env.VERCEL_REGION);
+      console.log('Node Version:', process.version);
+      console.log('Memory Usage (Initial):', JSON.stringify(process.memoryUsage()));
       console.log('Tool Dir:', require('../src/utils/nc-config/helpers').getToolDir());
       
       const dbUrl = process.env.NC_DB || process.env.DATABASE_URL;
@@ -41,10 +43,13 @@ async function initNoco() {
       };
       
       console.log('Calling Noco.init...');
+      console.time('Noco.init');
       const result = await Noco.init({}, dummyServer, app);
+      console.timeEnd('Noco.init');
       nocoApp = result;
       app.use(nocoApp);
       console.log('NocoDB Initialized successfully');
+      console.log('Memory Usage (Final):', JSON.stringify(process.memoryUsage()));
       return nocoApp;
     } catch (error) {
       console.error('NocoDB Initialization Error:', error);
