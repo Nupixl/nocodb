@@ -81,10 +81,14 @@ module.exports = {
     externals: [
         nodeExternals({
             modulesDir: path.resolve(__dirname, '../../../node_modules'),
-            allowlist: ['social-pixl-sdk'],
+            allowlist: [/social-pixl-sdk/],
         }),
         nodeExternals({
-            allowlist: ['social-pixl-sdk'],
+            modulesDir: path.resolve(__dirname, '../node_modules'),
+            allowlist: [/social-pixl-sdk/],
+        }),
+        nodeExternals({
+            allowlist: [/social-pixl-sdk/],
         }),
     ],
     plugins: [
