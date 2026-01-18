@@ -1,0 +1,3 @@
+# Enforcement Hook
+
+Before final output, verify Personal Project record exists and MCPs are checked.

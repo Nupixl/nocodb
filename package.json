@@ -15,6 +15,9 @@
     "url": "https://github.com/nocodb/nocodb/issues"
   },
   "license": "Sustainable Use License",
+  "engines": {
+    "node": "22.12.0"
+  },
   "devDependencies": {
     "husky": "^8.0.3",
     "lerna": "^8.2.2",
@@ -102,5 +105,6 @@
       "sqlite3",
       "vue-demi"
     ]
-  }
+  },
+  "packageManager": "pnpm@10.28.0+sha512.05df71d1421f21399e053fde567cea34d446fa02c76571441bfc1c7956e98e363088982d940465fd34480d4d90a0668bc12362f8aa88000a64e83d0b0e47be48"
 }
