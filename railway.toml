@@ -1,11 +1,13 @@
+# Root railway.toml
+# This file is shared by all services in the monorepo.
+# individual services can override settings via environment variables
+# or by having their own railway.toml in their root directory.
+
 [build]
-builder = "DOCKERFILE"
-dockerfilePath = "Dockerfile.railway"
-dockerContext = "."
-buildCommand = ""
+# Default to auto-detection (Nixpacks or Dockerfile)
+# builder = "DOCKERFILE" 
 
 [deploy]
-startCommand = ""
 healthcheckPath = "/api/v1/health"
 healthcheckTimeout = 300
 restartPolicyType = "ON_FAILURE"
