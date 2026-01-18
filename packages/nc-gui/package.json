@@ -21,7 +21,7 @@
   },
   "web-types": "web-types.json",
   "scripts": {
-    "build": "nuxt build",
+    "build": "pnpm --filter social-pixl-sdk build && pnpm --filter social-pixl-sdk-v2 build && nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "start": "node .output/server/index.mjs",
@@ -133,8 +133,8 @@
     "monacopilot": "^1.2.2",
     "nc-analytics": "^0.0.6",
     "nc-jsep": "^1.7.5",
-    "social-pixl-sdk": "workspace:^",
     "social-pixl-sdk-v2": "workspace:^",
+    "social-pixl-sdk": "workspace:^",
     "papaparse": "^5.5.2",
     "pdfobject": "^2.3.0",
     "pdfobject-vue": "^0.0.4",
