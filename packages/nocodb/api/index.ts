@@ -1,7 +1,25 @@
+// Log immediately to verify function is being invoked
+console.log('[BOOTSTRAP] Serverless function starting...');
+console.log('[BOOTSTRAP] Node version:', process.version);
+console.log('[BOOTSTRAP] Platform:', process.platform);
+console.log('[BOOTSTRAP] VERCEL env:', process.env.VERCEL);
+
 import dns from 'node:dns';
 import express from 'express';
 import cors from 'cors';
-import Noco from '../src/Noco';
+
+console.log('[BOOTSTRAP] Basic imports loaded');
+
+let Noco: any;
+try {
+  console.log('[BOOTSTRAP] Importing Noco...');
+  Noco = require('../src/Noco').default;
+  console.log('[BOOTSTRAP] Noco imported successfully');
+} catch (error) {
+  console.error('[BOOTSTRAP] FATAL: Failed to import Noco:', error);
+  console.error('[BOOTSTRAP] Stack:', error.stack);
+  throw error;
+}
 
 dns.setDefaultResultOrder('ipv4first');
 
