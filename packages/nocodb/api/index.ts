@@ -5,8 +5,15 @@ import Noco from '../src/Noco';
 
 dns.setDefaultResultOrder('ipv4first');
 
+// Catch all uncaught errors
+process.on('uncaughtException', (error) => {
+  console.error('[FATAL] Uncaught Exception:', error);
+  console.error('[FATAL] Stack:', error.stack);
+});
+
 process.on('unhandledRejection', (reason, promise) => {
-  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+  console.error('[ERROR] Unhandled Rejection at:', promise);
+  console.error('[ERROR] Reason:', reason);
 });
 
 const app = express();
@@ -16,25 +23,43 @@ app.set('view engine', 'ejs');
 
 let nocoApp: any = null;
 let initializationPromise: Promise<any> | null = null;
+let initError: Error | null = null;
 
 async function initNoco() {
-  if (nocoApp) return nocoApp;
-  if (initializationPromise) return initializationPromise;
+  console.log('[INIT] initNoco called, nocoApp:', !!nocoApp, 'initializationPromise:', !!initializationPromise);
+  
+  if (nocoApp) {
+    console.log('[INIT] Returning cached nocoApp');
+    return nocoApp;
+  }
+  
+  if (initializationPromise) {
+    console.log('[INIT] Waiting for existing initialization');
+    return initializationPromise;
+  }
 
   initializationPromise = (async () => {
     try {
-      console.log('Initializing NocoDB...');
-      console.log('Environment:', process.env.NODE_ENV);
-      console.log('Vercel Region:', process.env.VERCEL_REGION);
-      console.log('Node Version:', process.version);
-      console.log('Memory Usage (Initial):', JSON.stringify(process.memoryUsage()));
-      console.log('Tool Dir:', require('../src/utils/nc-config/helpers').getToolDir());
+      console.log('[INIT] Starting NocoDB initialization...');
+      console.log('[ENV] NODE_ENV:', process.env.NODE_ENV);
+      console.log('[ENV] VERCEL:', process.env.VERCEL);
+      console.log('[ENV] VERCEL_REGION:', process.env.VERCEL_REGION);
+      console.log('[ENV] Node Version:', process.version);
+      console.log('[MEM] Initial:', JSON.stringify(process.memoryUsage()));
+      
+      try {
+        const toolDir = require('../src/utils/nc-config/helpers').getToolDir();
+        console.log('[CONFIG] Tool Dir:', toolDir);
+      } catch (e) {
+        console.error('[CONFIG] Failed to get tool dir:', e.message);
+      }
       
       const dbUrl = process.env.NC_DB || process.env.DATABASE_URL;
       if (dbUrl) {
-        console.log('Database URL is provided (obfuscated):', dbUrl.replace(/:[^:@]+@/, ':****@'));
+        const safeUrl = dbUrl.replace(/:[^:@]+@/, ':****@');
+        console.log('[DB] Database URL provided:', safeUrl);
       } else {
-        console.warn('NC_DB is not provided, defaulting to SQLite in /tmp');
+        console.warn('[DB] NC_DB not provided, will use SQLite in /tmp');
       }
 
       const dummyServer: any = {
@@ -42,18 +67,26 @@ async function initNoco() {
         address: () => ({ port: process.env.PORT || 8080 }),
       };
       
-      console.log('Calling Noco.init...');
-      console.time('Noco.init');
-      const result = await Noco.init({}, dummyServer, app);
-      console.timeEnd('Noco.init');
+      console.log('[INIT] Creating Noco instance...');
+      console.time('[INIT] Noco.init');
+      
+      const result = await Promise.race([
+        Noco.init({}, dummyServer, app),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Noco.init timeout after 55s')), 55000)
+        )
+      ]);
+      
+      console.timeEnd('[INIT] Noco.init');
       nocoApp = result;
       app.use(nocoApp);
-      console.log('NocoDB Initialized successfully');
-      console.log('Memory Usage (Final):', JSON.stringify(process.memoryUsage()));
+      console.log('[INIT] NocoDB initialized successfully');
+      console.log('[MEM] Final:', JSON.stringify(process.memoryUsage()));
       return nocoApp;
     } catch (error) {
-      console.error('NocoDB Initialization Error:', error);
-      if (error.stack) console.error(error.stack);
+      console.error('[ERROR] NocoDB Initialization Failed:', error.message);
+      console.error('[ERROR] Stack:', error.stack);
+      initError = error;
       initializationPromise = null; // Allow retry on next request
       throw error;
     }
@@ -63,15 +96,26 @@ async function initNoco() {
 }
 
 export default async (req: express.Request, res: express.Response) => {
+  console.log('[REQUEST] Incoming:', req.method, req.url);
+  console.log('[REQUEST] Headers:', JSON.stringify(req.headers));
+  
   try {
+    console.log('[HANDLER] Calling initNoco...');
     await initNoco();
+    console.log('[HANDLER] initNoco completed, forwarding request');
     return app(req, res);
   } catch (error) {
-    console.error('Vercel API Error:', error);
+    console.error('[HANDLER] Request handler error:', error.message);
+    console.error('[HANDLER] Stack:', error.stack);
+    
     if (!res.headersSent) {
       res.status(500).json({
-        message: 'Failed to initialize NocoDB',
-        error: error.message,
+        error: 'Failed to initialize NocoDB',
+        message: error.message,
+        details: initError ? {
+          initError: initError.message,
+          initStack: initError.stack
+        } : undefined,
         stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
       });
     }
