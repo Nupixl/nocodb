@@ -66,6 +66,9 @@ RUN apt-get update && apt-get install -y \
     && chmod +x /usr/local/bin/dasel \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
+# Install pnpm in the runner stage as Railway may require it for starting the service
+RUN corepack enable && corepack prepare pnpm@9.15.4 --activate
+
 # Copy litestream binary
 COPY --link --from=lt-builder /usr/src/lt /usr/local/bin/litestream
 
