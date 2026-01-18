@@ -42,6 +42,10 @@ module.exports = {
                     },
                 },
             },
+            {
+                test: /\.(html|cs)$/,
+                loader: 'null-loader',
+            },
         ],
     },
     resolve: {
@@ -90,6 +94,17 @@ module.exports = {
         nodeExternals({
             allowlist: [/social-pixl-sdk/],
         }),
+        'cloudflare:sockets',
+        'better-sqlite3',
+        'tedious',
+        'oracledb',
+        'pg-query-stream',
+        'cardinal',
+        'canvas',
+        'mock-aws-s3',
+        'aws-sdk',
+        'snappy',
+        'snappy/package.json',
     ],
     plugins: [
         new rspack.EnvironmentPlugin({
