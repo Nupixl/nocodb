@@ -11,7 +11,11 @@ export function handleUncaughtErrors(process: NodeJS.Process) {
       }
     }
     if (!handled) {
-      process.exit(1);
+      if (process.env.VERCEL) {
+        console.error('Uncaught Exception (Vercel):', err);
+      } else {
+        process.exit(1);
+      }
     }
   });
 }

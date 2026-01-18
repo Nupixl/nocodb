@@ -20,10 +20,23 @@ async function initNoco() {
   initializationPromise = (async () => {
     try {
       console.log('Initializing NocoDB...');
+      console.log('Environment:', process.env.NODE_ENV);
+      console.log('Vercel Region:', process.env.VERCEL_REGION);
+      console.log('Tool Dir:', require('../src/utils/nc-config/helpers').getToolDir());
+      
+      const dbUrl = process.env.NC_DB || process.env.DATABASE_URL;
+      if (dbUrl) {
+        console.log('Database URL is provided (obfuscated):', dbUrl.replace(/:[^:@]+@/, ':****@'));
+      } else {
+        console.warn('NC_DB is not provided, defaulting to SQLite in /tmp');
+      }
+
       const dummyServer: any = {
         on: () => {},
         address: () => ({ port: process.env.PORT || 8080 }),
       };
+      
+      console.log('Calling Noco.init...');
       const result = await Noco.init({}, dummyServer, app);
       nocoApp = result;
       app.use(nocoApp);
@@ -31,6 +44,7 @@ async function initNoco() {
       return nocoApp;
     } catch (error) {
       console.error('NocoDB Initialization Error:', error);
+      if (error.stack) console.error(error.stack);
       initializationPromise = null; // Allow retry on next request
       throw error;
     }

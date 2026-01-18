@@ -27,6 +27,9 @@ export async function prepareEnv({
 }
 
 export function getToolDir() {
+  if (process.env.VERCEL && !process.env.NC_TOOL_DIR) {
+    return '/tmp';
+  }
   return process.env.NC_TOOL_DIR || process.cwd();
 }
 
