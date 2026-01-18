@@ -101,7 +101,6 @@
       "@swc/core",
       "core-js",
       "esbuild",
-      "lz4",
       "msgpackr-extract",
       "nestjs-pino",
       "nx",
