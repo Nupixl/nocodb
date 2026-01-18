@@ -127,9 +127,17 @@ export class NcConfig {
 
     try {
       // make sure meta db exists
-      await ncConfig.metaDbCreateIfNotExist();
+      if (!process.env.VERCEL || ncConfig.meta?.db?.client === 'sqlite3') {
+        await ncConfig.metaDbCreateIfNotExist();
+      } else {
+        console.log('Skipping metaDbCreateIfNotExist on Vercel for non-sqlite database');
+      }
     } catch (e) {
-      throw new Error(e);
+      if (process.env.VERCEL) {
+        console.warn('metaDbCreateIfNotExist failed on Vercel, ignoring:', e.message);
+      } else {
+        throw new Error(e);
+      }
     }
 
     return ncConfig;

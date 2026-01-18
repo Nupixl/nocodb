@@ -1,6 +1,5 @@
 import os from 'os';
 import Emittery from 'emittery';
-import { machineIdSync } from 'node-machine-id';
 import axios from 'axios';
 import isDocker from 'is-docker';
 import { packageVersion } from '~/utils/packageVersion';
@@ -62,15 +61,7 @@ class Tele {
     try {
       if (!Tele.emitter) {
         Tele.emitter = new Emittery();
-        if (process.env.VERCEL) {
-          Tele.machineId = 'vercel-id';
-        } else {
-          try {
-            Tele.machineId = machineIdSync();
-          } catch (e) {
-            Tele.machineId = 'unknown-id';
-          }
-        }
+        Tele.machineId = Tele.id;
 
         let package_id = '';
         let xc_version = '';
@@ -88,7 +79,7 @@ class Tele {
           env: process.env.NODE_ENV || 'production',
           oneClick: !!process.env.NC_ONE_CLICK,
         };
-        teleData.machine_id = `${machineIdSync()},,`;
+        teleData.machine_id = `${Tele.id},,`;
         Tele.emitter.on('evt_app_started', async (msg) => {
           try {
             await waitForMachineId(teleData);
@@ -117,7 +108,7 @@ class Tele {
 
             await waitForMachineId(teleData);
             if (payload.check) {
-              teleData.machine_id = `${machineIdSync()},,`;
+              teleData.machine_id = `${Tele.id},,`;
             }
             if (
               isDisabled &&
@@ -255,7 +246,15 @@ class Tele {
   }
 
   static get id() {
-    return this.machineId || machineIdSync();
+    if (this.machineId) return this.machineId;
+    if (process.env.VERCEL) return 'vercel-id';
+    try {
+      // machineIdSync is only used here as a fallback
+      const { machineIdSync: sync } = require('node-machine-id');
+      return sync();
+    } catch (e) {
+      return 'unknown-id';
+    }
   }
 
   static async payload() {
