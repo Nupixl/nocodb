@@ -37,6 +37,7 @@
     "watch:build": "tsc -p tsconfig.json -w",
     "prepare": "pnpm run build",
     "generate:sdk": "node build-script/mergeAndGenerateSwaggerCE && pnpm dlx swagger-typescript-api@10.0.3 -r -p ./nc_swagger.json -o ./src/lib/  --axios --unwrap-response-data  --module-name-first-tag --type-suffix=Type --templates ../../scripts/sdk/templates; rm ./nc_swagger.json",
+    "start": "echo 'SDK built' && tail -f /dev/null",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
