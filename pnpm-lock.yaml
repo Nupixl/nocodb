@@ -352,9 +352,6 @@ importers:
       nc-jsep:
         specifier: ^1.7.5
         version: 1.7.5
-      nocodb-sdk-v2:
-        specifier: workspace:^
-        version: link:../nocodb-sdk-v2
       papaparse:
         specifier: ^5.5.2
         version: 5.5.3
@@ -397,6 +394,9 @@ importers:
       social-pixl-sdk:
         specifier: workspace:^
         version: link:../nocodb-sdk
+      social-pixl-sdk-v2:
+        specifier: workspace:^
+        version: link:../nocodb-sdk-v2
       socket.io-client:
         specifier: ^4.8.1
         version: 4.8.1
