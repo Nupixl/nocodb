@@ -46,7 +46,8 @@
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
     "registerIntegrations": "pnpm --filter=social-pixl run registerIntegrations",
-    "install:local-sdk": "node scripts/installLocalSdk.js"
+    "install:local-sdk": "node scripts/installLocalSdk.js",
+    "start": "echo 'Service started' && tail -f /dev/null"
   },
   "pnpm": {
     "overrides": {
