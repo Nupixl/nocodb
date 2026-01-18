@@ -4,19 +4,6 @@ const isMiniSidebar = inject(IsMiniSidebarInj, undefined)
 const { appInfo } = useGlobal()
 
 const { isDark } = useTheme()
-
-// Fallback logic to prevent build errors if Nupixl logos are missing
-const logoSrc = computed(() => {
-  if (isDark.value) {
-    return '~/assets/img/brand/nupixl-white.png'
-  }
-  return '~/assets/img/brand/nupixl-color.png'
-})
-
-// We use a try/catch or simple check in the template to avoid Vite resolution errors
-// For now, let's use the absolute paths that Vite expects or a dynamic import approach
-// But the simplest way to fix the build error IMMEDIATELY is to use the existing logos 
-// as fallbacks in the template itself.
 </script>
 
 <template>
@@ -29,16 +16,14 @@ const logoSrc = computed(() => {
           <!-- Light Mode Logo -->
           <img
             v-if="!isDark"
-            src="~/assets/img/brand/nupixl-color.png"
+            src="/img/brand/nupixl-color.png"
             class="flex-none border-1 border-nc-border-gray-medium w-7 h-7 min-w-7 min-h-7 rounded-md"
-            @error="(e) => (e.target.src = '/nocodb.png')"
           />
           <!-- Dark Mode Logo -->
           <img
             v-else
-            src="~/assets/img/brand/nupixl-white.png"
+            src="/img/brand/nupixl-white.png"
             class="flex-none border-1 border-nc-border-gray-medium w-7 h-7 min-w-7 min-h-7 rounded-md"
-            @error="(e) => (e.target.src = '/text.png')"
           />
         </NcTooltip>
       </a>
@@ -58,8 +43,8 @@ const logoSrc = computed(() => {
         >
           <NcTooltip :disabled="!appInfo?.version || isEeUI">
             <template #title>{{ appInfo?.version }}</template>
-            <img v-if="isDark" alt="Nupixl" src="~/assets/img/brand/nupixl-white.png" @error="(e) => (e.target.src = '/text.png')" />
-            <img v-else alt="Nupixl" src="~/assets/img/brand/nupixl-color.png" @error="(e) => (e.target.src = '/nocodb.png')" />
+            <img v-if="isDark" alt="Nupixl" src="/img/brand/nupixl-white.png" />
+            <img v-else alt="Nupixl" src="/img/brand/nupixl-color.png" />
           </NcTooltip>
         </a>
         <div class="flex flex-grow"></div>

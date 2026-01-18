@@ -85,8 +85,8 @@ const hasTableCreatePermission = computed(() => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img v-if="isDark" alt="Nupixl" src="~/assets/img/brand/nupixl-white.png" />
-              <img v-else alt="Nupixl" src="~/assets/img/brand/nupixl-color.png" />
+              <img v-if="isDark" alt="Nupixl" src="/img/brand/nupixl-white.png" />
+              <img v-else alt="Nupixl" src="/img/brand/nupixl-color.png" />
             </a>
 
             <div class="flex flex-grow"></div>

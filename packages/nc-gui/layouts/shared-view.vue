@@ -72,8 +72,8 @@ export default {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img v-if="isDark" alt="Nupixl" src="~/assets/img/brand/nupixl-white.png" class="flex-none w-7 h-7" />
-              <img v-else alt="Nupixl" src="~/assets/img/brand/nupixl-color.png" class="flex-none w-7 h-7" />
+              <img v-if="isDark" alt="Nupixl" src="/img/brand/nupixl-white.png" class="flex-none w-7 h-7" />
+              <img v-else alt="Nupixl" src="/img/brand/nupixl-color.png" class="flex-none w-7 h-7" />
             </a>
 
             <div class="flex items-center gap-2 text-nc-content-gray-emphasis text-sm truncate">
