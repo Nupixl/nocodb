@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type CommentType } from 'nocodb-sdk'
+import { type CommentType } from 'social-pixl-sdk'
 
 /* interface */
 

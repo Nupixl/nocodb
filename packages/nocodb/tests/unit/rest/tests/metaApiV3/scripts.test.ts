@@ -1,7 +1,7 @@
 import 'mocha';
 import { expect } from 'chai';
 import request from 'supertest';
-import { PlanFeatureTypes } from 'nocodb-sdk';
+import { PlanFeatureTypes } from 'social-pixl-sdk';
 import { isEE } from '../../../utils/helpers';
 import init from '../../../init';
 import { overrideFeature } from '../../../utils/plan.utils';

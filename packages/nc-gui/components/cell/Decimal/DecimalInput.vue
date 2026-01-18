@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { composeNewDecimalValue, ncIsNaN } from 'nocodb-sdk'
+import { composeNewDecimalValue, ncIsNaN } from 'social-pixl-sdk'
 import type { StyleValue } from 'vue'
 
 interface Props {

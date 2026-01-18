@@ -1,4 +1,4 @@
-import { Api } from 'nocodb-sdk';
+import { Api } from 'social-pixl-sdk';
 import { NcContext } from './index';
 import { isEE } from './db';
 let api: Api<any>;

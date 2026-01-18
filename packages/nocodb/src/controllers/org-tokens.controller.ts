@@ -9,7 +9,7 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { ApiTokenReqType } from 'nocodb-sdk';
+import { ApiTokenReqType } from 'social-pixl-sdk';
 import { AuthGuard } from '@nestjs/passport';
 import { getConditionalHandler } from '~/helpers/getHandler';
 import { OrgTokensEeService } from '~/services/org-tokens-ee.service';

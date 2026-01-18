@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ColumnHelper, type ColumnType, UITypes } from 'nocodb-sdk'
-import { AllowedColumnTypesForQrAndBarcodes } from 'nocodb-sdk'
+import { ColumnHelper, type ColumnType, UITypes } from 'social-pixl-sdk'
+import { AllowedColumnTypesForQrAndBarcodes } from 'social-pixl-sdk'
 import { supportedBarcodeFormats } from '~/helpers/columnDefaultMeta'
 
 const props = defineProps<{

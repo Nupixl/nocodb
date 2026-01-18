@@ -1,7 +1,7 @@
 import { expect } from '@playwright/test';
 import BasePage from '../../../Base';
 import { ToolbarPage } from './index';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { getTextExcludeIconText } from '../../../../tests/utils/general';
 
 export class ToolbarFilterPage extends BasePage {

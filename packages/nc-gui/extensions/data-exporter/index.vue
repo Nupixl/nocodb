@@ -7,7 +7,7 @@ import {
   charsetOptions,
   csvColumnSeparatorOptions,
   getFirstNonPersonalView,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import { extensionUserPrefsManager } from '~/helpers/extensionUserPrefsManager'
 
 const jobStatusTooltip = {

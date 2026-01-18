@@ -2,8 +2,8 @@
 import type { SelectProps } from 'ant-design-vue'
 import { ref } from 'vue'
 import { StreamBarcodeReader } from 'vue-barcode-reader'
-import type { ColumnType } from 'nocodb-sdk'
-import { UITypes } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
+import { UITypes } from 'social-pixl-sdk'
 
 const meta = inject(MetaInj, ref())
 

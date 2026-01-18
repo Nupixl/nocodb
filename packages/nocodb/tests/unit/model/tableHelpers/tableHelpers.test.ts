@@ -1,7 +1,7 @@
 import 'mocha';
 import { expect } from 'chai';
 
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { DriverClient } from '~/utils/nc-config';
 import { repopulateCreateTableSystemColumns } from '~/helpers/tableHelpers';
 import { TableSystemColumns } from '~/helpers/columnHelpers';

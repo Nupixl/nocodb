@@ -4,7 +4,7 @@ import { AccountUsersPage } from '../../../pages/Account/Users';
 import { SignupPage } from '../../../pages/SignupPage';
 import setup, { unsetup } from '../../../setup';
 import { getDefaultPwd } from '../../../tests/utils/general';
-import { Api } from 'nocodb-sdk';
+import { Api } from 'social-pixl-sdk';
 import { DashboardPage } from '../../../pages/Dashboard';
 import { LoginPage } from '../../../pages/LoginPage';
 import { isEE } from '../../../setup/db';

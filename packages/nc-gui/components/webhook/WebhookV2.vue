@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { HookType } from 'nocodb-sdk'
+import type { HookType } from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 import { onKeyDown } from '@vueuse/core'
 import { defineAsyncComponent } from 'vue'

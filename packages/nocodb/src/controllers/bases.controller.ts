@@ -12,8 +12,8 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import isDocker from 'is-docker';
-import { ProjectReqType } from 'nocodb-sdk';
-import type { BaseType } from 'nocodb-sdk';
+import { ProjectReqType } from 'social-pixl-sdk';
+import type { BaseType } from 'social-pixl-sdk';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { PagedResponseImpl } from '~/helpers/PagedResponse';
 import Noco from '~/Noco';

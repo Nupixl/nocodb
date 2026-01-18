@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { MetaEventType, parseProp, UITypes } from 'nocodb-sdk';
-import type { NcContext } from 'nocodb-sdk';
+import { MetaEventType, parseProp, UITypes } from 'social-pixl-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type {
   AffectedDependencyResult,
   MetaDependencyEventRequest,

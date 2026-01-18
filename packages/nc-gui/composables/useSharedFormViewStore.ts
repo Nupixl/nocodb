@@ -9,8 +9,8 @@ import type {
   SelectOptionsType,
   StringOrNullType,
   TableType,
-} from 'nocodb-sdk'
-import { PermissionEntity, PermissionKey, RelationTypes, UITypes, isLinksOrLTAR, isSystemColumn, isVirtualCol } from 'nocodb-sdk'
+} from 'social-pixl-sdk'
+import { PermissionEntity, PermissionKey, RelationTypes, UITypes, isLinksOrLTAR, isSystemColumn, isVirtualCol } from 'social-pixl-sdk'
 import { isString } from '@vue/shared'
 import { useTitle } from '@vueuse/core'
 import type { RuleObject } from 'ant-design-vue/es/form'

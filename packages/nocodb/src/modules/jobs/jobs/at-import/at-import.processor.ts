@@ -1,11 +1,11 @@
 import moment from 'moment';
-import { AuditV1OperationTypes, SqlUiFactory, UITypes } from 'nocodb-sdk';
+import { AuditV1OperationTypes, SqlUiFactory, UITypes } from 'social-pixl-sdk';
 import Airtable from 'airtable';
 import hash from 'object-hash';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 import tinycolor from 'tinycolor2';
-import { isLinksOrLTAR } from 'nocodb-sdk';
+import { isLinksOrLTAR } from 'social-pixl-sdk';
 import debug from 'debug';
 import { Injectable, Logger } from '@nestjs/common';
 import PQueue from 'p-queue';
@@ -17,9 +17,9 @@ import type {
   AirtableImportFailPayload,
   AirtableImportPayload,
   NcRequest,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { Job } from 'bull';
-import type { UserType } from 'nocodb-sdk';
+import type { UserType } from 'social-pixl-sdk';
 import type { AtImportJobData } from '~/interface/Jobs';
 import {
   extractNonSystemProps,

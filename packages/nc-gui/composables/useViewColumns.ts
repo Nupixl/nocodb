@@ -1,5 +1,5 @@
-import type { ButtonType, ColumnType, GridColumnReqType, GridColumnType, MapType, TableType, ViewType } from 'nocodb-sdk'
-import { CommonAggregations, ViewTypes, getFirstNonPersonalView, isHiddenCol, isSystemColumn } from 'nocodb-sdk'
+import type { ButtonType, ColumnType, GridColumnReqType, GridColumnType, MapType, TableType, ViewType } from 'social-pixl-sdk'
+import { CommonAggregations, ViewTypes, getFirstNonPersonalView, isHiddenCol, isSystemColumn } from 'social-pixl-sdk'
 import type { ComputedRef, Ref } from 'vue'
 
 const [useProvideViewColumns, useViewColumns] = useInjectionState(

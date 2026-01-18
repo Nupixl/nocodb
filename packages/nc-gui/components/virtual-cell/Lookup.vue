@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import type { ColumnType, LinkToAnotherRecordType, LookupType } from 'nocodb-sdk'
-import { RelationTypes, UITypes, isVirtualCol } from 'nocodb-sdk'
+import type { ColumnType, LinkToAnotherRecordType, LookupType } from 'social-pixl-sdk'
+import { RelationTypes, UITypes, isVirtualCol } from 'social-pixl-sdk'
 
 const { getMeta, getMetaByKey } = useMetas()
 

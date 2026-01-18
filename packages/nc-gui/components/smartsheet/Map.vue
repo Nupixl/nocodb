@@ -2,7 +2,7 @@
 import 'leaflet/dist/leaflet.css'
 import L, { LatLng } from 'leaflet'
 import 'leaflet.markercluster'
-import { ViewTypes } from 'nocodb-sdk'
+import { ViewTypes } from 'social-pixl-sdk'
 
 const route = useRoute()
 

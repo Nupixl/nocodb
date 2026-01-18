@@ -88,7 +88,7 @@ import {
   UITypes,
   ViewTypes,
   WorkspaceUserRoles,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { expect } from 'chai';
 import request from 'supertest';
 import init from '../../init';
@@ -110,7 +110,7 @@ import { createView, updateView } from '../../factory/view';
 
 import { defaultUserArgs } from '../../factory/user';
 import { runOnSet } from '../../utils/runOnSet';
-import type { ColumnType } from 'nocodb-sdk';
+import type { ColumnType } from 'social-pixl-sdk';
 import type { Base, Model } from '../../../../src/models';
 
 export default function (API_VERSION: 'v2' | 'v3') {

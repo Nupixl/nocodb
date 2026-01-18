@@ -1,4 +1,4 @@
-import { NcErrorType } from 'nocodb-sdk';
+import { NcErrorType } from 'social-pixl-sdk';
 import type { DBError } from './utils';
 import type { Logger } from '@nestjs/common';
 import type { DBErrorExtractResult, IClientDbErrorExtractor } from './utils';

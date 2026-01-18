@@ -3,8 +3,8 @@ import {
   isLinksOrLTAR,
   ncIsNullOrUndefined,
   RelationTypes,
-} from 'nocodb-sdk';
-import type { AuditOperationSubTypes, NcRequest } from 'nocodb-sdk';
+} from 'social-pixl-sdk';
+import type { AuditOperationSubTypes, NcRequest } from 'social-pixl-sdk';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
 import type { LinkToAnotherRecordColumn } from '~/models';
 import type { NcContext } from '~/interface/config';

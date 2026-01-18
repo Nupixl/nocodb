@@ -1,4 +1,4 @@
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { expect } from 'chai';
 import request from 'supertest';
 import { createTable, getAllTables } from '../../factory/table';

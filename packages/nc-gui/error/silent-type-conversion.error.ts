@@ -1,1 +1,1 @@
-export { SilentTypeConversionError } from 'nocodb-sdk'
+export { SilentTypeConversionError } from 'social-pixl-sdk'

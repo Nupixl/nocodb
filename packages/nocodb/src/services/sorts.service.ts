@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { AppEvents, EventType } from 'nocodb-sdk';
+import { AppEvents, EventType } from 'social-pixl-sdk';
 import Noco from 'src/Noco';
-import type { SortReqType } from 'nocodb-sdk';
+import type { SortReqType } from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import type { MetaService } from '~/meta/meta.service';
 import {

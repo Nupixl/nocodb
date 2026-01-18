@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { VNodeRef } from '@vue/runtime-core'
 import type { InputPassword } from 'ant-design-vue'
-import { ViewTypes } from 'nocodb-sdk'
+import { ViewTypes } from 'social-pixl-sdk'
 import gridImage from '~/assets/img/views/grid.png'
 import galleryImage from '~/assets/img/views/gallery.png'
 import kanbanImage from '~/assets/img/views/kanban.png'

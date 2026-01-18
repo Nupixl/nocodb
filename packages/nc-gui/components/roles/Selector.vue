@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import type { RoleLabels } from 'nocodb-sdk'
-import { RoleDescriptions } from 'nocodb-sdk'
+import type { RoleLabels } from 'social-pixl-sdk'
+import { RoleDescriptions } from 'social-pixl-sdk'
 import type { SelectValue } from 'ant-design-vue/es/select'
 
 const props = withDefaults(

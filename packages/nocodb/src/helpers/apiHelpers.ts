@@ -2,7 +2,7 @@ import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import type { ErrorObject } from 'ajv';
 import type { NextFunction, Request, Response } from 'express';
-import type { NcApiVersion, NcRequest } from 'nocodb-sdk';
+import type { NcApiVersion, NcRequest } from 'social-pixl-sdk';
 import { NcError } from '~/helpers/catchError';
 import swagger, { swaggerV3Validation } from '~/schema';
 

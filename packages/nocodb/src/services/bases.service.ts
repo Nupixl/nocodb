@@ -11,13 +11,13 @@ import {
   NcBaseError,
   OrgUserRoles,
   SqlUiFactory,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type {
   NcApiVersion,
   ProjectReqType,
   ProjectUpdateReqType,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { Request } from 'express';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { AppHooksService } from '~/services/app-hooks/app-hooks.service';

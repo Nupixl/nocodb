@@ -1,4 +1,4 @@
-import { PluginCategory } from 'nocodb-sdk';
+import { PluginCategory } from 'social-pixl-sdk';
 import { NcError } from './catchError';
 import type {
   IEmailAdapter,

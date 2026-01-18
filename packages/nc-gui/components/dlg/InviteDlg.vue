@@ -9,7 +9,7 @@ import {
   type UserType,
   type WorkspaceType,
   WorkspaceUserRoles,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 import { extractEmail } from '../../helpers/parsers/parserHelpers'
 

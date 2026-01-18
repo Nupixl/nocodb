@@ -1,4 +1,4 @@
-import type { Api, ButtonType, TableType } from 'nocodb-sdk'
+import type { Api, ButtonType, TableType } from 'social-pixl-sdk'
 import type { UserObject } from 'packages/nc-gui/composables/useUserSync'
 
 interface ActionState {

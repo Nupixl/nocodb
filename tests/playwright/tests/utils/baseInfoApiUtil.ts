@@ -18,7 +18,7 @@ import {
   UserType,
   ViewListType,
   ViewType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 
 export class ViewInfo {
   view: ViewType;

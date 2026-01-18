@@ -13,7 +13,7 @@ import {
   isSystemColumn,
   isVirtualCol,
   parseProp,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import type {
   ColumnType,
   ColumnTypeForFilter,
@@ -23,15 +23,15 @@ import type {
   LinkToAnotherRecordType,
   LookupType,
   TableType,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 export const MAX_NESTED_LEVEL = 5
 export const excludedFilterColUidt = [UITypes.QrCode, UITypes.Barcode, UITypes.Button]
 
-// Re-export types from nocodb-sdk for backward compatibility
+// Re-export types from social-pixl-sdk for backward compatibility
 export type { ComparisonOpUiType, FilterGroupChangeEvent, FilterRowChangeEvent, ColumnTypeForFilter }
 
-// Re-export functions from nocodb-sdk for backward compatibility
+// Re-export functions from social-pixl-sdk for backward compatibility
 export {
   isDateType,
   comparisonOpList,

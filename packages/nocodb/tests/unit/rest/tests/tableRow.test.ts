@@ -1,7 +1,7 @@
 import 'mocha';
 // @ts-ignore
 import request from 'supertest';
-import { UITypes, ViewTypes } from 'nocodb-sdk';
+import { UITypes, ViewTypes } from 'social-pixl-sdk';
 import { expect } from 'chai';
 import init from '../../init';
 import { createProject, createSakilaProject } from '../../factory/base';
@@ -24,7 +24,7 @@ import {
 } from '../../factory/row';
 import { listenForJob } from '../../factory/job';
 import { isMysql, isPg, isSqlite } from '../../init/db';
-import type { ColumnType } from 'nocodb-sdk';
+import type { ColumnType } from 'social-pixl-sdk';
 import type Model from '../../../../src/models/Model';
 import type View from '../../../../src/models/View';
 import type Base from '~/models/Base';

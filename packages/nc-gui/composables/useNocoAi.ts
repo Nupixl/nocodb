@@ -1,4 +1,4 @@
-import { BaseVersion, type IntegrationType, type SerializedAiViewType, type TableType } from 'nocodb-sdk'
+import { BaseVersion, type IntegrationType, type SerializedAiViewType, type TableType } from 'social-pixl-sdk'
 
 const aiIntegrationNotFound = 'AI integration not found'
 

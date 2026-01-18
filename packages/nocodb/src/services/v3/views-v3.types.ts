@@ -1,4 +1,4 @@
-import type { NcContext, NcRequest } from 'nocodb-sdk';
+import type { NcContext, NcRequest } from 'social-pixl-sdk';
 import type { MetaService } from '~/meta/meta.service';
 
 export interface IViewsV3Service {

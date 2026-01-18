@@ -6,8 +6,8 @@ import {
   type TableType,
   UITypesName,
   type ViewType,
-} from 'nocodb-sdk'
-import { UITypes } from 'nocodb-sdk'
+} from 'social-pixl-sdk'
+import { UITypes } from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 import rfdc from 'rfdc'
 import type { Group } from '../lib/types'

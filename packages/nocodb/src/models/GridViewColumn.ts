@@ -2,7 +2,7 @@ import {
   type BoolType,
   type GridColumnType,
   VIEW_GRID_DEFAULT_WIDTH,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import type Upgrader from '~/Upgrader';
 import View from '~/models/View';

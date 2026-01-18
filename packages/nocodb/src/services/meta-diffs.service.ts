@@ -9,9 +9,9 @@ import {
   RelationTypes,
   SqlUiFactory,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { pluralize, singularize } from 'inflection';
-import type { UserType } from 'nocodb-sdk';
+import type { UserType } from 'social-pixl-sdk';
 import type { LinksColumn, LinkToAnotherRecordColumn } from '~/models';
 import type { NcContext } from '~/interface/config';
 import { AppHooksService } from '~/services/app-hooks/app-hooks.service';

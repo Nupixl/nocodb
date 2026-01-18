@@ -1,5 +1,5 @@
 import 'mocha';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { expect } from 'chai';
 import { initFormulaLookupColumns, initInitialModel } from '../initModel';
 import { createColumn } from '../../factory/column';

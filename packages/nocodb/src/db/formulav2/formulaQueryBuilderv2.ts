@@ -7,7 +7,7 @@ import {
   NcErrorType,
   UITypes,
   validateFormulaAndExtractTreeWithType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { getColumnName } from 'src/helpers/dbHelpers';
 import { DBErrorExtractor } from 'src/helpers/db-error/extractor';
 import genRollupSelectv2 from '../genRollupSelectv2';
@@ -18,7 +18,7 @@ import {
   binaryExpressionBuilder,
   callExpressionBuilder,
 } from './parsed-tree-builder';
-import type { ClientType, LiteralNode } from 'nocodb-sdk';
+import type { ClientType, LiteralNode } from 'social-pixl-sdk';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
 import type { BarcodeColumn, Model, QrCodeColumn, User } from '~/models';
 import type Column from '~/models/Column';

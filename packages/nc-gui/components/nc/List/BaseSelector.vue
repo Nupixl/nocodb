@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { BaseType } from 'nocodb-sdk'
+import type { BaseType } from 'social-pixl-sdk'
 
 interface Props {
   workspaceId?: string

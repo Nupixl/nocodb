@@ -1,4 +1,4 @@
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { convertDateFormat } from './convertDateFormat';
 import type { NcContext } from '~/interface/config';
 import Column from '~/models/Column';

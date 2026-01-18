@@ -15,7 +15,7 @@ import {
   RelationTypes,
   ServiceUserType,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type {
   ColumnType,
   NcApiVersion,
@@ -23,7 +23,7 @@ import type {
   TableReqType,
   TableType,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { MetaService } from '~/meta/meta.service';
 import type { LinkToAnotherRecordColumn, User, View } from '~/models';
 import type { NcContext, NcRequest } from '~/interface/config';

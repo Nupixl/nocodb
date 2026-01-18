@@ -5,7 +5,7 @@ import {
   OrgUserRoles,
   validatePassword,
   WorkspaceUserRoles,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { v4 as uuidv4 } from 'uuid';
 import isEmail from 'validator/lib/isEmail';
 import bcrypt from 'bcryptjs';
@@ -16,7 +16,7 @@ import type {
   PasswordResetReqType,
   SignUpReqType,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcRequest } from '~/interface/config';
 import { isEE, T } from '~/utils';
 import { genJwt, setTokenCookie } from '~/services/users/helpers';

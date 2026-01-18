@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { AppEvents } from 'nocodb-sdk'
-import type { NotificationType } from 'nocodb-sdk'
+import { AppEvents } from 'social-pixl-sdk'
+import type { NotificationType } from 'social-pixl-sdk'
 
 const props = defineProps<{
   item: NotificationType

@@ -3,11 +3,11 @@ import { PassThrough } from 'stream';
 import { forwardRef, Inject, Injectable, Logger } from '@nestjs/common';
 import axios from 'axios';
 import { nanoid } from 'nanoid';
-import { AuditV1OperationTypes, EventType, ncIsNull } from 'nocodb-sdk';
+import { AuditV1OperationTypes, EventType, ncIsNull } from 'social-pixl-sdk';
 import slash from 'slash';
 import { useAgent } from 'request-filtering-agent';
 import { getBase64FileSize } from 'src/helpers/stringHelpers';
-import type { DataUpdatePayload, NcContext } from 'nocodb-sdk';
+import type { DataUpdatePayload, NcContext } from 'social-pixl-sdk';
 import type { AttachmentFilePathConstructed } from '~/helpers/attachmentHelpers';
 import type {
   AttachmentBase64UploadParam,

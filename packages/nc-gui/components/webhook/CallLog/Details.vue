@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { HookLogType } from 'nocodb-sdk'
+import type { HookLogType } from 'social-pixl-sdk'
 import { hookLogFormatter } from '../../../utils/datetimeUtils'
 
 interface Props {

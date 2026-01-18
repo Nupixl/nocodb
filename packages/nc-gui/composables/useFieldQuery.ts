@@ -1,4 +1,4 @@
-import { ColumnHelper, type ColumnType, FormulaDataTypes, type TableType, UITypes, isNumericCol, isVirtualCol } from 'nocodb-sdk'
+import { ColumnHelper, type ColumnType, FormulaDataTypes, type TableType, UITypes, isNumericCol, isVirtualCol } from 'social-pixl-sdk'
 
 export interface FieldQueryType {
   field: string

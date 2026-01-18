@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { DashboardPage } from '../../../pages/Dashboard';
 import setup, { NcContext, unsetup } from '../../../setup';
-import { Api } from 'nocodb-sdk';
+import { Api } from 'social-pixl-sdk';
 import { DataSourcePage } from '../../../pages/Dashboard/ProjectView/DataSourcePage';
 
 test.describe('Source Restrictions', () => {

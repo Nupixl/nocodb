@@ -1,5 +1,5 @@
 import type { Logger } from '@nestjs/common';
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type CustomKnex from '~/db/CustomKnex';
 import type { Knex } from '~/db/CustomKnex';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';

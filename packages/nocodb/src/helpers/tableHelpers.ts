@@ -1,4 +1,4 @@
-import { type ColumnType, type NcContext } from 'nocodb-sdk';
+import { type ColumnType, type NcContext } from 'social-pixl-sdk';
 import {
   extractRolesObj,
   getProjectRole,
@@ -7,8 +7,8 @@ import {
   PermissionKey,
   PermissionRole,
   ProjectRoles,
-} from 'nocodb-sdk';
-import type { UITypes, UserType } from 'nocodb-sdk';
+} from 'social-pixl-sdk';
+import type { UITypes, UserType } from 'social-pixl-sdk';
 import type { User } from '~/models';
 import {
   deleteColumnSystemPropsFromRequest,
@@ -181,7 +181,7 @@ export async function hasTableVisibilityAccess(
   }
 
   // Get the user's project role (base role)
-  // Use getProjectRole from nocodb-sdk which extracts the role from user object
+  // Use getProjectRole from social-pixl-sdk which extracts the role from user object
   // It looks at user.base_roles and returns the most powerful role
   const userRole = getProjectRole(user) as ProjectRoles;
 

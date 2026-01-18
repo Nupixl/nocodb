@@ -3,7 +3,7 @@
 import BasePage from '../../Base';
 import { expect, Locator } from '@playwright/test';
 import { DetailsPage } from './index';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 
 export class FieldsPage extends BasePage {
   readonly detailsPage: DetailsPage;

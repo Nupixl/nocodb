@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
 import { Strategy } from 'passport-custom';
-import { extractRolesObj } from 'nocodb-sdk';
+import { extractRolesObj } from 'social-pixl-sdk';
 import type { NcRequest } from '~/interface/config';
 import { OAuthToken, User } from '~/models';
 import { sanitiseUserObj } from '~/utils';

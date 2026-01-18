@@ -20,7 +20,7 @@ import {
   getSystemColumns,
   isLinksOrLTAR,
   isVirtualCol,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import type { ValidateInfo } from 'ant-design-vue/es/form/useForm'
 import type { ImageCropperConfig } from '#imports'
 

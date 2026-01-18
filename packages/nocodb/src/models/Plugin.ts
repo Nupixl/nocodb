@@ -1,4 +1,4 @@
-import type { PluginType } from 'nocodb-sdk';
+import type { PluginType } from 'social-pixl-sdk';
 import Noco from '~/Noco';
 import NocoCache from '~/cache/NocoCache';
 import { extractProps } from '~/helpers/extractProps';

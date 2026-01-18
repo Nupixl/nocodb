@@ -1,4 +1,4 @@
-import { XcActionType, XcType } from 'nocodb-sdk';
+import { XcActionType, XcType } from 'social-pixl-sdk';
 import LinodeObjectStoragePlugin from './LinodeObjectStoragePlugin';
 import type { XcPluginConfig } from '~/types/nc-plugin';
 

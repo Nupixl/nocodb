@@ -15,7 +15,7 @@ import {
   extractRolesObj,
   TableCreateV3Type,
   TableUpdateV3Type,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { Acl } from '~/middlewares/extract-ids/extract-ids.middleware';
 import { PagedResponseImpl } from '~/helpers/PagedResponse';

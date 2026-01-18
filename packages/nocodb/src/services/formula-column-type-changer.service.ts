@@ -4,14 +4,14 @@ import {
   NcBaseError,
   type NcContext,
   type NcRequest,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { generateUpdateAuditV1Payload } from 'src/utils';
 import type {
   AuditV1,
   ColumnReqType,
   DataUpdatePayload,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { BaseModelSqlv2 } from '~/db/BaseModelSqlv2';
 import type { FormulaColumn } from '~/models';
 import type { ReusableParams } from '~/services/columns.service.type';

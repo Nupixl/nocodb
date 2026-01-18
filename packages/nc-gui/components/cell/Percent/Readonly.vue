@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ColumnHelper, UITypes, ncIsNaN } from 'nocodb-sdk'
+import { ColumnHelper, UITypes, ncIsNaN } from 'social-pixl-sdk'
 interface Props {
   modelValue?: number | string | null
   localEditEnabled?: boolean

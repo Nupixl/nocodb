@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ClientType } from 'nocodb-sdk'
+import { ClientType } from 'social-pixl-sdk'
 import { defaultColumns } from '../../../-helper/columns'
 const columns = defaultColumns
 

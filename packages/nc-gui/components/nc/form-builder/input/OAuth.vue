@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { FormBuilderElement } from 'nocodb-sdk'
+import type { FormBuilderElement } from 'social-pixl-sdk'
 
 const props = defineProps<{
   value: {

@@ -18,7 +18,7 @@ import {
   isCreatedOrLastModifiedByCol,
   isCreatedOrLastModifiedTimeCol,
   isSystemColumn,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import type { CanvasGroup } from '../lib/types'
 import type { Row } from '#imports'
 import { validateRowFilters } from '~/utils/dataUtils'

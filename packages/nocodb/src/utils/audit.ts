@@ -6,7 +6,7 @@ import {
   isVirtualCol,
   ratingIconList,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { diff } from 'deep-object-diff';
 import type { IBaseModelSqlV2 } from 'src/db/IBaseModelSqlV2';
 import type {
@@ -20,7 +20,7 @@ import type {
   SelectOptionsType,
   UpdateDestructedPayload,
   UpdatePayload,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { Request } from 'express';
 import { Column, Hook } from '~/models';
 import { Model, View } from '~/models';

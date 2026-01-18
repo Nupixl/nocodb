@@ -1,4 +1,4 @@
-import { ncIsUndefined } from 'nocodb-sdk';
+import { ncIsUndefined } from 'social-pixl-sdk';
 import type { Knex } from 'knex';
 import { MAX_CONCURRENT_TRANSFORMS } from '~/constants';
 

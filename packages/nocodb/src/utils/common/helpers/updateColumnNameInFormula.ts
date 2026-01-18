@@ -1,4 +1,4 @@
-import { jsepTreeToFormula } from 'nocodb-sdk';
+import { jsepTreeToFormula } from 'social-pixl-sdk';
 
 export default function (args: {
   virtualColumns;

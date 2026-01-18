@@ -1,6 +1,6 @@
 import { Logger } from '@nestjs/common';
-import { NcBaseError } from 'nocodb-sdk';
-import type { NcContext } from 'nocodb-sdk';
+import { NcBaseError } from 'social-pixl-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import { NcError } from '~/helpers/ncError';
 import { MetaTable } from '~/cli';
 import Noco from '~/Noco';

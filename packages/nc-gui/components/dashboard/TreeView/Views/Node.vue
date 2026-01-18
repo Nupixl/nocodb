@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type TableType, ViewLockType, type ViewType, type ViewTypes } from 'nocodb-sdk'
+import { type TableType, ViewLockType, type ViewType, type ViewTypes } from 'social-pixl-sdk'
 import type { WritableComputedRef } from '@vue/reactivity'
 import { LockType, isDefaultBase } from '#imports'
 

@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { extractRolesObj, OrgUserRoles, ProjectRoles } from 'nocodb-sdk';
+import { extractRolesObj, OrgUserRoles, ProjectRoles } from 'social-pixl-sdk';
 import type { Observable } from 'rxjs';
 import type {
   CallHandler,

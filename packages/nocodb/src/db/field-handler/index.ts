@@ -4,8 +4,8 @@ import {
   isRollup,
   ncIsUndefined,
   UITypes,
-} from 'nocodb-sdk';
-import { ClientType } from 'nocodb-sdk';
+} from 'social-pixl-sdk';
+import { ClientType } from 'social-pixl-sdk';
 import { CurrencyGeneralHandler } from './handlers/currency/currency.general.handler';
 import { CurrencyPgHandler } from './handlers/currency/currency.pg.handler';
 import { CurrencyMysqlHandler } from './handlers/currency/currency.mysql.handler';
@@ -13,7 +13,7 @@ import { CurrencySqliteHandler } from './handlers/currency/currency.sqlite.handl
 import type { Logger } from '@nestjs/common';
 import type { MetaService } from '~/meta/meta.service';
 import type CustomKnex from '../CustomKnex';
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type { IBaseModelSqlV2 } from '../IBaseModelSqlV2';
 import type {
   FilterOperationResult,

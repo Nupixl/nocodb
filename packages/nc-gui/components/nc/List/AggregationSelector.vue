@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { CommonAggregations, UITypes, getAvailableAggregations } from 'nocodb-sdk'
-import type { ColumnType } from 'nocodb-sdk'
+import { CommonAggregations, UITypes, getAvailableAggregations } from 'social-pixl-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
 
 interface Props {
   baseId?: string

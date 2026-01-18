@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { type UserType, viewTypeAlias } from 'nocodb-sdk';
+import { type UserType, viewTypeAlias } from 'social-pixl-sdk';
 import { getCommandPaletteForUserWorkspace } from 'src/helpers/commandPaletteHelpers';
 import { deserializeJSON } from '~/utils/serialize';
 // This service is overwritten entirely in the cloud and does not extend there.

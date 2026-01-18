@@ -1,4 +1,4 @@
-import { PlanLimitTypes } from 'nocodb-sdk';
+import { PlanLimitTypes } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import { prepareForDb, prepareForResponse } from '~/utils/modelUtils';
 import Noco from '~/Noco';

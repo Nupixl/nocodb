@@ -1,6 +1,6 @@
 import { LRUCache } from 'lru-cache'
 import JsBarcode from 'jsbarcode'
-import type { ColumnType, UserType } from 'nocodb-sdk'
+import type { ColumnType, UserType } from 'social-pixl-sdk'
 import type { SpriteLoader } from '../loaders/SpriteLoader'
 import { type MarkdownLoader, markdownTextCache } from '../loaders/markdownLoader'
 import type { RenderMultiLineTextProps, RenderSingleLineTextProps, RenderTagProps } from './types'

@@ -1,4 +1,4 @@
-import { type NcContext } from 'nocodb-sdk';
+import { type NcContext } from 'social-pixl-sdk';
 import type RowColorCondition from '~/models/RowColorCondition';
 import type { MetaService } from '~/meta/meta.service';
 import type { Filter, View } from '~/models';

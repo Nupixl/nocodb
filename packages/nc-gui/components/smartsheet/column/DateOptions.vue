@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ColumnHelper, UITypes, dateFormats, dateMonthFormats } from 'nocodb-sdk'
+import { ColumnHelper, UITypes, dateFormats, dateMonthFormats } from 'social-pixl-sdk'
 
 const props = defineProps<{
   value: any

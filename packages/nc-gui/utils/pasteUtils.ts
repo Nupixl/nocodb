@@ -1,5 +1,5 @@
-import { ColumnHelper } from 'nocodb-sdk'
-import type { ColumnType, TableType, UITypes } from 'nocodb-sdk'
+import { ColumnHelper } from 'social-pixl-sdk'
+import type { ColumnType, TableType, UITypes } from 'social-pixl-sdk'
 
 export const valueToCopy = (
   rowObj: Row,

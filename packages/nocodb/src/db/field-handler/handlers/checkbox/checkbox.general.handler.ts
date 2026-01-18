@@ -1,4 +1,4 @@
-import { type NcContext, ncIsUndefined, parseCheckboxValue } from 'nocodb-sdk';
+import { type NcContext, ncIsUndefined, parseCheckboxValue } from 'social-pixl-sdk';
 import { NcError } from 'src/helpers/catchError';
 import type { FilterVerificationResult } from '~/db/field-handler/field-handler.interface';
 import type { Column, Filter } from '~/models';

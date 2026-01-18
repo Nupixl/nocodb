@@ -1,4 +1,4 @@
-import { NO_SCOPE as SDK_NO_SCOPE } from 'nocodb-sdk'
+import { NO_SCOPE as SDK_NO_SCOPE } from 'social-pixl-sdk'
 
 export const NOCO = 'noco'
 

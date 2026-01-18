@@ -8,7 +8,7 @@ import type {
   TableType,
   UITypes,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { XcEmailAttachment } from '~/types/nc-plugin';
 
 enum MailEvent {

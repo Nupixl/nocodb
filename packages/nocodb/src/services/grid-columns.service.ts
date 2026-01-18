@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { AppEvents, EventType } from 'nocodb-sdk';
-import type { GridColumnReqType } from 'nocodb-sdk';
+import { AppEvents, EventType } from 'social-pixl-sdk';
+import type { GridColumnReqType } from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import type { MetaService } from '~/meta/meta.service';
 import {

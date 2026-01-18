@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import { AppHooksListenerService } from '~/services/app-hooks-listener.service';
 import { Audit, PresignedUrl } from '~/models';

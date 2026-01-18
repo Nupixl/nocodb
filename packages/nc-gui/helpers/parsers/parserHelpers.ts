@@ -1,4 +1,4 @@
-import { ButtonActionsType, type ColumnType, FieldNameFromUITypes, UITypes, UITypesName } from 'nocodb-sdk'
+import { ButtonActionsType, type ColumnType, FieldNameFromUITypes, UITypes, UITypesName } from 'social-pixl-sdk'
 import isURL from 'validator/lib/isURL'
 import { pluralize } from 'inflection'
 

@@ -1,4 +1,4 @@
-import { UITypes, SyncCategory, TARGET_TABLES } from 'nocodb-sdk';
+import { UITypes, SyncCategory, TARGET_TABLES } from 'social-pixl-sdk';
 import { SyncColumnDefinition } from './types';
 
 export { SyncCategory, TARGET_TABLES };

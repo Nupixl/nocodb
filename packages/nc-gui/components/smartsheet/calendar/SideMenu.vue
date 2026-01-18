@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { VNodeRef } from '@vue/runtime-core'
-import { PermissionEntity, PermissionKey, UITypes } from 'nocodb-sdk'
+import { PermissionEntity, PermissionKey, UITypes } from 'social-pixl-sdk'
 import dayjs from 'dayjs'
 
 const props = defineProps<{

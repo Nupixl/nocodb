@@ -1,11 +1,11 @@
 import { Injectable } from '@nestjs/common';
-import { extractRolesObj, NcApiVersion, OrgUserRoles } from 'nocodb-sdk';
+import { extractRolesObj, NcApiVersion, OrgUserRoles } from 'social-pixl-sdk';
 import type {
   BaseUpdateV3Type,
   BaseV3Type,
   ProjectReqType,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { BaseMetaProps } from '~/types/metaProps/base-meta-props';
 import { NcError } from '~/helpers/catchError';

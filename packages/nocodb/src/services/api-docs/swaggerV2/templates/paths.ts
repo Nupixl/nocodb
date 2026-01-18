@@ -1,4 +1,4 @@
-import { ModelTypes } from 'nocodb-sdk';
+import { ModelTypes } from 'social-pixl-sdk';
 import {
   fieldsParam,
   getNestedParams,

@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import type { NcApiVersion, NcRequest } from 'nocodb-sdk';
+import type { NcApiVersion, NcRequest } from 'social-pixl-sdk';
 import type { PathParams } from '~/helpers/dataHelpers';
 import type { BaseModelSqlv2 } from '~/db/BaseModelSqlv2';
 import type { NcContext } from '~/interface/config';

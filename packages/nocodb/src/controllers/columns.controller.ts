@@ -10,7 +10,7 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { ColumnReqType } from 'nocodb-sdk';
+import { ColumnReqType } from 'social-pixl-sdk';
 import type { Column } from '~/models';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { ColumnsService } from '~/services/columns.service';

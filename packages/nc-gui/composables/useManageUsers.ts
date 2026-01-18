@@ -1,4 +1,4 @@
-import type { RequestParams } from 'nocodb-sdk'
+import type { RequestParams } from 'social-pixl-sdk'
 
 const [setup, use] = useInjectionState(() => {
   const { api } = useApi()

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import type { ColumnType } from 'nocodb-sdk'
-import { isSystemColumn } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
+import { isSystemColumn } from 'social-pixl-sdk'
 import { NavigateDir } from '#imports'
 
 interface Props {

@@ -4,7 +4,7 @@ import {
   type MetaDependencyEventRequest,
   type MetaEventHandler,
 } from './types';
-import type { MetaEventType, NcContext } from 'nocodb-sdk';
+import type { MetaEventType, NcContext } from 'social-pixl-sdk';
 import type { MetaService } from '~/meta/meta.service';
 import Noco from '~/Noco';
 

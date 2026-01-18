@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { BaseType, TableType } from 'nocodb-sdk'
+import type { BaseType, TableType } from 'social-pixl-sdk'
 import Sortable from 'sortablejs'
 import TableNode from './Node.vue'
 

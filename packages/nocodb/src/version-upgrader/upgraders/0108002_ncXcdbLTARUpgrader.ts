@@ -1,4 +1,4 @@
-import { RelationTypes, UITypes } from 'nocodb-sdk';
+import { RelationTypes, UITypes } from 'social-pixl-sdk';
 import type { LinkToAnotherRecordColumn } from '~/models';
 import type { MetaService } from '~/meta/meta.service';
 import type { NcUpgraderCtx } from '~/version-upgrader/NcUpgrader';

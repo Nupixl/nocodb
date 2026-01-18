@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type ViewType, ViewTypes } from 'nocodb-sdk'
+import { type ViewType, ViewTypes } from 'social-pixl-sdk'
 
 interface Props {
   tableId: string

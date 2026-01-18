@@ -9,7 +9,7 @@ on:
     # closed: pull request is closed, used to delete uffizzi previews
     types: [opened, reopened, synchronize, ready_for_review, closed]
     paths:
-      - "packages/nocodb-sdk/**"
+      - "packages/social-pixl-sdk/**"
       - "packages/nc-gui/**"
       - "packages/nocodb/**"
 

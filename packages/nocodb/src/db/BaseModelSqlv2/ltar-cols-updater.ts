@@ -1,6 +1,6 @@
-import { isLinksOrLTAR, RelationTypes } from 'nocodb-sdk';
+import { isLinksOrLTAR, RelationTypes } from 'social-pixl-sdk';
 import type { Logger } from '@nestjs/common';
-import type { NcRequest } from 'nocodb-sdk';
+import type { NcRequest } from 'social-pixl-sdk';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
 import type { Column } from '~/models';
 import type CustomKnex from '~/db/CustomKnex';

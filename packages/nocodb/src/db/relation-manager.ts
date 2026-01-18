@@ -1,5 +1,5 @@
-import { AuditOperationSubTypes, RelationTypes, UITypes } from 'nocodb-sdk';
-import type { NcContext, NcRequest } from 'nocodb-sdk';
+import { AuditOperationSubTypes, RelationTypes, UITypes } from 'social-pixl-sdk';
+import type { NcContext, NcRequest } from 'social-pixl-sdk';
 import type { Column, LinkToAnotherRecordColumn } from '~/models';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
 import type { Knex } from 'knex';

@@ -1,5 +1,5 @@
 import 'mocha';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { expect } from 'chai';
 import request from 'supertest';
 import init from '../../init';

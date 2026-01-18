@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { AuditType } from 'nocodb-sdk'
+import type { AuditType } from 'social-pixl-sdk'
 
 /* interface */
 

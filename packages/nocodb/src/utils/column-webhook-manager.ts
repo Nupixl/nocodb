@@ -1,5 +1,5 @@
-import { WebhookActions } from 'nocodb-sdk';
-import type { NcContext } from 'nocodb-sdk';
+import { WebhookActions } from 'social-pixl-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type { IColumnsV3Service } from 'src/services/v3/columns-v3.types';
 import type { MetaService } from '~/meta/meta.service';
 import type { Model } from '~/models';

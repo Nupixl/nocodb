@@ -1,13 +1,13 @@
 /* eslint-disable no-async-promise-executor */
 import { Readable } from 'stream';
-import { isLinksOrLTAR, RelationTypes } from 'nocodb-sdk';
+import { isLinksOrLTAR, RelationTypes } from 'social-pixl-sdk';
 import sizeof from 'object-sizeof';
 import { Logger } from '@nestjs/common';
 import PQueue from 'p-queue';
 import type { BulkDataAliasService } from '~/services/bulk-data-alias.service';
 import type { TablesService } from '~/services/tables.service';
 import type { AirtableBase } from 'airtable/lib/airtable_base';
-import type { NcRequest, TableType } from 'nocodb-sdk';
+import type { NcRequest, TableType } from 'social-pixl-sdk';
 import type { Source } from '~/models';
 import type { NcContext } from '~/interface/config';
 

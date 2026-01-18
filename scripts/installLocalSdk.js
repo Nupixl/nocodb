@@ -1,16 +1,16 @@
 const { exec } = require('child_process');
 const path = require('path');
-const sdkPath = path.join(__dirname, '..', 'packages', 'nocodb-sdk');
+const sdkPath = path.join(__dirname, '..', 'packages', 'social-pixl-sdk');
 const guiPath = path.join(__dirname, '..', 'packages', 'nc-gui');
 const nocodbPath = path.join(__dirname, '..', 'packages', 'nocodb');
 
 exec(`cd ${sdkPath} && pnpm i && npm run build`, (err, stdout, stderr) => {
     if (err) {
-      console.error(`Error installing dependencies and building nocodb-sdk: ${err}`);
+      console.error(`Error installing dependencies and building social-pixl-sdk: ${err}`);
       return;
     }
     
-    console.log(`Dependencies installed and nocodb-sdk built: ${stdout}`);
+    console.log(`Dependencies installed and social-pixl-sdk built: ${stdout}`);
 
     const guiPromise = new Promise((resolve, reject) => {
       exec(`cd ${guiPath} && pnpm i ${sdkPath}`, (err, stdout, stderr) => {

@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';
-import { type NcContext } from 'nocodb-sdk';
+import { type NcContext } from 'social-pixl-sdk';
 import { NcError } from 'src/helpers/catchError';
 import type { IBaseModelSqlV2 } from 'src/db/IBaseModelSqlV2';
 import type { MetaService } from 'src/meta/meta.service';

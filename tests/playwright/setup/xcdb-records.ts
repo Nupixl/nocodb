@@ -1,4 +1,4 @@
-import { ColumnType, UITypes } from 'nocodb-sdk';
+import { ColumnType, UITypes } from 'social-pixl-sdk';
 
 const rowMixedValue = (column: ColumnType, index: number, db?: string) => {
   // Array of country names

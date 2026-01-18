@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ViewLockType } from 'nocodb-sdk'
+import { ViewLockType } from 'social-pixl-sdk'
 
 const { t } = useI18n()
 

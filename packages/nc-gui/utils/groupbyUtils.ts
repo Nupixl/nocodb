@@ -1,4 +1,4 @@
-import { type ColumnType, type SelectOptionsType, UITypes, dateFormats, timeFormats } from 'nocodb-sdk'
+import { type ColumnType, type SelectOptionsType, UITypes, dateFormats, timeFormats } from 'social-pixl-sdk'
 
 export const valueToTitle = (value: string, col: ColumnType, displayValueProp?: string) => {
   if (col.uidt === UITypes.Checkbox) {

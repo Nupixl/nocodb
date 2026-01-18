@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { LinkToAnotherRecordType, SourceType, TableType } from 'nocodb-sdk'
-import { isLinksOrLTAR } from 'nocodb-sdk'
+import type { LinkToAnotherRecordType, SourceType, TableType } from 'social-pixl-sdk'
+import { isLinksOrLTAR } from 'social-pixl-sdk'
 import type { ERDConfig } from './utils'
 
 const props = defineProps({

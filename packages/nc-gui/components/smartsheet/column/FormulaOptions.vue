@@ -8,8 +8,8 @@ import {
   isHiddenCol,
   substituteColumnIdWithAliasInFormula,
   validateFormulaAndExtractTreeWithType,
-} from 'nocodb-sdk'
-import type { ColumnType, FormulaType, UnifiedMetaType } from 'nocodb-sdk'
+} from 'social-pixl-sdk'
+import type { ColumnType, FormulaType, UnifiedMetaType } from 'social-pixl-sdk'
 
 const props = defineProps<{
   value: any

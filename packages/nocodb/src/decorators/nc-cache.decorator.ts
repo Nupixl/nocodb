@@ -1,4 +1,4 @@
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 
 /**
  * Type-safe cache options that can infer function parameter types

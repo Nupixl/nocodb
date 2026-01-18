@@ -15,8 +15,8 @@ import {
 } from '@nestjs/common';
 import { AnyFilesInterceptor } from '@nestjs/platform-express';
 import { Response } from 'express';
-import { PublicAttachmentScope } from 'nocodb-sdk';
-import type { AttachmentReqType, FileType } from 'nocodb-sdk';
+import { PublicAttachmentScope } from 'social-pixl-sdk';
+import type { AttachmentReqType, FileType } from 'social-pixl-sdk';
 import type { NcRequest } from '~/interface/config';
 import { NcContext } from '~/interface/config';
 import { GlobalGuard } from '~/guards/global/global.guard';

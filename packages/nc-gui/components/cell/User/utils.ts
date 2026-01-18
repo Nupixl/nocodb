@@ -1,4 +1,4 @@
-import { type ColumnType, type UserFieldRecordType, type UserType, arrFlatMap } from 'nocodb-sdk'
+import { type ColumnType, type UserFieldRecordType, type UserType, arrFlatMap } from 'social-pixl-sdk'
 
 export const getOptions = (
   column: ColumnType,

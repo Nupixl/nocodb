@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { AppEvents } from 'nocodb-sdk';
+import { AppEvents } from 'social-pixl-sdk';
 import type { OnModuleDestroy, OnModuleInit } from '@nestjs/common';
 import type {
   MetaDiffEvent,

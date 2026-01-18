@@ -3,7 +3,7 @@ import { DashboardPage } from '../../../pages/Dashboard';
 import { ToolbarPage } from '../../../pages/Dashboard/common/Toolbar';
 import setup, { unsetup } from '../../../setup';
 import { enableQuickRun, isMysql } from '../../../setup/db';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 
 test.describe('Toolbar operations (GRID)', () => {
   let dashboard: DashboardPage, toolbar: ToolbarPage;

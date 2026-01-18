@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 import { DashboardPage } from '../../../pages/Dashboard';
 import { GridPage } from '../../../pages/Dashboard/Grid';
 import setup, { unsetup } from '../../../setup';
-import { Api, UITypes } from 'nocodb-sdk';
+import { Api, UITypes } from 'social-pixl-sdk';
 import { isEE } from '../../../setup/db';
 import { getDefaultPwd } from '../../utils/general';
 import config from '../../../playwright.config';

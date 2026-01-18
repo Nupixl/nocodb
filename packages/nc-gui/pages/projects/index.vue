@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { Modal, message } from 'ant-design-vue'
-import type { BaseType } from 'nocodb-sdk'
+import type { BaseType } from 'social-pixl-sdk'
 import { useI18n } from 'vue-i18n'
 import MaterialSymbolsFormatListBulletedRounded from '~icons/material-symbols/format-list-bulleted-rounded'
 import MaterialSymbolsGridView from '~icons/material-symbols/grid-view'

@@ -1,4 +1,4 @@
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type Column from '~/models/Column';
 import type Filter from '~/models/Filter';
 

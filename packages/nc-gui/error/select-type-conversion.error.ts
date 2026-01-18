@@ -1,1 +1,1 @@
-export { SelectTypeConversionError } from 'nocodb-sdk'
+export { SelectTypeConversionError } from 'social-pixl-sdk'

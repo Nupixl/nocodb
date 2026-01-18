@@ -1,6 +1,6 @@
 import type { Edge, Node } from '@vue-flow/core'
-import type { WorkflowNodeDefinition } from 'nocodb-sdk'
-import { GeneralNodeID } from 'nocodb-sdk'
+import type { WorkflowNodeDefinition } from 'social-pixl-sdk'
+import { GeneralNodeID } from 'social-pixl-sdk'
 
 /**
  * Filter out plus nodes and their associated edges

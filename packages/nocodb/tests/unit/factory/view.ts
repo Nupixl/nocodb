@@ -1,4 +1,4 @@
-import { ViewTypes } from 'nocodb-sdk';
+import { ViewTypes } from 'social-pixl-sdk';
 import request from 'supertest';
 import View from '../../../src/models/View';
 import type Model from '../../../src/models/Model';

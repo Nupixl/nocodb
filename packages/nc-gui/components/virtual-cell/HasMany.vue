@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ColumnType } from 'nocodb-sdk'
-import { isSystemColumn } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
+import { isSystemColumn } from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 import { forcedNextTick } from '../../utils/browserUtils'
 

@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import axios from 'axios'
 import { nextTick } from '@vue/runtime-core'
-import type { ButtonType, ColumnReqType, ColumnType, PaginatedType, TableType, ViewType } from 'nocodb-sdk'
-import { UITypes, ViewTypes, isAIPromptCol, isLinksOrLTAR, isSystemColumn, isVirtualCol } from 'nocodb-sdk'
+import type { ButtonType, ColumnReqType, ColumnType, PaginatedType, TableType, ViewType } from 'social-pixl-sdk'
+import { UITypes, ViewTypes, isAIPromptCol, isLinksOrLTAR, isSystemColumn, isVirtualCol } from 'social-pixl-sdk'
 import { useColumnDrag } from './useColumnDrag'
 import { type CellRange, type Group, NavigateDir } from '#imports'
 

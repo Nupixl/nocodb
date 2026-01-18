@@ -102,11 +102,11 @@ jobs:
 
       - name: build nocodb
         run: |
-          # build nocodb ( pack nocodb-sdk and nc-gui )
+          # build nocodb ( pack social-pixl-sdk and nc-gui )
           cd packages/nocodb &&
           EE=true pnpm exec rspack --config rspack.timely.config.js &&
-          # remove bundled libraries (nocodb-sdk, knex-snowflake)
-          pnpm uninstall --save-prod nocodb-sdk  
+          # remove bundled libraries (social-pixl-sdk, knex-snowflake)
+          pnpm uninstall --save-prod social-pixl-sdk  
 
       - name: Update version in package.json
         run: |

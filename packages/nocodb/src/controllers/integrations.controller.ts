@@ -10,7 +10,7 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { IntegrationReqType, IntegrationsType, NcApiVersion } from 'nocodb-sdk';
+import { IntegrationReqType, IntegrationsType, NcApiVersion } from 'social-pixl-sdk';
 // This service is overwritten entirely in the cloud and does not extend there.
 // As a result, it refers to services from OSS to avoid type mismatches.
 import { IntegrationsService } from 'src/services/integrations.service';

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { PermissionEntity, PermissionKey, isVirtualCol } from 'nocodb-sdk'
+import { PermissionEntity, PermissionKey, isVirtualCol } from 'social-pixl-sdk'
 
 const props = withDefaults(
   defineProps<{

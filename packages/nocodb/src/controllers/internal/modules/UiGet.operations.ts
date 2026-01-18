@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import type { OPERATION_SCOPES } from '~/controllers/internal/operationScopes';
-import type { NcContext, NcRequest } from 'nocodb-sdk';
+import type { NcContext, NcRequest } from 'social-pixl-sdk';
 import type {
   InternalApiModule,
   InternalGETResponseType,

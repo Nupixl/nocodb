@@ -1,9 +1,9 @@
 import { nanoid } from 'nanoid';
 import contentDisposition from 'content-disposition';
 import slash from 'slash';
-import { IconType, ncIsObject } from 'nocodb-sdk';
+import { IconType, ncIsObject } from 'social-pixl-sdk';
 import { Logger } from '@nestjs/common';
-import type { MetaType } from 'nocodb-sdk';
+import type { MetaType } from 'social-pixl-sdk';
 import NcPluginMgrv2 from '~/helpers/NcPluginMgrv2';
 import Noco from '~/Noco';
 import NocoCache from '~/cache/NocoCache';

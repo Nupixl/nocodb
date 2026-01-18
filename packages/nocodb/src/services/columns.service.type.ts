@@ -4,7 +4,7 @@ import type {
   NcContext,
   NcRequest,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { BaseModelSqlv2 } from '~/db/BaseModelSqlv2';
 import type CustomKnex from '~/db/CustomKnex';
 import type SqlClient from '~/db/sql-client/lib/SqlClient';

@@ -2,8 +2,8 @@ import { test } from '@playwright/test';
 import { DashboardPage } from '../../../pages/Dashboard';
 import setup, { unsetup } from '../../../setup';
 import { ToolbarPage } from '../../../pages/Dashboard/common/Toolbar';
-import { UITypes } from 'nocodb-sdk';
-import { Api } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
+import { Api } from 'social-pixl-sdk';
 let api: Api<any>;
 
 test.describe('Checkbox - cell, filter, sort', () => {

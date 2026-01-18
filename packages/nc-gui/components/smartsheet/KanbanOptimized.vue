@@ -2,7 +2,7 @@
 import type { VNodeRef } from '@vue/runtime-core'
 import Draggable from 'vuedraggable'
 import tinycolor from 'tinycolor2'
-import { type ColumnType, PermissionEntity, PermissionKey, UITypes, isVirtualCol } from 'nocodb-sdk'
+import { type ColumnType, PermissionEntity, PermissionKey, UITypes, isVirtualCol } from 'social-pixl-sdk'
 import type { Row as RowType } from '#imports'
 
 interface Attachment {

@@ -1,5 +1,5 @@
 import rfdc from 'rfdc'
-import { OrderedOrgRoles, OrderedProjectRoles, OrderedWorkspaceRoles } from 'nocodb-sdk'
+import { OrderedOrgRoles, OrderedProjectRoles, OrderedWorkspaceRoles } from 'social-pixl-sdk'
 import dayjs from 'dayjs'
 import type { UsersSortType } from '~/lib/types'
 

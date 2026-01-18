@@ -1,12 +1,12 @@
 import { Inject, Injectable, Logger } from '@nestjs/common';
-import { UITypes, ViewTypes } from 'nocodb-sdk';
+import { UITypes, ViewTypes } from 'social-pixl-sdk';
 import type { OnModuleDestroy, OnModuleInit } from '@nestjs/common';
 import type {
   ColumnType,
   FormColumnType,
   FormType,
   HookType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import {
   getAffectedColumns,

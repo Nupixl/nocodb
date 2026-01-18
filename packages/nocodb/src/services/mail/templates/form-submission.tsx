@@ -12,7 +12,7 @@ import {
   Text,
 } from '@react-email/components';
 import * as React from 'react';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import {
   ContentWrapper,
   Footer,

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { stringToViewTypeMap } from 'nocodb-sdk'
+import { stringToViewTypeMap } from 'social-pixl-sdk'
 
 interface Props {
   dialogShow: boolean

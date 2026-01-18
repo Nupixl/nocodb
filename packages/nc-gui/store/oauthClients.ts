@@ -1,5 +1,5 @@
-import type { OAuthClient } from 'nocodb-sdk'
-import { NO_SCOPE } from 'nocodb-sdk'
+import type { OAuthClient } from 'social-pixl-sdk'
+import { NO_SCOPE } from 'social-pixl-sdk'
 
 export const useOAuthClients = defineStore('oauthClientsStore', () => {
   const { $api, $e } = useNuxtApp()

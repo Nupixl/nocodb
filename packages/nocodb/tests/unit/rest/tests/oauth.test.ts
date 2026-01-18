@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import 'mocha';
 import request from 'supertest';
 import crypto from 'crypto';
-import { NO_SCOPE } from 'nocodb-sdk';
+import { NO_SCOPE } from 'social-pixl-sdk';
 import init from '../../init';
 import { createProject } from '../../factory/base';
 import type { IInitContext } from '../../init';

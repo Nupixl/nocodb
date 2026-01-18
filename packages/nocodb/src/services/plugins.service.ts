@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { AppEvents } from 'nocodb-sdk';
-import type { PluginTestReqType, PluginType } from 'nocodb-sdk';
+import { AppEvents } from 'social-pixl-sdk';
+import type { PluginTestReqType, PluginType } from 'social-pixl-sdk';
 import type { NcRequest } from '~/interface/config';
 import { AppHooksService } from '~/services/app-hooks/app-hooks.service';
 import { validatePayload } from '~/helpers';

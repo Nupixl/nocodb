@@ -1,5 +1,5 @@
 import type { WritableComputedRef } from '@vue/reactivity'
-import { AllAggregations, type ColumnType, PlanTitles, type TableType, UITypes, isCreatedOrLastModifiedByCol } from 'nocodb-sdk'
+import { AllAggregations, type ColumnType, PlanTitles, type TableType, UITypes, isCreatedOrLastModifiedByCol } from 'social-pixl-sdk'
 import type { Composer } from 'vue-i18n'
 import {
   isBoxHovered,

@@ -1,4 +1,4 @@
-import type { BaseType, WorkspaceType } from 'nocodb-sdk'
+import type { BaseType, WorkspaceType } from 'social-pixl-sdk'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 import { isString } from '@vue/shared'
 

@@ -1,7 +1,7 @@
 import type { RuleObject } from 'ant-design-vue/es/form'
 import isMobilePhone from 'validator/lib/isMobilePhone'
-import { StringValidationType, UITypes } from 'nocodb-sdk'
-import type { ColumnType, Validation } from 'nocodb-sdk'
+import { StringValidationType, UITypes } from 'social-pixl-sdk'
+import type { ColumnType, Validation } from 'social-pixl-sdk'
 import { getI18n } from '../plugins/a.i18n'
 
 export const formEmailValidator = (val: Validation) => {

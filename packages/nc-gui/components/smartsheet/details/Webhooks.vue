@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type HookType, PlanLimitTypes } from 'nocodb-sdk'
+import { type HookType, PlanLimitTypes } from 'social-pixl-sdk'
 import { LoadingOutlined } from '@ant-design/icons-vue'
 import dayjs from 'dayjs'
 

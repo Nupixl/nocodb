@@ -1,4 +1,4 @@
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { createTable } from '../factory/table';
 import { createBulkRows } from '../factory/row';
 import { createLtarColumn } from '../factory/column';

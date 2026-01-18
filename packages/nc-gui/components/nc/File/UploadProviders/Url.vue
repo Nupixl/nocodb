@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PublicAttachmentScope } from 'nocodb-sdk'
+import type { PublicAttachmentScope } from 'social-pixl-sdk'
 import { useUploadState } from './useUploadState'
 
 const { openAttachment } = useAttachment()

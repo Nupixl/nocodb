@@ -1,7 +1,7 @@
 import { expect, Page, test } from '@playwright/test';
 import { DashboardPage } from '../../../pages/Dashboard';
 import setup, { unsetup } from '../../../setup';
-import { Api, UITypes } from 'nocodb-sdk';
+import { Api, UITypes } from 'social-pixl-sdk';
 import { rowMixedValue } from '../../../setup/xcdb-records';
 import { GridPage } from '../../../pages/Dashboard/Grid';
 import { ToolbarPage } from '../../../pages/Dashboard/common/Toolbar';

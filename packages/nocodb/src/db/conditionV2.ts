@@ -8,10 +8,10 @@ import {
   isDateMonthFormat,
   isNumericCol,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { FieldHandler } from './field-handler';
 import type { FilterOperationResult } from './field-handler/field-handler.interface';
-import type { FilterType, NcContext } from 'nocodb-sdk';
+import type { FilterType, NcContext } from 'social-pixl-sdk';
 // import customParseFormat from 'dayjs/plugin/customParseFormat.js';
 import type { Knex } from 'knex';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';

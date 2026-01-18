@@ -9,7 +9,7 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { GalleryUpdateReqType, ViewCreateReqType } from 'nocodb-sdk';
+import { GalleryUpdateReqType, ViewCreateReqType } from 'social-pixl-sdk';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { GalleriesService } from '~/services/galleries.service';
 import { Acl } from '~/middlewares/extract-ids/extract-ids.middleware';

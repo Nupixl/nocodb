@@ -1,4 +1,4 @@
-import { Api, UITypes } from 'nocodb-sdk';
+import { Api, UITypes } from 'social-pixl-sdk';
 import { rowMixedValue } from './xcdb-records';
 
 let api: Api<any>;

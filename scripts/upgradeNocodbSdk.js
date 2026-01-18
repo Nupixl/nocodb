@@ -3,7 +3,7 @@ const path = require('path');
 const execSync = require('child_process').execSync;
 
 // extract latest version from package.json
-const nocodbSdkPackage = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'packages', 'nocodb-sdk', 'package.json'), 'utf8'))
+const nocodbSdkPackage = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'packages', 'social-pixl-sdk', 'package.json'), 'utf8'))
 
 
 if (process.env.revertSDK === 'true') {
@@ -14,7 +14,7 @@ const replacePackageName = (filePath) => {
     return new Promise((resolve, reject) => {
         return fs.readFile(filePath, 'utf8', function (err, data) {
             if (err) return reject(err)
-            var result = data.replace(/nocodb-sdk/g, nocodbSdkPackage.name);
+            var result = data.replace(/social-pixl-sdk/g, nocodbSdkPackage.name);
             return fs.writeFile(filePath, result, 'utf8', function (err) {
                 if (err) return reject(err)
                 return resolve()
@@ -38,7 +38,7 @@ const replacePackageVersion = (filePath) => {
 }
 
 const bumbVersionAndSave = () => {
-    // upgrade nocodb-sdk version in nocodb & nc-gui
+    // upgrade social-pixl-sdk version in nocodb & nc-gui
     return Promise.all([
         replacePackageVersion(path.join(__dirname, '..', 'packages', 'nocodb', 'package.json')),
         replacePackageVersion(path.join(__dirname, '..', 'packages', 'nc-gui', 'package.json')),
@@ -88,8 +88,8 @@ const searchAndReplace = (target) => {
 }
 
 if (process.env.targetEnv === 'DEV') {
-    // replace nocodb-sdk by nocodb-sdk-daily if it is nightly build / pr build
-    searchAndReplace('nocodb-sdk')
+    // replace social-pixl-sdk by social-pixl-sdk-daily if it is nightly build / pr build
+    searchAndReplace('social-pixl-sdk')
     .then(() => {
         bumbVersionAndSave()
     })

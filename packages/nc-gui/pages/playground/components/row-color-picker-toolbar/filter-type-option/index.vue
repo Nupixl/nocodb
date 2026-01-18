@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { RowColoringMode } from 'nocodb-sdk'
+import type { RowColoringMode } from 'social-pixl-sdk'
 
 const rowColoringMode = ref<RowColoringMode>(null)
 </script>

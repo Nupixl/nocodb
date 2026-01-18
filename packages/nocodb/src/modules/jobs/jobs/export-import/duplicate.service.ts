@@ -4,7 +4,7 @@ import {
   type NcContext,
   type NcRequest,
   ProjectStatus,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { Base, Source } from '~/models';
 import Noco from '~/Noco';
 import { MetaTable } from '~/cli';

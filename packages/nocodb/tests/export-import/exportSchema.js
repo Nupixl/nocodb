@@ -1,5 +1,5 @@
-const Api = require('nocodb-sdk').Api;
-const { UITypes } = require('nocodb-sdk');
+const Api = require('social-pixl-sdk').Api;
+const { UITypes } = require('social-pixl-sdk');
 const jsonfile = require('jsonfile');
 const {fromEntries} = require("../../src/ee/utils");
 

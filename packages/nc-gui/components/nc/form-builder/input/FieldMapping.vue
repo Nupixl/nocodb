@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { FormBuilderFieldMappingElement, FormBuilderSelectOption } from 'nocodb-sdk'
+import type { FormBuilderFieldMappingElement, FormBuilderSelectOption } from 'social-pixl-sdk'
 
 interface Props {
   element: FormBuilderFieldMappingElement

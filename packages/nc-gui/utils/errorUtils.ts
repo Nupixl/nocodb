@@ -1,4 +1,4 @@
-import { NcErrorType } from 'nocodb-sdk'
+import { NcErrorType } from 'social-pixl-sdk'
 
 export async function extractSdkResponseErrorMsg(e: Error & { response?: any }) {
   if (!e || !e.response) {

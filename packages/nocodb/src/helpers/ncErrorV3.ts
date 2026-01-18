@@ -1,4 +1,4 @@
-import { NcBaseErrorv2, NcErrorType } from 'nocodb-sdk';
+import { NcBaseErrorv2, NcErrorType } from 'social-pixl-sdk';
 import { NcErrorV1 } from './NcErrorV1';
 import type { ErrorObject } from 'ajv';
 

@@ -1,6 +1,6 @@
-import { ProjectRoles } from 'nocodb-sdk';
+import { ProjectRoles } from 'social-pixl-sdk';
 import { Logger } from '@nestjs/common';
-import type { BaseType } from 'nocodb-sdk';
+import type { BaseType } from 'social-pixl-sdk';
 import type User from '~/models/User';
 import type { NcContext } from '~/interface/config';
 import Base from '~/models/Base';

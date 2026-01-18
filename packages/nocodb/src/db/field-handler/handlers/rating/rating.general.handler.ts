@@ -1,4 +1,4 @@
-import { type NcContext, parseProp } from 'nocodb-sdk';
+import { type NcContext, parseProp } from 'social-pixl-sdk';
 import { NcError } from 'src/helpers/catchError';
 import { DecimalGeneralHandler } from '../decimal/decimal.general.handler';
 import type { Knex } from 'knex';

@@ -1,4 +1,4 @@
-import { type AuditV1OperationTypes } from 'nocodb-sdk';
+import { type AuditV1OperationTypes } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import Noco from '~/Noco';
 import { extractProps } from '~/helpers/extractProps';

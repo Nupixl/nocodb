@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { UITypes, UITypesName, UITypesSearchTerms, readonlyMetaAllowedTypes } from 'nocodb-sdk'
+import { UITypes, UITypesName, UITypesSearchTerms, readonlyMetaAllowedTypes } from 'social-pixl-sdk'
 
 const props = defineProps<{
   options: typeof uiTypes

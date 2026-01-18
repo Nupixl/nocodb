@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { DashboardType } from 'nocodb-sdk'
+import type { DashboardType } from 'social-pixl-sdk'
 
 const props = defineProps<{
   dashboard: DashboardType

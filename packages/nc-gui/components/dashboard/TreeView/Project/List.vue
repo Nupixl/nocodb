@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Draggable from 'vuedraggable'
-import type { TableType, ViewType } from 'nocodb-sdk'
+import type { TableType, ViewType } from 'social-pixl-sdk'
 import ProjectWrapper from '../ProjectWrapper.vue'
 
 const { isUIAllowed } = useRoles()

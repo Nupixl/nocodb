@@ -1,6 +1,6 @@
 import { useStorage } from '@vueuse/core'
-import type { ProjectRoles } from 'nocodb-sdk'
-import { PlanLimitTypes, getProjectRole, hasMinimumRoleAccess } from 'nocodb-sdk'
+import type { ProjectRoles } from 'social-pixl-sdk'
+import { PlanLimitTypes, getProjectRole, hasMinimumRoleAccess } from 'social-pixl-sdk'
 import { usePlugin } from './usePlugin'
 import { ExtensionsEvents } from '#imports'
 import { extensionUserPrefsManager } from '~/helpers/extensionUserPrefsManager'

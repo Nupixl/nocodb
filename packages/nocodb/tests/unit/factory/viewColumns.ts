@@ -1,5 +1,5 @@
 import request from 'supertest';
-import { APIContext } from 'nocodb-sdk';
+import { APIContext } from 'social-pixl-sdk';
 import type View from '../../../src/models/View';
 
 const updateViewColumns = async (

@@ -2,7 +2,7 @@ import type { Socket } from 'socket.io';
 import type { Handler } from 'express';
 import type * as e from 'express';
 import type { Knex } from 'knex';
-import type { NcContext, NcRequest, UserType } from 'nocodb-sdk';
+import type { NcContext, NcRequest, UserType } from 'social-pixl-sdk';
 
 export interface Route {
   path: string;

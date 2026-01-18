@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ExportTypes } from 'nocodb-sdk'
+import { ExportTypes } from 'social-pixl-sdk'
 
 const { $api, $poller } = useNuxtApp()
 

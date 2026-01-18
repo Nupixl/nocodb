@@ -1,7 +1,7 @@
-import { ncIsNull, ncIsUndefined } from 'nocodb-sdk';
+import { ncIsNull, ncIsUndefined } from 'social-pixl-sdk';
 import { NcError } from 'src/helpers/catchError';
 import { NC_MAX_TEXT_LENGTH } from 'src/constants';
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type { Knex } from 'knex';
 import type CustomKnex from '~/db/CustomKnex';
 import type { FilterOptions } from '~/db/field-handler/field-handler.interface';

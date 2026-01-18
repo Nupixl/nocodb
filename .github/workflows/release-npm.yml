@@ -54,10 +54,10 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - run: |
           export NODE_OPTIONS="--max_old_space_size=16384"
-          NOCODB_SDK_PKG_NAME=nocodb-sdk
-          # If targetEnv is DEV, then use nocodb-sdk-daily package
+          NOCODB_SDK_PKG_NAME=social-pixl-sdk
+          # If targetEnv is DEV, then use social-pixl-sdk-daily package
           if [[ ${{ github.event.inputs.targetEnv || inputs.targetEnv }} == 'DEV' ]]; then
-            NOCODB_SDK_PKG_NAME=nocodb-sdk-daily
+            NOCODB_SDK_PKG_NAME=social-pixl-sdk-daily
           fi
           echo $NOCODB_SDK_PKG_NAME
           targetEnv=${{ github.event.inputs.targetEnv || inputs.targetEnv }} targetVersion=${{ github.event.inputs.tag || inputs.tag }} node scripts/bumpNocodbSdkVersion.js &&

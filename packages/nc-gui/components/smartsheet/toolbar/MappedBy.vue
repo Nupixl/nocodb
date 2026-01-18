@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { MapType } from 'nocodb-sdk'
-import { UITypes } from 'nocodb-sdk'
+import type { MapType } from 'social-pixl-sdk'
+import { UITypes } from 'social-pixl-sdk'
 import type { SelectProps } from 'ant-design-vue'
 
 const { eventBus } = useSmartsheetStoreOrThrow()

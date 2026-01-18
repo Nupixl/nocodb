@@ -1,4 +1,4 @@
-import { precisionFormats, supportedBarcodeFormats } from 'nocodb-sdk'
+import { precisionFormats, supportedBarcodeFormats } from 'social-pixl-sdk'
 
 export { precisionFormats, supportedBarcodeFormats }
 

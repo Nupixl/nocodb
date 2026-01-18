@@ -3,7 +3,7 @@ import {
   type HookReqType,
   type HookType,
   PlanLimitTypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import {
   compareOperationCode,
   operationArrToCode,

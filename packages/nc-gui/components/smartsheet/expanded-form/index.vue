@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ColumnType, TableType, ViewType } from 'nocodb-sdk'
-import { ExpandedFormMode, PermissionEntity, PermissionKey, ViewTypes } from 'nocodb-sdk'
+import type { ColumnType, TableType, ViewType } from 'social-pixl-sdk'
+import { ExpandedFormMode, PermissionEntity, PermissionKey, ViewTypes } from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 import { Drawer } from 'ant-design-vue'
 import NcModal from '../../nc/Modal.vue'

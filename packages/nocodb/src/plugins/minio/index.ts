@@ -1,4 +1,4 @@
-import { XcActionType, XcType } from 'nocodb-sdk';
+import { XcActionType, XcType } from 'social-pixl-sdk';
 import S3Plugin from './MinioPlugin';
 import type { XcPluginConfig } from '~/types/nc-plugin';
 

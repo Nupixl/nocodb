@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import getSwaggerJSON from './swagger/getSwaggerJSON';
 import getSwaggerJSONV2 from './swaggerV2/getSwaggerJSONV2';
 import getSwaggerJSONV3 from './swaggerV3/getSwaggerJSONV3';
-import type { NcRequest } from 'nocodb-sdk';
+import type { NcRequest } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import type { Source } from '~/models';
 import type { SourcesMap } from '~/services/api-docs/types';

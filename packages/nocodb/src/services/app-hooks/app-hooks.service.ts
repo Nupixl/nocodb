@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 
 import { Logger } from '@nestjs/common';
-import type { AppEvents } from 'nocodb-sdk';
+import type { AppEvents } from 'social-pixl-sdk';
 import type {
   ApiCreatedEvent,
   ApiTokenCreateEvent,

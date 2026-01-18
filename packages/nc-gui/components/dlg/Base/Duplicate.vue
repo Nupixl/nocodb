@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import tinycolor from 'tinycolor2'
-import { type BaseType, ProjectRoles, WorkspaceUserRoles } from 'nocodb-sdk'
+import { type BaseType, ProjectRoles, WorkspaceUserRoles } from 'social-pixl-sdk'
 
 const props = defineProps<{
   modelValue: boolean

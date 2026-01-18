@@ -8,7 +8,7 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { AppEvents, ProjectStatus, readonlyMetaAllowedTypes } from 'nocodb-sdk';
+import { AppEvents, ProjectStatus, readonlyMetaAllowedTypes } from 'social-pixl-sdk';
 import { TenantContext } from '~/decorators/tenant-context.decorator';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { MetaApiLimiterGuard } from '~/guards/meta-api-limiter.guard';

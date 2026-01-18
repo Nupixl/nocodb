@@ -1,4 +1,4 @@
-import { PluginCategory, XcActionType, XcType } from 'nocodb-sdk';
+import { PluginCategory, XcActionType, XcType } from 'social-pixl-sdk';
 import S3Plugin from './S3Plugin';
 import type { XcPluginConfig } from '~/types/nc-plugin';
 

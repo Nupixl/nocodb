@@ -10,7 +10,7 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { ProjectRoles, ProjectUserReqType } from 'nocodb-sdk';
+import { ProjectRoles, ProjectUserReqType } from 'social-pixl-sdk';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { BaseUsersService } from '~/services/base-users/base-users.service';
 import { NcError } from '~/helpers/catchError';

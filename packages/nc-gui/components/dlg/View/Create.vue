@@ -16,8 +16,8 @@ import {
   type TableType,
   stringToViewTypeMap,
   viewTypeToStringMap,
-} from 'nocodb-sdk'
-import { PlanTitles, UITypes, ViewTypes } from 'nocodb-sdk'
+} from 'social-pixl-sdk'
+import { PlanTitles, UITypes, ViewTypes } from 'social-pixl-sdk'
 import { AiWizardTabsType } from '#imports'
 
 const props = withDefaults(defineProps<Props>(), {

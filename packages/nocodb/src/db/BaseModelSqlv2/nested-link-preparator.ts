@@ -1,4 +1,4 @@
-import { type NcRequest, RelationTypes } from 'nocodb-sdk';
+import { type NcRequest, RelationTypes } from 'social-pixl-sdk';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
 import {
   extractIdPropIfObjectOrReturn,

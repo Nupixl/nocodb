@@ -1,10 +1,10 @@
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import type {
   BoolType,
   GalleryColumnType,
   GalleryType,
   MetaType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import View from '~/models/View';
 import Noco from '~/Noco';

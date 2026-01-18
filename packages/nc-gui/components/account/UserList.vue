@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { OrgUserRoles } from 'nocodb-sdk'
-import type { OrgUserReqType, RequestParams, UserType } from 'nocodb-sdk'
+import { OrgUserRoles } from 'social-pixl-sdk'
+import type { OrgUserReqType, RequestParams, UserType } from 'social-pixl-sdk'
 
 const { api, isLoading } = useApi()
 

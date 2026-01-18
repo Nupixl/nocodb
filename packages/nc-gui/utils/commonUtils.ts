@@ -1,8 +1,8 @@
 import type { DefaultOptionType } from 'ant-design-vue/lib/select'
 import type { SortableOptions } from 'sortablejs'
 import type { AutoScrollOptions } from 'sortablejs/plugins'
-import type { UserType } from 'nocodb-sdk'
-import { ncIsArray } from 'nocodb-sdk'
+import type { UserType } from 'social-pixl-sdk'
+import { ncIsArray } from 'social-pixl-sdk'
 import GraphemeSplitter from 'grapheme-splitter'
 
 export const modalSizes = {

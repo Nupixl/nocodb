@@ -1,4 +1,4 @@
-import { OrgUserRoles, ProjectRoles, SourceRestriction } from 'nocodb-sdk'
+import { OrgUserRoles, ProjectRoles, SourceRestriction } from 'social-pixl-sdk'
 
 const roleScopes = {
   org: [OrgUserRoles.VIEWER, OrgUserRoles.CREATOR],

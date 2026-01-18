@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import type { ColumnType } from 'nocodb-sdk'
-import { UITypes, isVirtualCol } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
+import { UITypes, isVirtualCol } from 'social-pixl-sdk'
 
 interface Props {
   value: string | number | boolean

@@ -1,5 +1,5 @@
-import type { ClientType } from 'nocodb-sdk';
-import type { NcContext } from 'nocodb-sdk';
+import type { ClientType } from 'social-pixl-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type { Knex } from 'knex';
 import type CustomKnex from '~/db/CustomKnex';
 import type { Source } from '~/models';

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ViewTypes } from 'nocodb-sdk'
+import { ViewTypes } from 'social-pixl-sdk'
 
 const props = withDefaults(
   defineProps<{

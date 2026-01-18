@@ -1,5 +1,5 @@
 import { All, Controller, HttpCode, Req } from '@nestjs/common';
-import { NcRequest } from 'nocodb-sdk';
+import { NcRequest } from 'social-pixl-sdk';
 import { NcError } from 'src/helpers/catchError';
 
 const V1_PATH_PREFIX = '/api/v1/*';

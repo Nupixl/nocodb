@@ -13,7 +13,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { Response } from 'express';
-import { NcApiVersion } from 'nocodb-sdk';
+import { NcApiVersion } from 'social-pixl-sdk';
 import type {
   DataDeleteRequest,
   DataInsertRequest,

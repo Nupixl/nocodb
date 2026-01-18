@@ -11,8 +11,8 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { HookReqType, HookTestReqType } from 'nocodb-sdk';
-import type { HookType } from 'nocodb-sdk';
+import { HookReqType, HookTestReqType } from 'social-pixl-sdk';
+import type { HookType } from 'social-pixl-sdk';
 import { NcError } from '~/helpers/ncError';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { PagedResponseImpl } from '~/helpers/PagedResponse';

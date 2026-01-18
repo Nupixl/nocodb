@@ -3,7 +3,7 @@ import knex from 'knex';
 import isEmpty from 'lodash/isEmpty';
 import mapKeys from 'lodash/mapKeys';
 import find from 'lodash/find';
-import { ncIsNullOrUndefined, UITypes } from 'nocodb-sdk';
+import { ncIsNullOrUndefined, UITypes } from 'social-pixl-sdk';
 import KnexClient from '~/db/sql-client/lib/KnexClient';
 import Debug from '~/db/util/Debug';
 import Result from '~/db/util/Result';

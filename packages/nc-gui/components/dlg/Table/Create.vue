@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TableType } from 'nocodb-sdk'
+import type { TableType } from 'social-pixl-sdk'
 import { AiWizardTabsType } from '#imports'
 
 const props = withDefaults(

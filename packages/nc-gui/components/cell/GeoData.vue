@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type GeoLocationType, TypeConversionError, convertGeoNumberToString, latLongToJoinedString } from 'nocodb-sdk'
+import { type GeoLocationType, TypeConversionError, convertGeoNumberToString, latLongToJoinedString } from 'social-pixl-sdk'
 
 interface Props {
   modelValue?: string | null

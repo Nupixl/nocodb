@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ProjectRoles, RoleColors, RoleIcons, RoleLabels, WorkspaceUserRoles } from 'nocodb-sdk'
+import { ProjectRoles, RoleColors, RoleIcons, RoleLabels, WorkspaceUserRoles } from 'social-pixl-sdk'
 
 const props = withDefaults(
   defineProps<{

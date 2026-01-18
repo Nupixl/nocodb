@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useTitle } from '@vueuse/core'
-import { ProjectRoles } from 'nocodb-sdk'
+import { ProjectRoles } from 'social-pixl-sdk'
 
 const props = defineProps<{
   baseId?: string

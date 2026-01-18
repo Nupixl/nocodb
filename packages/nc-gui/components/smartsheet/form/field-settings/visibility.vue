@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ColumnType } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
 
 const { visibleColumns, activeField, allViewFilters, localColumns, localColumnsMapByFkColumnId } = useFormViewStoreOrThrow()
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { OAuthClientType, PublicAttachmentScope } from 'nocodb-sdk'
+import { OAuthClientType, PublicAttachmentScope } from 'social-pixl-sdk'
 
 const props = defineProps<{
   visible: boolean

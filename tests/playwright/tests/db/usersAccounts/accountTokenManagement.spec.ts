@@ -2,7 +2,7 @@ import { test } from '@playwright/test';
 import { AccountPage } from '../../../pages/Account';
 import { AccountTokenPage } from '../../../pages/Account/Token';
 import setup, { unsetup } from '../../../setup';
-import { Api } from 'nocodb-sdk';
+import { Api } from 'social-pixl-sdk';
 
 test.describe('Token Management', () => {
   let accountTokenPage: AccountTokenPage;

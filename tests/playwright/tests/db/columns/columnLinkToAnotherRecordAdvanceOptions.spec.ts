@@ -2,7 +2,7 @@ import { test } from '@playwright/test';
 import { DashboardPage } from '../../../pages/Dashboard';
 import setup, { unsetup } from '../../../setup';
 import { enableQuickRun } from '../../../setup/db';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 
 test.describe('LTAR create & update', () => {
   // force disabled temporarily

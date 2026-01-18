@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { marked } from 'marked'
-import { PlanFeatureTypes } from 'nocodb-sdk'
+import { PlanFeatureTypes } from 'social-pixl-sdk'
 
 interface Prop {
   modelValue: boolean

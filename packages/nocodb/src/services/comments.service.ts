@@ -1,11 +1,11 @@
 import { Injectable } from '@nestjs/common';
-import { AppEvents, EventType } from 'nocodb-sdk';
+import { AppEvents, EventType } from 'social-pixl-sdk';
 import { Base, Model } from '../models';
 import type {
   CommentReqType,
   CommentUpdateReqType,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { NcError } from '~/helpers/catchError';
 import { validatePayload } from '~/helpers';

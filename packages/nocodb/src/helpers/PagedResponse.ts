@@ -1,5 +1,5 @@
 import { extractLimitAndOffset } from '.';
-import type { NcContext, PaginatedType, PaginatedV3Type } from 'nocodb-sdk';
+import type { NcContext, PaginatedType, PaginatedV3Type } from 'social-pixl-sdk';
 import { NcError } from '~/helpers/catchError';
 import { extractProps } from '~/helpers/extractProps';
 

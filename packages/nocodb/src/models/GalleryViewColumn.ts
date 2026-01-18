@@ -1,4 +1,4 @@
-import type { BoolType } from 'nocodb-sdk';
+import type { BoolType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import View from '~/models/View';
 import Noco from '~/Noco';

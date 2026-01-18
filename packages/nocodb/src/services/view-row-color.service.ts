@@ -4,7 +4,7 @@ import type {
   FilterType,
   NcContext,
   RowColoringInfo,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { MetaService } from '~/meta/meta.service';
 import type { Column } from '~/models';
 

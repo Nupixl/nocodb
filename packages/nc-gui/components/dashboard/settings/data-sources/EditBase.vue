@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { IntegrationsType, type SourceType, validateAndExtractSSLProp } from 'nocodb-sdk'
+import { IntegrationsType, type SourceType, validateAndExtractSSLProp } from 'social-pixl-sdk'
 import { Form } from 'ant-design-vue'
 import {
   ClientType,

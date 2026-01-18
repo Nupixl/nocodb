@@ -1,6 +1,6 @@
 import 'mocha';
 import request from 'supertest';
-import { PlanFeatureTypes, TeamUserRoles } from 'nocodb-sdk';
+import { PlanFeatureTypes, TeamUserRoles } from 'social-pixl-sdk';
 import { isEE } from '../../../utils/helpers';
 import init from '../../../init';
 import { createUser } from '../../../factory/user';

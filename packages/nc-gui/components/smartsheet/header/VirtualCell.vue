@@ -11,8 +11,8 @@ import {
   type TableType,
   isLinksOrLTAR,
   readonlyMetaAllowedTypes,
-} from 'nocodb-sdk'
-import { RelationTypes, UITypes, UITypesName, substituteColumnIdWithAliasInFormula } from 'nocodb-sdk'
+} from 'social-pixl-sdk'
+import { RelationTypes, UITypes, UITypesName, substituteColumnIdWithAliasInFormula } from 'social-pixl-sdk'
 
 const props = defineProps<{
   column: ColumnType

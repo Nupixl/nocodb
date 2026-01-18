@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type SourceType, stringifyRolesObj } from 'nocodb-sdk'
+import { type SourceType, stringifyRolesObj } from 'social-pixl-sdk'
 
 interface Props {
   showBaseOption: (source: SourceType) => boolean

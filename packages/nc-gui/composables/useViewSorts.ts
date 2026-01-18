@@ -1,4 +1,4 @@
-import type { ColumnType, SortType, ViewType } from 'nocodb-sdk'
+import type { ColumnType, SortType, ViewType } from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 import type { EventHook } from '@vueuse/core'
 import type { UndoRedoAction } from '~/lib/types'

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { WorkspaceType } from 'nocodb-sdk'
+import type { WorkspaceType } from 'social-pixl-sdk'
 
 interface Props {
   value?: string | null | undefined

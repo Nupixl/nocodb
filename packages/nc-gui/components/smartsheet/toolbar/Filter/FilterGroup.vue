@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Draggable from 'vuedraggable'
-import { type FilterType, UITypes, parseProp } from 'nocodb-sdk'
+import { type FilterType, UITypes, parseProp } from 'social-pixl-sdk'
 import { type GroupEmits, type GroupProps } from './types'
 import { SmartsheetToolbarFilterGroupRow } from '#components'
 

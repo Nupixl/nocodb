@@ -1,6 +1,6 @@
 import type { FunctionalComponent, SVGAttributes } from 'vue'
-import type { FormDefinition, IntegrationType, PaginatedType } from 'nocodb-sdk'
-import { ClientType, IntegrationsType, SyncDataType } from 'nocodb-sdk'
+import type { FormDefinition, IntegrationType, PaginatedType } from 'social-pixl-sdk'
+import { ClientType, IntegrationsType, SyncDataType } from 'social-pixl-sdk'
 import GeneralBaseLogo from '~/components/general/BaseLogo.vue'
 import type { IntegrationStoreEvents as IntegrationStoreEventsTypes } from '#imports'
 

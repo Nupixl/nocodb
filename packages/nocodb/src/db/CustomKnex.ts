@@ -2,7 +2,7 @@ import { Knex, knex } from 'knex';
 import { defaults, types } from 'pg';
 import dayjs from 'dayjs';
 import { CTEGenerator } from './cte-generator';
-import type { FilterType, NcContext } from 'nocodb-sdk';
+import type { FilterType, NcContext } from 'social-pixl-sdk';
 import type { BaseModelSqlv2 } from '~/db/BaseModelSqlv2';
 import Filter from '~/models/Filter';
 import { NcError } from '~/helpers/catchError';

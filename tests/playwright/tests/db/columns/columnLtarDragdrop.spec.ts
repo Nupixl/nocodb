@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import setup, { unsetup } from '../../../setup';
-import { Api, UITypes } from 'nocodb-sdk';
+import { Api, UITypes } from 'social-pixl-sdk';
 import { DashboardPage } from '../../../pages/Dashboard';
 import { GridPage } from '../../../pages/Dashboard/Grid';
 import { getTextExcludeIconText } from '../../../tests/utils/general';

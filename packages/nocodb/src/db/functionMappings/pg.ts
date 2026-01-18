@@ -1,9 +1,9 @@
 import dayjs from 'dayjs';
 import { customAlphabet } from 'nanoid';
-import { FormulaDataTypes, JSEPNode, UITypes } from 'nocodb-sdk';
+import { FormulaDataTypes, JSEPNode, UITypes } from 'social-pixl-sdk';
 import { sanitize } from 'src/helpers/sqlSanitize';
 import commonFns from './commonFns';
-import type { CallExpressionNode } from 'nocodb-sdk';
+import type { CallExpressionNode } from 'social-pixl-sdk';
 import type { MapFnArgs } from '~/db/mapFunctionName';
 import { convertUnits } from '~/helpers/convertUnits';
 import { getWeekdayByText } from '~/helpers/formulaFnHelper';

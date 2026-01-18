@@ -1,6 +1,6 @@
-import { FormulaDataTypes, parseProp, UITypes } from 'nocodb-sdk';
+import { FormulaDataTypes, parseProp, UITypes } from 'social-pixl-sdk';
 import { ComputedFieldHandler } from '../computed';
-import type { ColumnType, ParsedFormulaNode } from 'nocodb-sdk';
+import type { ColumnType, ParsedFormulaNode } from 'social-pixl-sdk';
 import type CustomKnex from 'src/db/CustomKnex';
 import type {
   FilterOptions,

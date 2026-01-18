@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ColumnHelper, UITypes, dateFormats, timeFormats } from 'nocodb-sdk'
+import { ColumnHelper, UITypes, dateFormats, timeFormats } from 'social-pixl-sdk'
 import { type TimeZone, getTimeZones } from '@vvo/tzdb'
 
 const props = defineProps<{

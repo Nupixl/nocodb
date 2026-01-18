@@ -1,5 +1,5 @@
 import type { FunctionalComponent, SVGAttributes } from 'vue'
-import type { ButtonType, ColumnType, FormulaType, IntegrationType, LinkToAnotherRecordType } from 'nocodb-sdk'
+import type { ButtonType, ColumnType, FormulaType, IntegrationType, LinkToAnotherRecordType } from 'social-pixl-sdk'
 import {
   ButtonActionsType,
   FormulaDataTypes,
@@ -15,7 +15,7 @@ import {
   ratingIconList,
   substituteColumnIdWithAliasInPrompt,
   validateEmail,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import isMobilePhone from 'validator/lib/isMobilePhone'
 
 export interface UiTypesType {

@@ -1,5 +1,5 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import { ProjectRoles } from 'nocodb-sdk'
+import { ProjectRoles } from 'social-pixl-sdk'
 
 export const useShare = defineStore('share', () => {
   const visibility = ref<'public' | 'private' | 'none' | 'hidden'>('none')

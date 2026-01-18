@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { BaseType, SourceType } from 'nocodb-sdk'
+import type { BaseType, SourceType } from 'social-pixl-sdk'
 
 const props = withDefaults(
   defineProps<{

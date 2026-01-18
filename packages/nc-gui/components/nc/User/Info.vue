@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { UserType } from 'nocodb-sdk'
+import type { UserType } from 'social-pixl-sdk'
 
 interface Props {
   user: UserType

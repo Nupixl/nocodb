@@ -14,7 +14,7 @@ import type {
   PermissionEntity,
   PermissionKey,
   RelationTypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { Knex } from 'knex';
 import type CustomKnex from '~/db/CustomKnex';
 import type { Column, Filter, Model, Sort, Source, View } from '~/models';

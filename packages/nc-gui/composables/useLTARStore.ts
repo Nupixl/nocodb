@@ -1,4 +1,4 @@
-import type { ColumnType, LinkToAnotherRecordType, PaginatedType, RequestParams, TableType } from 'nocodb-sdk'
+import type { ColumnType, LinkToAnotherRecordType, PaginatedType, RequestParams, TableType } from 'social-pixl-sdk'
 import {
   FormulaDataTypes,
   RelationTypes,
@@ -12,7 +12,7 @@ import {
   ncIsNaN,
   parseStringDateTime,
   timeFormats,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import type { ComputedRef, Ref } from 'vue'
 
 interface DataApiResponse {

@@ -1,7 +1,7 @@
 import 'mocha';
 // @ts-ignore
 import request from 'supertest';
-import { APIContext, UITypes, ViewTypes } from 'nocodb-sdk';
+import { APIContext, UITypes, ViewTypes } from 'social-pixl-sdk';
 import { expect } from 'chai';
 import init from '../../init';
 import { createProject, createSakilaProject } from '../../factory/base';
@@ -25,7 +25,7 @@ import {
 import { listenForJob } from '../../factory/job';
 import Model from '../../../../src/models/Model';
 import { getViewColumns, updateViewColumns } from '../../factory/viewColumns';
-import type { ColumnType } from 'nocodb-sdk';
+import type { ColumnType } from 'social-pixl-sdk';
 import type View from '../../../../src/models/View';
 import type Base from '~/models/Base';
 

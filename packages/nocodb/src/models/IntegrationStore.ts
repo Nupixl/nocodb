@@ -1,4 +1,4 @@
-import type { IntegrationType } from 'nocodb-sdk';
+import type { IntegrationType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import { MetaTable, RootScopes } from '~/utils/globals';
 import Noco from '~/Noco';

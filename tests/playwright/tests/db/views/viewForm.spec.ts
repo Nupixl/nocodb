@@ -3,7 +3,7 @@ import { DashboardPage } from '../../../pages/Dashboard';
 import setup, { unsetup } from '../../../setup';
 import { FormPage } from '../../../pages/Dashboard/Form';
 import { SharedFormPage } from '../../../pages/SharedForm';
-import { Api, StringValidationType, UITypes } from 'nocodb-sdk';
+import { Api, StringValidationType, UITypes } from 'social-pixl-sdk';
 import { LoginPage } from '../../../pages/LoginPage';
 import { getDefaultPwd } from '../../../tests/utils/general';
 import { enableQuickRun, isEE } from '../../../setup/db';

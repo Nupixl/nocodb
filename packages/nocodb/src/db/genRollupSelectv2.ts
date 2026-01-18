@@ -1,5 +1,5 @@
-import { NcDataErrorCodes, RelationTypes, UITypes } from 'nocodb-sdk';
-import { CircularRefContext } from 'nocodb-sdk';
+import { NcDataErrorCodes, RelationTypes, UITypes } from 'social-pixl-sdk';
+import { CircularRefContext } from 'social-pixl-sdk';
 import type { IBaseModelSqlV2 } from './IBaseModelSqlV2';
 import type { Knex } from 'knex';
 import type {

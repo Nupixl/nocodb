@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { isVirtualCol, NcApiVersion, UITypes } from 'nocodb-sdk';
+import { isVirtualCol, NcApiVersion, UITypes } from 'social-pixl-sdk';
 import type {
   ColumnType,
   FieldV3Type,
@@ -8,7 +8,7 @@ import type {
   TableUpdateV3Type,
   TableV3Type,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { Model, User } from '~/models';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { Base } from '~/models';

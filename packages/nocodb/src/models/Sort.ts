@@ -1,4 +1,4 @@
-import type { SortType } from 'nocodb-sdk';
+import type { SortType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import Model from '~/models/Model';
 import Column from '~/models/Column';

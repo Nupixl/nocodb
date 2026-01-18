@@ -1,6 +1,6 @@
-import { ButtonActionsType, UITypes } from 'nocodb-sdk';
+import { ButtonActionsType, UITypes } from 'social-pixl-sdk';
 import genRollupSelectv2 from '../genRollupSelectv2';
-import type { ColumnType } from 'nocodb-sdk';
+import type { ColumnType } from 'social-pixl-sdk';
 import type { Knex } from 'knex';
 import type {
   BarcodeColumn,

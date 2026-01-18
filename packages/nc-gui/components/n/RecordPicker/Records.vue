@@ -6,7 +6,7 @@ import {
   isCreatedOrLastModifiedTimeCol,
   isLinksOrLTAR,
   isSystemColumn,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import { searchLike } from '~/utils/searchUtils'
 
 const props = defineProps<{

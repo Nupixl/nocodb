@@ -12,7 +12,7 @@ import {
   getLookupColumnType as sdkGetLookupColumnType,
   validateRowFilters as sdkValidateRowFilters,
   timeFormats,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import type {
   AIRecordType,
   ButtonType,
@@ -22,7 +22,7 @@ import type {
   LookupType,
   RollupType,
   TableType,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import dayjs from 'dayjs'
 import { isColumnRequiredAndNull } from './columnUtils'
 import { parseFlexibleDate } from '~/utils/datetimeUtils'

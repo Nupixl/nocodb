@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { IntegrationCategoryType, SyncDataType } from 'nocodb-sdk'
+import type { IntegrationCategoryType, SyncDataType } from 'social-pixl-sdk'
 
 const props = defineProps<{
   open: boolean

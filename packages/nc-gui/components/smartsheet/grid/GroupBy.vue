@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { CommonAggregations } from 'nocodb-sdk'
+import { CommonAggregations } from 'social-pixl-sdk'
 import { shouldRenderCell } from '../../../utils/groupbyUtils'
 import Table from './Table.vue'
 import GroupBy from './GroupBy.vue'

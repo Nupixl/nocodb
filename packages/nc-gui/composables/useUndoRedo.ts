@@ -1,6 +1,6 @@
 import type { Ref } from 'vue'
 import rfdc from 'rfdc'
-import type { BaseType, TableType, ViewType } from 'nocodb-sdk'
+import type { BaseType, TableType, ViewType } from 'social-pixl-sdk'
 
 export const useUndoRedo = createSharedComposable(() => {
   const clone = rfdc()

@@ -1,4 +1,4 @@
-import type { AppEvents } from 'nocodb-sdk';
+import type { AppEvents } from 'social-pixl-sdk';
 import { extractProps } from '~/helpers/extractProps';
 import Noco from '~/Noco';
 import { MetaTable, RootScopes } from '~/utils/globals';

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { expect } from 'chai';
-import { checkboxTypeMap, type ColumnType } from 'nocodb-sdk';
+import { checkboxTypeMap, type ColumnType } from 'social-pixl-sdk';
 import {
   beforeEachAttachment,
   beforeEachCheckbox,

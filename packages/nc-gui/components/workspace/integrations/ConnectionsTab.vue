@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { IntegrationsType, integrationCategoryNeedDefault } from 'nocodb-sdk'
-import type { IntegrationType, UserType, WorkspaceUserType } from 'nocodb-sdk'
+import { IntegrationsType, integrationCategoryNeedDefault } from 'social-pixl-sdk'
+import type { IntegrationType, UserType, WorkspaceUserType } from 'social-pixl-sdk'
 import dayjs from 'dayjs'
 
 type SortFields = 'title' | 'sub_type' | 'created_at' | 'created_by' | 'source_count'

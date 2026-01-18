@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PlanFeatureTypes } from 'nocodb-sdk'
+import { PlanFeatureTypes } from 'social-pixl-sdk'
 
 interface Props {
   isFullscreen?: boolean

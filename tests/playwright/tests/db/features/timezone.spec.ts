@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { DashboardPage } from '../../../pages/Dashboard';
 import setup, { NcContext, unsetup } from '../../../setup';
-import { Api, PaginatedType, ProjectListType, UITypes } from 'nocodb-sdk';
+import { Api, PaginatedType, ProjectListType, UITypes } from 'social-pixl-sdk';
 import { enableQuickRun, isEE, isMysql, isPg, isSqlite } from '../../../setup/db';
 import { getKnexConfig } from '../../utils/config';
 import { getBrowserTimezoneOffset } from '../../utils/general';

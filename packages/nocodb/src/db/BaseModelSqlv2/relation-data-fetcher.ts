@@ -1,6 +1,6 @@
 import groupBy from 'lodash/groupBy';
-import { extractFilterFromXwhere, NcApiVersion } from 'nocodb-sdk';
-import type { NcContext } from 'nocodb-sdk';
+import { extractFilterFromXwhere, NcApiVersion } from 'social-pixl-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type { Logger } from '@nestjs/common';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
 import type { LinkToAnotherRecordColumn } from '~/models';

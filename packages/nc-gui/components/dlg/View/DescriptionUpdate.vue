@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ViewType } from 'nocodb-sdk'
+import type { ViewType } from 'social-pixl-sdk'
 import type { ComponentPublicInstance } from '@vue/runtime-core'
 
 interface Props {

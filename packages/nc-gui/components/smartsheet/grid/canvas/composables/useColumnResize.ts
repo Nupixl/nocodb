@@ -1,4 +1,4 @@
-import { type ColumnType, UITypes } from 'nocodb-sdk'
+import { type ColumnType, UITypes } from 'social-pixl-sdk'
 import { parseCellWidth } from '../utils/cell'
 
 export function useColumnResize(

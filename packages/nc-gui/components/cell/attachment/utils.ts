@@ -1,5 +1,5 @@
-import type { AttachmentReqType, AttachmentType } from 'nocodb-sdk'
-import { populateUniqueFileName } from 'nocodb-sdk'
+import type { AttachmentReqType, AttachmentType } from 'social-pixl-sdk'
+import { populateUniqueFileName } from 'social-pixl-sdk'
 import DOMPurify from 'isomorphic-dompurify'
 import { zip as fflateZip } from 'fflate'
 import RenameFile from './RenameFile.vue'

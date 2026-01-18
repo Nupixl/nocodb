@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { AIRecordType, ButtonType, ColumnType } from 'nocodb-sdk'
+import type { AIRecordType, ButtonType, ColumnType } from 'social-pixl-sdk'
 
 interface Props {
   modelValue?: AIRecordType | null

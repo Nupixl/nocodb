@@ -1,5 +1,5 @@
 <script>
-/** @typedef {import('nocodb-sdk').ColumnType} ColumnType */
+/** @typedef {import('social-pixl-sdk').ColumnType} ColumnType */
 
 export default {
   props: {

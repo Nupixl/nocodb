@@ -1,5 +1,5 @@
-import { type ColumnType, type TableType, UITypes, type ViewType } from 'nocodb-sdk'
-import { ColumnHelper, ComputedTypePasteError, TypeConversionError } from 'nocodb-sdk'
+import { type ColumnType, type TableType, UITypes, type ViewType } from 'social-pixl-sdk'
+import { ColumnHelper, ComputedTypePasteError, TypeConversionError } from 'social-pixl-sdk'
 import { clearTextCache } from '../utils/canvas'
 import type { Row } from '../../../../../lib/types'
 import convertCellData from '../../../../../composables/useMultiSelect/convertCellData'

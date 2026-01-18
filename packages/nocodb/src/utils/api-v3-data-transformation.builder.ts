@@ -6,7 +6,7 @@ import {
   ratingIconList,
   UITypes,
   VIEW_GRID_DEFAULT_WIDTH,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type {
   ColumnType,
   FieldV3Type,
@@ -14,7 +14,7 @@ import type {
   FilterType,
   FilterV3Type,
   SortType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type {
   CalendarViewColumn,
   Column,

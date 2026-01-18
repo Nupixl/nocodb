@@ -6,7 +6,7 @@ import type {
   SupportedExportCharset,
   SyncTrigger,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 export const JOBS_QUEUE = 'jobs';
 

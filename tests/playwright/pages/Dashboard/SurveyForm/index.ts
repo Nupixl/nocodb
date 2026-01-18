@@ -1,5 +1,5 @@
 import { expect, Locator, Page } from '@playwright/test';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import BasePage from '../../Base';
 import { getTextExcludeIconText } from '../../../tests/utils/general';
 import { CellPageObject } from '../common/Cell';

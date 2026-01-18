@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { FormulaDataTypes, handleTZ } from 'nocodb-sdk'
-import type { ColumnType } from 'nocodb-sdk'
+import { FormulaDataTypes, handleTZ } from 'social-pixl-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 import { useDetachedLongText } from '../smartsheet/grid/canvas/composables/useDetachedLongText'
 

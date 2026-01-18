@@ -1,6 +1,6 @@
 import { Form } from 'ant-design-vue'
 import { diff } from 'deep-object-diff'
-import type { FormBuilderCondition, FormBuilderElement, FormDefinition } from 'nocodb-sdk'
+import type { FormBuilderCondition, FormBuilderElement, FormDefinition } from 'social-pixl-sdk'
 
 const [useProvideFormBuilderHelper, useFormBuilderHelper] = useInjectionState(
   (props: {

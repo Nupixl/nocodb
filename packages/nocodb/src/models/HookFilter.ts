@@ -1,5 +1,5 @@
 import { Logger } from '@nestjs/common';
-import type { FilterType } from 'nocodb-sdk';
+import type { FilterType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import Model from '~/models/Model';
 import Column from '~/models/Column';

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from '@vue/runtime-core'
-import type { ColumnType, LinkToAnotherRecordType, RollupType, TableType } from 'nocodb-sdk'
+import type { ColumnType, LinkToAnotherRecordType, RollupType, TableType } from 'social-pixl-sdk'
 import {
   ColumnHelper,
   PlanFeatureTypes,
@@ -9,7 +9,7 @@ import {
   getAvailableRollupForColumn,
   getRenderAsTextFunForUiType,
   rollupAllFunctions,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 const props = defineProps<{
   value: any

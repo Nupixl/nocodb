@@ -1,6 +1,6 @@
 import { isString } from '@vue/shared'
-import { type Roles, type RolesObj, SourceRestriction, type SourceType, type WorkspaceUserRoles } from 'nocodb-sdk'
-import { extractRolesObj } from 'nocodb-sdk'
+import { type Roles, type RolesObj, SourceRestriction, type SourceType, type WorkspaceUserRoles } from 'social-pixl-sdk'
+import { extractRolesObj } from 'social-pixl-sdk'
 import type { MaybeRef } from 'vue'
 
 const hasPermission = (role: Exclude<Roles, WorkspaceUserRoles>, hasRole: boolean, permission: Permission | string) => {

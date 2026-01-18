@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { PermissionEntity, PermissionKey } from 'nocodb-sdk'
+import type { PermissionEntity, PermissionKey } from 'social-pixl-sdk'
 import type { TooltipPlacement } from 'ant-design-vue/lib/tooltip'
 
 interface Props {

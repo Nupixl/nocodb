@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
-import { extractRolesObj, ProjectRoles } from 'nocodb-sdk';
+import { extractRolesObj, ProjectRoles } from 'social-pixl-sdk';
 import { Strategy } from 'passport-custom';
 import type { NcRequest } from '~/interface/config';
 import { ApiToken, User } from '~/models';

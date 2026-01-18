@@ -12,7 +12,7 @@ import {
   Request,
   UseGuards,
 } from '@nestjs/common';
-import { extractRolesObj, NcRequest, TableReqType } from 'nocodb-sdk';
+import { extractRolesObj, NcRequest, TableReqType } from 'social-pixl-sdk';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { TablesService } from '~/services/tables.service';
 import { Acl } from '~/middlewares/extract-ids/extract-ids.middleware';

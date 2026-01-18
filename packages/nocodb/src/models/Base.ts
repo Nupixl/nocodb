@@ -1,6 +1,6 @@
 import { Logger } from '@nestjs/common';
-import { BaseVersion } from 'nocodb-sdk';
-import type { BaseType, BoolType, MetaType } from 'nocodb-sdk';
+import { BaseVersion } from 'social-pixl-sdk';
+import type { BaseType, BoolType, MetaType } from 'social-pixl-sdk';
 import type { DB_TYPES } from '~/utils/globals';
 import type { NcContext } from '~/interface/config';
 import {

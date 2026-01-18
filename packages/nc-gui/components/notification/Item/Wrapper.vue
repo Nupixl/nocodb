@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { NotificationType } from 'nocodb-sdk'
+import type { NotificationType } from 'social-pixl-sdk'
 import { timeAgo } from '~/utils/datetimeUtils'
 
 const props = defineProps<{

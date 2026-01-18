@@ -1,4 +1,4 @@
-import { ButtonActionsType, type ButtonType } from 'nocodb-sdk'
+import { ButtonActionsType, type ButtonType } from 'social-pixl-sdk'
 import { defaultOffscreen2DContext, renderSpinner, truncateText } from '../../utils/canvas'
 import { getButtonColors } from './utils'
 

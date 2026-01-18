@@ -1,4 +1,4 @@
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type { MetaService } from '~/meta/meta.service';
 import { NcError } from '~/helpers/ncError';
 

@@ -1,6 +1,6 @@
-import { PermissionEntity, PermissionKey, ViewTypes } from 'nocodb-sdk'
+import { PermissionEntity, PermissionKey, ViewTypes } from 'social-pixl-sdk'
 import axios from 'axios'
-import type { Api, ColumnType, FormColumnType, FormType, GalleryType, PaginatedType, TableType, ViewType } from 'nocodb-sdk'
+import type { Api, ColumnType, FormColumnType, FormType, GalleryType, PaginatedType, TableType, ViewType } from 'social-pixl-sdk'
 import type { ComputedRef, Ref } from 'vue'
 import { NavigateDir } from '#imports'
 

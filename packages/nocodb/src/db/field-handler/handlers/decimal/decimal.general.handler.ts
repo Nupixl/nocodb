@@ -1,9 +1,9 @@
-import { ncIsNull, ncIsNumber, ncIsUndefined } from 'nocodb-sdk';
+import { ncIsNull, ncIsNumber, ncIsUndefined } from 'social-pixl-sdk';
 import { NcError } from 'src/helpers/catchError';
 import { ncIsStringHasValue } from '../../utils/handlerUtils';
 import type { Knex } from 'knex';
 import type { IBaseModelSqlV2 } from 'src/db/IBaseModelSqlV2';
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type {
   FilterOptions,
   FilterVerificationResult,

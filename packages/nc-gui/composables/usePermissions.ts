@@ -1,7 +1,7 @@
-import { PermissionOptionValue, PermissionOptions, getPermissionIcon, getPermissionLabel, getPermissionOption } from 'nocodb-sdk'
+import { PermissionOptionValue, PermissionOptions, getPermissionIcon, getPermissionLabel, getPermissionOption } from 'social-pixl-sdk'
 
 // Re-export the interface from SDK for backward compatibility
-export type { PermissionOption } from 'nocodb-sdk'
+export type { PermissionOption } from 'social-pixl-sdk'
 
 export const usePermissions = () => {
   // Use centralized permission options from SDK

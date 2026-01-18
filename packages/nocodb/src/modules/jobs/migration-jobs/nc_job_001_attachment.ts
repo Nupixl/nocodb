@@ -1,7 +1,7 @@
 import path from 'path';
 import debug from 'debug';
 import PQueue from 'p-queue';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { Injectable } from '@nestjs/common';
 import mime from 'mime/lite';
 import { FileReference, Source } from '~/models';

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { UITypes } from 'nocodb-sdk'
+import { UITypes } from 'social-pixl-sdk'
 
 const props = defineProps<{
   value: any

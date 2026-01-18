@@ -1,5 +1,5 @@
 import type { ComputedRef, Ref } from 'vue'
-import { EventType, FormulaDataTypes, UITypes, ViewTypes, isSystemColumn, isVirtualCol, workerWithTimezone } from 'nocodb-sdk'
+import { EventType, FormulaDataTypes, UITypes, ViewTypes, isSystemColumn, isVirtualCol, workerWithTimezone } from 'social-pixl-sdk'
 import type {
   Api,
   CalendarRangeType,
@@ -9,7 +9,7 @@ import type {
   PaginatedType,
   TableType,
   ViewType,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import type dayjs from 'dayjs'
 import { validateRowFilters } from '~/utils/dataUtils'
 

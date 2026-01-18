@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import type { NcContext, NcRequest, ViewRowColourV3Type } from 'nocodb-sdk';
+import type { NcContext, NcRequest, ViewRowColourV3Type } from 'social-pixl-sdk';
 import type { MetaService } from '~/meta/meta.service';
 import type { ViewWebhookManager } from '~/utils/view-webhook-manager';
 

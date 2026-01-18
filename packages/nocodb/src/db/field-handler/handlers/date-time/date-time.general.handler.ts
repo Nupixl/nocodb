@@ -6,8 +6,8 @@ import {
   isDateTimeStringHasTimezone,
   parseDateTimeValue,
   parseProp,
-} from 'nocodb-sdk';
-import type { NcContext } from 'nocodb-sdk';
+} from 'social-pixl-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
 import type { MetaService } from '~/meta/meta.service';
 import type {

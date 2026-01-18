@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type TableType, ViewTypes, viewTypeAlias } from 'nocodb-sdk'
+import { type TableType, ViewTypes, viewTypeAlias } from 'social-pixl-sdk'
 
 const { $e } = useNuxtApp()
 

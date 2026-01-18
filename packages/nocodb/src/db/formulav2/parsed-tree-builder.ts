@@ -6,7 +6,7 @@ import {
   type ParsedFormulaNode,
   UITypes,
   validateDateWithUnknownFormat,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { convertDateFormatForConcat } from 'src/helpers/formulaFnHelper';
 import mapFunctionName from '../mapFunctionName';
 import type {
@@ -15,7 +15,7 @@ import type {
   IdentifierNode,
   LiteralNode,
   NcContext,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { Model } from 'src/models';
 import type {
   FnParsedTreeNode,

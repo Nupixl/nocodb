@@ -4,10 +4,10 @@ import {
   extractRolesObj,
   OrgUserRoles,
   PluginCategory,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { v4 as uuidv4 } from 'uuid';
 import validator from 'validator';
-import type { UserType } from 'nocodb-sdk';
+import type { UserType } from 'social-pixl-sdk';
 import type { NcRequest } from '~/interface/config';
 import { AppHooksService } from '~/services/app-hooks/app-hooks.service';
 import { BaseUsersService } from '~/services/base-users/base-users.service';

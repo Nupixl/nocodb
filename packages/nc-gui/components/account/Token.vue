@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { VNodeRef } from '@vue/runtime-core'
-import type { ApiTokenType, RequestParams } from 'nocodb-sdk'
+import type { ApiTokenType, RequestParams } from 'social-pixl-sdk'
 import { extractNextDefaultName } from '~/helpers/parsers/parserHelpers'
 
 const { api, isLoading } = useApi()

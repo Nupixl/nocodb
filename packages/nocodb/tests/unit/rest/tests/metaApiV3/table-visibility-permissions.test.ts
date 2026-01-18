@@ -9,7 +9,7 @@ import {
   PlanLimitTypes,
   ProjectRoles,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import request from 'supertest';
 import { createProject } from '../../../factory/base';
 import { createUser } from '../../../factory/user';

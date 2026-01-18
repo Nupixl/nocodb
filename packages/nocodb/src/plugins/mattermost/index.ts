@@ -1,4 +1,4 @@
-import { XcActionType, XcType } from 'nocodb-sdk';
+import { XcActionType, XcType } from 'social-pixl-sdk';
 import MattermostPlugin from './MattermostPlugin';
 import type { XcPluginConfig } from '~/types/nc-plugin';
 

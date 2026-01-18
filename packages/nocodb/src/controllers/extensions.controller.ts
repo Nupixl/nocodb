@@ -9,7 +9,7 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import type { ExtensionReqType } from 'nocodb-sdk';
+import type { ExtensionReqType } from 'social-pixl-sdk';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { ExtensionsService } from '~/services/extensions.service';
 import { Acl } from '~/middlewares/extract-ids/extract-ids.middleware';

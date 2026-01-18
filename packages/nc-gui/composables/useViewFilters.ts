@@ -7,10 +7,10 @@ import {
   getEquivalentUIType,
   isDateType,
   parseProp,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import type { ComputedRef, Ref } from 'vue'
 import type { SelectProps } from 'ant-design-vue'
-import { UITypes, isSystemColumn } from 'nocodb-sdk'
+import { UITypes, isSystemColumn } from 'social-pixl-sdk'
 
 export type ColumnFilterType = FilterType & {
   status?: string

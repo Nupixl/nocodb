@@ -2,7 +2,7 @@
 import { Form } from 'ant-design-vue'
 import type { SelectHandler } from 'ant-design-vue/es/vc-select/Select'
 import { diff } from 'deep-object-diff'
-import { IntegrationsType, validateAndExtractSSLProp } from 'nocodb-sdk'
+import { IntegrationsType, validateAndExtractSSLProp } from 'social-pixl-sdk'
 import { defineAsyncComponent } from 'vue'
 import {
   type CertTypes,

@@ -12,7 +12,7 @@ import {
   ncIsPromise,
   ncIsString,
   ncIsUndefined,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 const ncIsPlaywright = () => {
   return !!(window as any)?.isPlaywright

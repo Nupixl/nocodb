@@ -1,4 +1,4 @@
-import { formulaJsep, UITypes } from 'nocodb-sdk';
+import { formulaJsep, UITypes } from 'social-pixl-sdk';
 import type FormulaColumn from '../models/FormulaColumn';
 import type { NcContext } from '~/interface/config';
 import type { ButtonColumn, Column } from '~/models';

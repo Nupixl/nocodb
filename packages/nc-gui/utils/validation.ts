@@ -1,5 +1,5 @@
-import type { ColumnType } from 'nocodb-sdk'
-import { validateEmail } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
+import { validateEmail } from 'social-pixl-sdk'
 import validator from 'validator'
 import { getI18n } from '../plugins/a.i18n'
 import { TypeConversionError } from '../error/type-conversion.error'

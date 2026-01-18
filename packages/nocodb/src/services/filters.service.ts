@@ -1,7 +1,7 @@
 import RowColorCondition from 'src/models/RowColorCondition';
 import { Injectable, Logger } from '@nestjs/common';
-import { AppEvents, comparisonOpList, EventType } from 'nocodb-sdk';
-import type { FilterReqType, FilterType, UITypes, UserType } from 'nocodb-sdk';
+import { AppEvents, comparisonOpList, EventType } from 'social-pixl-sdk';
+import type { FilterReqType, FilterType, UITypes, UserType } from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import type { ViewWebhookManager } from '~/utils/view-webhook-manager';
 import type { MetaService } from '~/meta/meta.service';

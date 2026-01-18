@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import type { PathParams } from '~/helpers/dataHelpers';
 import type { NcContext } from '~/interface/config';
 import { NcError } from '~/helpers/catchError';

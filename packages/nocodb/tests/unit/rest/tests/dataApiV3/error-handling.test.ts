@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { expect } from 'chai';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import request from 'supertest';
 import { createBulkRows } from '../../../factory/row';
 import { createTable, getTable } from '../../../factory/table';

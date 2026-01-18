@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import 'mocha'
 import request from 'supertest'
-import { IntegrationsType } from 'nocodb-sdk'
+import { IntegrationsType } from 'social-pixl-sdk'
 import { createProject } from '../../factory/base'
 import init from '../../init'
 

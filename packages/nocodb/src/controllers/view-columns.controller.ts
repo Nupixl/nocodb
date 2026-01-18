@@ -9,14 +9,14 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { APIContext, ViewColumnReqType } from 'nocodb-sdk';
+import { APIContext, ViewColumnReqType } from 'social-pixl-sdk';
 import type {
   CalendarColumnReqType,
   FormColumnReqType,
   GalleryColumnReqType,
   GridColumnReqType,
   KanbanColumnReqType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { PagedResponseImpl } from '~/helpers/PagedResponse';
 import { ViewColumnsService } from '~/services/view-columns.service';

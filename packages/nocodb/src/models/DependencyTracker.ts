@@ -1,4 +1,4 @@
-import { DependencyTableType } from 'nocodb-sdk';
+import { DependencyTableType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import Noco from '~/Noco';
 import { MetaTable } from '~/utils/globals';

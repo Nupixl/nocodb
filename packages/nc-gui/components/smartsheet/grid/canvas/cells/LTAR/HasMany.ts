@@ -1,4 +1,4 @@
-import type { ColumnType, TableType } from 'nocodb-sdk'
+import type { ColumnType, TableType } from 'social-pixl-sdk'
 import { isBoxHovered, renderIconButton, renderSingleLineText } from '../../utils/canvas'
 import { PlainCellRenderer } from '../Plain'
 import { renderAsCellLookupOrLtarValue } from '../../utils/cell'

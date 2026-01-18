@@ -1,5 +1,5 @@
-import type { ColumnType, LinkToAnotherRecordType, TableType } from 'nocodb-sdk'
-import { RelationTypes, UITypes, isLinksOrLTAR } from 'nocodb-sdk'
+import type { ColumnType, LinkToAnotherRecordType, TableType } from 'social-pixl-sdk'
+import { RelationTypes, UITypes, isLinksOrLTAR } from 'social-pixl-sdk'
 import dagre from 'dagre'
 import type { Edge, EdgeMarker, Elements, Node } from '@vue-flow/core'
 import { MarkerType, Position, isEdge, isNode } from '@vue-flow/core'

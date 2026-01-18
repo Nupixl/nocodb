@@ -1,5 +1,5 @@
 import { NcError } from './ncError';
-import type { NcApiVersion } from 'nocodb-sdk';
+import type { NcApiVersion } from 'social-pixl-sdk';
 
 export default function validateParams(
   props: string[],

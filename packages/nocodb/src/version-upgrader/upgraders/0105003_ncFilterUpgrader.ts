@@ -1,4 +1,4 @@
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import type { MetaService } from '~/meta/meta.service';
 import type { NcUpgraderCtx } from '~/version-upgrader/NcUpgrader';
 import type { NcContext } from '~/interface/config';

@@ -6,9 +6,9 @@ import {
   getAvailableAggregations,
   NumericalAggregations,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type { BarcodeColumn, QrCodeColumn } from '~/models';
 import { Column } from '~/models';
 import { NcError } from '~/helpers/catchError';

@@ -3,8 +3,8 @@ import {
   durationOptions,
   ratingIconList,
   UITypes,
-} from 'nocodb-sdk';
-import type { ColumnType } from 'nocodb-sdk';
+} from 'social-pixl-sdk';
+import type { ColumnType } from 'social-pixl-sdk';
 import type { Column } from '~/models';
 
 const convertToSnakeCase = (str: string) => {

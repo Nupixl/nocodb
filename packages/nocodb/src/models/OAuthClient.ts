@@ -2,9 +2,9 @@ import { randomBytes } from 'crypto';
 import { promisify } from 'util';
 import { nanoid } from 'nanoid';
 import bcrypt from 'bcryptjs';
-import { OAuthClientType } from 'nocodb-sdk';
-import type { AttachmentResType } from 'nocodb-sdk';
-import type { OAuthClient as IOAuthClient } from 'nocodb-sdk';
+import { OAuthClientType } from 'social-pixl-sdk';
+import type { AttachmentResType } from 'social-pixl-sdk';
+import type { OAuthClient as IOAuthClient } from 'social-pixl-sdk';
 import {
   CacheDelDirection,
   CacheGetType,

@@ -1,7 +1,7 @@
 import { Process, Processor } from '@nestjs/bull';
 import { Inject, Logger } from '@nestjs/common';
 import { Job } from 'bull';
-import { Timer } from 'nocodb-sdk';
+import { Timer } from 'social-pixl-sdk';
 import type { JobData } from '~/interface/Jobs';
 import {
   JOB_REQUEUE_LIMIT,

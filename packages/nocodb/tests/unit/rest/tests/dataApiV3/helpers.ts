@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import request from 'supertest';
-import { type ColumnType, WorkspaceUserRoles } from 'nocodb-sdk';
+import { type ColumnType, WorkspaceUserRoles } from 'social-pixl-sdk';
 import { defaultUserArgs } from '../../../factory/user';
 import type { ITestContext } from '../../../init';
 

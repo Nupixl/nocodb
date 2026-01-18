@@ -1,5 +1,5 @@
 // based on source restriction decide the icon color
-import type { SourceType } from 'nocodb-sdk'
+import type { SourceType } from 'social-pixl-sdk'
 import { clientTypes } from '~/utils/baseCreateUtils'
 
 export const getSourceIconColor = (source: SourceType) => {

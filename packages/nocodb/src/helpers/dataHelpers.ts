@@ -1,4 +1,4 @@
-import { convertMS2Duration, UITypes } from 'nocodb-sdk';
+import { convertMS2Duration, UITypes } from 'social-pixl-sdk';
 import type LinkToAnotherRecordColumn from '~/models/LinkToAnotherRecordColumn';
 import type LookupColumn from '~/models/LookupColumn';
 import type { NcContext } from '~/interface/config';

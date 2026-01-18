@@ -2,8 +2,8 @@
 // - formula dependency list
 // - nested lookup/ rollup
 
-const Api = require('nocodb-sdk').Api;
-const { UITypes } = require('nocodb-sdk');
+const Api = require('social-pixl-sdk').Api;
+const { UITypes } = require('social-pixl-sdk');
 const jsonfile = require('jsonfile');
 
 let inputConfig = jsonfile.readFileSync(`config.json`)

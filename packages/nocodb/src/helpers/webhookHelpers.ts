@@ -11,14 +11,14 @@ import {
   HookOperationCode,
   isDateMonthFormat,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type {
   ColumnType,
   FormColumnType,
   HookType,
   TableType,
   UpdatePayload,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { AxiosResponse } from 'axios';
 import type { NcContext } from '~/interface/config';
 import type { Column, FormView, Hook, Model, Source, View } from '~/models';

@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import setup, { NcContext, unsetup } from '../../../setup';
 import { DashboardPage } from '../../../pages/Dashboard';
-import { Api } from 'nocodb-sdk';
+import { Api } from 'social-pixl-sdk';
 import { createDemoTable } from '../../../setup/demoTable';
 import { isMysql } from '../../../setup/db';
 

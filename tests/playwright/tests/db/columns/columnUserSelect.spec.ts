@@ -6,7 +6,7 @@ import { TopbarPage } from '../../../pages/Dashboard/common/Topbar';
 import { ToolbarPage } from '../../../pages/Dashboard/common/Toolbar';
 import { WorkspacePage } from '../../../pages/WorkspacePage';
 import { CollaborationPage } from '../../../pages/WorkspacePage/CollaborationPage';
-import { Api } from 'nocodb-sdk';
+import { Api } from 'social-pixl-sdk';
 import { isEE } from '../../../setup/db';
 import { getDefaultPwd } from '../../utils/general';
 

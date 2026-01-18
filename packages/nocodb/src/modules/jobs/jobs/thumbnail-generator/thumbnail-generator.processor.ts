@@ -2,7 +2,7 @@ import path from 'path';
 import { Logger } from '@nestjs/common';
 import type { IStorageAdapterV2 } from '~/types/nc-plugin';
 import type { Job } from 'bull';
-import type { AttachmentResType, PublicAttachmentScope } from 'nocodb-sdk';
+import type { AttachmentResType, PublicAttachmentScope } from 'social-pixl-sdk';
 import type { ThumbnailGeneratorJobData } from '~/interface/Jobs';
 import NcPluginMgrv2 from '~/helpers/NcPluginMgrv2';
 import { getPathFromUrl } from '~/helpers/attachmentHelpers';

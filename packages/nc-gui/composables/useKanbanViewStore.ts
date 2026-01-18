@@ -1,5 +1,5 @@
 import type { ComputedRef, Ref } from 'vue'
-import { EventType, ViewTypes } from 'nocodb-sdk'
+import { EventType, ViewTypes } from 'social-pixl-sdk'
 import type {
   Api,
   ColumnType,
@@ -9,7 +9,7 @@ import type {
   SelectOptionsType,
   TableType,
   ViewType,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import { validateRowFilters } from '~/utils/dataUtils'
 
 type GroupingFieldColOptionsType = SelectOptionType & { collapsed: boolean }

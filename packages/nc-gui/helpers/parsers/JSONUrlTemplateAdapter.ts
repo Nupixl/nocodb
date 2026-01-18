@@ -1,4 +1,4 @@
-import type { Api } from 'nocodb-sdk'
+import type { Api } from 'social-pixl-sdk'
 import JSONTemplateAdapter from './JSONTemplateAdapter'
 import type { ProgressMessageType } from './TemplateGenerator'
 

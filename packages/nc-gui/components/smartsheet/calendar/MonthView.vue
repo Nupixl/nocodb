@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type dayjs from 'dayjs'
-import { PermissionEntity, PermissionKey, UITypes } from 'nocodb-sdk'
+import { PermissionEntity, PermissionKey, UITypes } from 'social-pixl-sdk'
 
 const emit = defineEmits(['newRecord', 'expandRecord'])
 

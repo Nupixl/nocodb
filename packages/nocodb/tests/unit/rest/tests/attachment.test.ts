@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { expect } from 'chai';
-import { OrgUserRoles, ProjectRoles } from 'nocodb-sdk';
+import { OrgUserRoles, ProjectRoles } from 'social-pixl-sdk';
 import 'mocha';
 import request from 'supertest';
 import { createProject } from '../../factory/base';

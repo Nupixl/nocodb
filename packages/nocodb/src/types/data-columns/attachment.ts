@@ -1,5 +1,5 @@
 import type { AttachmentFilePathConstructed } from '~/helpers/attachmentHelpers';
-import type { NcContext, NcRequest, PublicAttachmentScope } from 'nocodb-sdk';
+import type { NcContext, NcRequest, PublicAttachmentScope } from 'social-pixl-sdk';
 
 // Attachment data types for v3 API
 export interface DataAttachmentRequestUrl {

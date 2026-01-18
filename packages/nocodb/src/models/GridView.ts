@@ -1,4 +1,4 @@
-import type { GridType, MetaType } from 'nocodb-sdk';
+import type { GridType, MetaType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import GridViewColumn from '~/models/GridViewColumn';
 import View from '~/models/View';

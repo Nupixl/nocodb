@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import type { ViewType } from 'nocodb-sdk'
-import { ViewTypes, getFirstNonPersonalView, viewTypeAlias } from 'nocodb-sdk'
+import type { ViewType } from 'social-pixl-sdk'
+import { ViewTypes, getFirstNonPersonalView, viewTypeAlias } from 'social-pixl-sdk'
 import type { SortableEvent } from 'sortablejs'
 import Sortable from 'sortablejs'
 

@@ -1,4 +1,4 @@
-import { ButtonActionsType } from 'nocodb-sdk';
+import { ButtonActionsType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import Noco from '~/Noco';
 import NocoCache from '~/cache/NocoCache';

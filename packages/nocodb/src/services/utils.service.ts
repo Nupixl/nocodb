@@ -2,11 +2,11 @@ import process from 'process';
 import { Injectable, Logger } from '@nestjs/common';
 import axios from 'axios';
 import { compareVersions, validate } from 'compare-versions';
-import { ViewTypes } from 'nocodb-sdk';
+import { ViewTypes } from 'social-pixl-sdk';
 import { ConfigService } from '@nestjs/config';
 import { useAgent } from 'request-filtering-agent';
 import dayjs from 'dayjs';
-import type { ErrorReportReqType } from 'nocodb-sdk';
+import type { ErrorReportReqType } from 'social-pixl-sdk';
 import type { AppConfig, NcRequest } from '~/interface/config';
 import {
   NC_ATTACHMENT_FIELD_SIZE,

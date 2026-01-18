@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { NcBaseError } from 'nocodb-sdk';
+import { NcBaseError } from 'social-pixl-sdk';
 import {
   BaseUser,
   OAuthAuthorizationCode,

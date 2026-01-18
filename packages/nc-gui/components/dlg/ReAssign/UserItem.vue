@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { UserType } from 'nocodb-sdk'
+import type { UserType } from 'social-pixl-sdk'
 
 const { user } = defineProps<{
   user: UserType

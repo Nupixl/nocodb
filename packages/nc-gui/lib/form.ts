@@ -1,6 +1,6 @@
 import type { ColumnType } from 'ant-design-vue/lib/table'
 import dayjs from 'dayjs'
-import { type FilterType, type LinkToAnotherRecordType, type TableType, UITypes, isDateMonthFormat } from 'nocodb-sdk'
+import { type FilterType, type LinkToAnotherRecordType, type TableType, UITypes, isDateMonthFormat } from 'social-pixl-sdk'
 
 type FormViewColumn = ColumnType & Record<string, any>
 

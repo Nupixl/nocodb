@@ -1,4 +1,4 @@
-import { NcApiVersion, type NcRequest } from 'nocodb-sdk';
+import { NcApiVersion, type NcRequest } from 'social-pixl-sdk';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
 import { type AttachmentUrlUploadJobData, JobTypes } from '~/interface/Jobs';
 import { EMIT_EVENT } from '~/constants';

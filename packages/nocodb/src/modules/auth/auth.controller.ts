@@ -12,7 +12,7 @@ import {
 import { Response } from 'express';
 import { AuthGuard } from '@nestjs/passport';
 import { ConfigService } from '@nestjs/config';
-import { extractRolesObj } from 'nocodb-sdk';
+import { extractRolesObj } from 'social-pixl-sdk';
 import * as ejs from 'ejs';
 import { PresignedUrl } from 'src/models';
 import type { AppConfig } from '~/interface/config';

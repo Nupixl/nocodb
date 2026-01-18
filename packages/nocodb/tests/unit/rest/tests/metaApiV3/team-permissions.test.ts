@@ -6,7 +6,7 @@ import {
   TeamUserRoles,
   UITypes,
   WorkspaceUserRoles,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { isEE } from '../../../utils/helpers';
 import init from '../../../init';
 import { overrideFeature } from '../../../utils/plan.utils';

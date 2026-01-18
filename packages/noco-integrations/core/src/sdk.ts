@@ -1,3 +1,3 @@
-import * as NocoSDK from 'nocodb-sdk';
+import * as NocoSDK from 'social-pixl-sdk';
 
 export { NocoSDK };

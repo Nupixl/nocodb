@@ -2,7 +2,7 @@ import { NcError } from 'src/helpers/catchError';
 import { DecimalGeneralHandler } from '../decimal/decimal.general.handler';
 import type { Column } from 'src/models';
 import type { IBaseModelSqlV2 } from 'src/db/IBaseModelSqlV2';
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type { MetaService } from 'src/meta/meta.service';
 
 export class NumberGeneralHandler extends DecimalGeneralHandler {

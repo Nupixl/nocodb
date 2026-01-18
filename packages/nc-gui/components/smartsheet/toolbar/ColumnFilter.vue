@@ -6,8 +6,8 @@ import {
   isCreatedOrLastModifiedTimeCol,
   isSystemColumn,
   isVirtualCol,
-} from 'nocodb-sdk'
-import { PlanLimitTypes, UITypes } from 'nocodb-sdk'
+} from 'social-pixl-sdk'
+import { PlanLimitTypes, UITypes } from 'social-pixl-sdk'
 import Draggable from 'vuedraggable'
 
 interface Props {

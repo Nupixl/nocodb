@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { OAuthClient } from 'nocodb-sdk'
+import type { OAuthClient } from 'social-pixl-sdk'
 
 interface Props {
   modelValue: boolean

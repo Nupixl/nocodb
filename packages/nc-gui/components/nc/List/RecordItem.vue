@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type ColumnType, isLinksOrLTAR, isSystemColumn, isVirtualCol } from 'nocodb-sdk'
+import { type ColumnType, isLinksOrLTAR, isSystemColumn, isVirtualCol } from 'social-pixl-sdk'
 
 const props = withDefaults(
   defineProps<{

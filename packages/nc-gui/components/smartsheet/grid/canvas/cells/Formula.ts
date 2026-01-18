@@ -1,4 +1,4 @@
-import { type ColumnType, FormulaDataTypes, UITypes, handleTZ } from 'nocodb-sdk'
+import { type ColumnType, FormulaDataTypes, UITypes, handleTZ } from 'social-pixl-sdk'
 import {
   defaultOffscreen2DContext,
   isBoxHovered,

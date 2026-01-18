@@ -1,5 +1,5 @@
-import { RelationTypes, isLinksOrLTAR } from 'nocodb-sdk'
-import type { ColumnType, LinkToAnotherRecordType, TableType } from 'nocodb-sdk'
+import { RelationTypes, isLinksOrLTAR } from 'social-pixl-sdk'
+import type { ColumnType, LinkToAnotherRecordType, TableType } from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 
 const [useProvideSmartsheetLtarHelpers, useSmartsheetLtarHelpers] = useInjectionState(

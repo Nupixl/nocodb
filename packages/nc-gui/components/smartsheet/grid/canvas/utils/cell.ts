@@ -7,7 +7,7 @@ import {
   type UserFieldRecordType,
   type UserType,
   timeFormats,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import { LRUCache } from 'lru-cache'
 import { getI18n } from '../../../../../plugins/a.i18n'
 

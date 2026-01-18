@@ -11,14 +11,14 @@ import {
   SqlUiFactory,
   UITypes,
   ViewTypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import hash from 'object-hash';
 import papaparse from 'papaparse';
 import { MetaTable } from 'src/cli';
 import PQueue from 'p-queue';
 import { elapsedTime, initTime } from '../../helpers';
 import type { ColumnWebhookManager } from '~/utils/column-webhook-manager';
-import type { UserType, ViewCreateReqType } from 'nocodb-sdk';
+import type { UserType, ViewCreateReqType } from 'social-pixl-sdk';
 import type { Readable } from 'stream';
 import type { NcContext, NcRequest } from '~/interface/config';
 import type { CalendarView, LinksColumn, User } from '~/models';

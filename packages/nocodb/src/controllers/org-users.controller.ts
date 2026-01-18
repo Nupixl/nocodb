@@ -11,7 +11,7 @@ import {
   Request,
   UseGuards,
 } from '@nestjs/common';
-import { OrgUserRoles } from 'nocodb-sdk';
+import { OrgUserRoles } from 'social-pixl-sdk';
 // This service is overwritten entirely in the cloud and does not extend there.
 // As a result, it refers to services from OSS to avoid type mismatches.
 import { OrgUsersService } from 'src/services/org-users.service';

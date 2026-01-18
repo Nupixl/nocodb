@@ -1,4 +1,4 @@
-import { ProjectRoles } from 'nocodb-sdk';
+import { ProjectRoles } from 'social-pixl-sdk';
 import { CacheGetType, CacheScope, MetaTable } from '~/utils/globals';
 import Noco from '~/Noco';
 import NocoCache from '~/cache/NocoCache';

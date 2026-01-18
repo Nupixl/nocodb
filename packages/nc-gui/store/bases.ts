@@ -1,6 +1,6 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import type { BaseType, OracleUi, ProjectUserReqType, RequestParams, SourceType } from 'nocodb-sdk'
-import { SqlUiFactory } from 'nocodb-sdk'
+import type { BaseType, OracleUi, ProjectUserReqType, RequestParams, SourceType } from 'social-pixl-sdk'
+import { SqlUiFactory } from 'social-pixl-sdk'
 import { isString } from '@vue/shared'
 import type Record from '~icons/*'
 import { extensionUserPrefsManager } from '~/helpers/extensionUserPrefsManager'

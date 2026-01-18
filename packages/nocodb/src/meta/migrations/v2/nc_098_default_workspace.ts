@@ -1,4 +1,4 @@
-import { OrgUserRoles, WorkspaceUserRoles } from 'nocodb-sdk';
+import { OrgUserRoles, WorkspaceUserRoles } from 'social-pixl-sdk';
 import { customAlphabet } from 'nanoid';
 import type { Knex } from 'knex';
 import {

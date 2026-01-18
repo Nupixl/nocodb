@@ -10,7 +10,7 @@ import {
   ROW_COLORING_MODE,
   UITypes,
   ViewTypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { Logger } from '@nestjs/common';
 import type { NcContext } from '~/interface/config';
 import type { MetaService } from '~/meta/meta.service';

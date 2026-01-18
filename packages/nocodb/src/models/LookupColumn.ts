@@ -1,4 +1,4 @@
-import type { LookupType } from 'nocodb-sdk';
+import type { LookupType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import Column from '~/models/Column';
 import Noco from '~/Noco';

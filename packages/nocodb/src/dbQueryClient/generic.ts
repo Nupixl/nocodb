@@ -1,4 +1,4 @@
-import { arrFlatMap } from 'nocodb-sdk';
+import { arrFlatMap } from 'social-pixl-sdk';
 import type { DBQueryClient } from '~/dbQueryClient/types';
 import type { XKnex } from '~/db/CustomKnex';
 

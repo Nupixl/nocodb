@@ -1,7 +1,7 @@
 import { expect, Locator } from '@playwright/test';
 import { DashboardPage } from '..';
 import BasePage from '../../Base';
-import { ViewTypes } from 'nocodb-sdk';
+import { ViewTypes } from 'social-pixl-sdk';
 
 export class ViewSidebarPage extends BasePage {
   readonly base: any;

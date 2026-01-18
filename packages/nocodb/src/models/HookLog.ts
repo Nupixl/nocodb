@@ -1,4 +1,4 @@
-import type { HookLogType } from 'nocodb-sdk';
+import type { HookLogType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import Hook from '~/models/Hook';
 import Noco from '~/Noco';

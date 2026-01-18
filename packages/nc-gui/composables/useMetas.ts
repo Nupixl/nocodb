@@ -1,5 +1,5 @@
 import type { WatchStopHandle } from 'vue'
-import type { TableType } from 'nocodb-sdk'
+import type { TableType } from 'social-pixl-sdk'
 
 export const useMetas = createSharedComposable(() => {
   const { $api } = useNuxtApp()

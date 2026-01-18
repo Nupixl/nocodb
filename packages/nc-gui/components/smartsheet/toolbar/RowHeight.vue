@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type GridType, ViewTypes } from 'nocodb-sdk'
+import { type GridType, ViewTypes } from 'social-pixl-sdk'
 
 const rowHeightOptions: { icon: keyof typeof iconMap; heightClass: string }[] = [
   {

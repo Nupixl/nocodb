@@ -2,7 +2,7 @@ import type CustomKnex from '../CustomKnex';
 import type { Logger } from '@nestjs/common';
 import type { IBaseModelSqlV2 } from '../IBaseModelSqlV2';
 import type { MetaService } from 'src/meta/meta.service';
-import type { FilterType, NcContext } from 'nocodb-sdk';
+import type { FilterType, NcContext } from 'social-pixl-sdk';
 import type { Knex } from 'knex';
 import type { Column, Filter } from '~/models';
 

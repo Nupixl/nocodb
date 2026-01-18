@@ -1,4 +1,4 @@
-import { isLinksOrLTAR, RelationTypes, UITypes } from 'nocodb-sdk';
+import { isLinksOrLTAR, RelationTypes, UITypes } from 'social-pixl-sdk';
 import type { LinkToAnotherRecordColumn } from '~/models';
 import type { SwaggerColumn } from '../getSwaggerColumnMetas';
 import type { NcContext } from '~/interface/config';

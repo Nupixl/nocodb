@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BaseVersion } from 'nocodb-sdk'
+import { BaseVersion } from 'social-pixl-sdk'
 
 const { t } = useI18n()
 const { $api } = useNuxtApp()

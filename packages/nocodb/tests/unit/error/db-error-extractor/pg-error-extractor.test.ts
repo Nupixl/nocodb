@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import 'mocha';
-import { ClientType } from 'nocodb-sdk';
+import { ClientType } from 'social-pixl-sdk';
 import { Source } from '../../../../src/models';
 import { initInitialModel } from '../../formula/initModel';
 import { BaseModelSqlv2 } from '~/db/BaseModelSqlv2';

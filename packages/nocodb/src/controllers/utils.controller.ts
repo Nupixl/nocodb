@@ -10,13 +10,13 @@ import {
   Request,
   UseGuards,
 } from '@nestjs/common';
-import { ProjectRoles, validateAndExtractSSLProp } from 'nocodb-sdk';
+import { ProjectRoles, validateAndExtractSSLProp } from 'social-pixl-sdk';
 import {
   ErrorReportReqType,
   getTestDatabaseName,
   IntegrationsType,
   OrgUserRoles,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { UtilsService } from '~/services/utils.service';
 import { Acl } from '~/middlewares/extract-ids/extract-ids.middleware';

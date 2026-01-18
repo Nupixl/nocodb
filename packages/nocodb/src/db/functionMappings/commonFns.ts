@@ -1,4 +1,4 @@
-import { FormulaDataTypes } from 'nocodb-sdk';
+import { FormulaDataTypes } from 'social-pixl-sdk';
 import type { Knex } from 'knex';
 import type { MapFnArgs } from '~/db/mapFunctionName';
 import { concatKnexRaw } from '~/helpers/dbHelpers';

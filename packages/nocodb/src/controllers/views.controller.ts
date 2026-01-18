@@ -11,7 +11,7 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { ViewUpdateReqType } from 'nocodb-sdk';
+import { ViewUpdateReqType } from 'social-pixl-sdk';
 import { ViewRowColorService } from '~/services/view-row-color.service';
 import { PagedResponseImpl } from '~/helpers/PagedResponse';
 import { GlobalGuard } from '~/guards/global/global.guard';

@@ -1,5 +1,5 @@
-import type { ColumnType, FilterType, KanbanType, SortType, TableType, ViewType } from 'nocodb-sdk'
-import { NcApiVersion, ViewLockType, ViewTypes, extractFilterFromXwhere, getFirstNonPersonalView } from 'nocodb-sdk'
+import type { ColumnType, FilterType, KanbanType, SortType, TableType, ViewType } from 'social-pixl-sdk'
+import { NcApiVersion, ViewLockType, ViewTypes, extractFilterFromXwhere, getFirstNonPersonalView } from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 
 const [useProvideSmartsheetStore, useSmartsheetStore] = useInjectionState(

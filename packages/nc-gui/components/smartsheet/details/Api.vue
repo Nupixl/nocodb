@@ -109,7 +109,7 @@ const activeLang = computed(() => langs.find((lang) => lang.name === selectedLan
 
 const code = computed(() => {
   if (activeLang.value?.name === 'NocoDB-SDK') {
-    return `${selectedClient.value === 'node' ? 'const { Api } = require("nocodb-sdk");' : 'import { Api } from "nocodb-sdk";'}
+    return `${selectedClient.value === 'node' ? 'const { Api } = require("social-pixl-sdk");' : 'import { Api } from "social-pixl-sdk";'}
 
 const api = new Api({
     baseURL: "${(appInfo.value && appInfo.value.ncSiteUrl) || '/'}",

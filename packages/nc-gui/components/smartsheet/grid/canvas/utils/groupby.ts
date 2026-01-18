@@ -1,4 +1,4 @@
-import { UITypes, isLinksOrLTAR } from 'nocodb-sdk'
+import { UITypes, isLinksOrLTAR } from 'social-pixl-sdk'
 import { GROUP_EXPANDED_BOTTOM_PADDING, GROUP_HEADER_HEIGHT, GROUP_PADDING } from './constants'
 
 export function getGroupColors(depth: number, maxDepth: number, getColor: (color: string) => string) {

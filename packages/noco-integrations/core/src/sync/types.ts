@@ -1,5 +1,5 @@
 import { Readable } from 'stream';
-import { UITypes, TARGET_TABLES } from 'nocodb-sdk';
+import { UITypes, TARGET_TABLES } from 'social-pixl-sdk';
 import { IntegrationWrapper } from '../integration';
 import { AuthIntegration } from '../auth';
 

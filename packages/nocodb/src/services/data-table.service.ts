@@ -4,9 +4,9 @@ import {
   ncIsNumber,
   RelationTypes,
   ViewTypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { validatePayload } from 'src/helpers';
-import type { NcApiVersion, NcRequest } from 'nocodb-sdk';
+import type { NcApiVersion, NcRequest } from 'social-pixl-sdk';
 import type { LinkToAnotherRecordColumn } from '~/models';
 import type { NcContext } from '~/interface/config';
 import { validateV1V2DataPayloadLimit } from '~/helpers/dataHelpers';

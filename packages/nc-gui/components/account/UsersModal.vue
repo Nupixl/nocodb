@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { VNodeRef } from '@vue/runtime-core'
-import type { OrgUserReqType } from 'nocodb-sdk'
-import { OrgUserRoles } from 'nocodb-sdk'
+import type { OrgUserReqType } from 'social-pixl-sdk'
+import { OrgUserRoles } from 'social-pixl-sdk'
 import { extractEmail } from '~/helpers/parsers/parserHelpers'
 
 interface Props {

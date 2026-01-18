@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { UITypes, isSelectTypeCol } from 'nocodb-sdk'
+import { UITypes, isSelectTypeCol } from 'social-pixl-sdk'
 
 const { formState, activeField, updateColMeta, isRequired } = useFormViewStoreOrThrow()
 

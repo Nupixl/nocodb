@@ -5,12 +5,12 @@ import {
   parseProp,
   UITypes,
   ViewTypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type {
   KanbanUpdateReqType,
   UserType,
   ViewCreateReqType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import type { MetaService } from '~/meta/meta.service';
 import type { SelectOption } from '~/models';

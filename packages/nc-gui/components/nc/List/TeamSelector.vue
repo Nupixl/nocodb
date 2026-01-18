@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type TeamV3V3Type } from 'nocodb-sdk'
+import { type TeamV3V3Type } from 'social-pixl-sdk'
 import type { SelectValue } from 'ant-design-vue/es/select'
 
 const props = withDefaults(

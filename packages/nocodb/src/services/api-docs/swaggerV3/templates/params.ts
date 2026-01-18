@@ -1,4 +1,4 @@
-import { isLinksOrLTAR, isSelfLinkCol, UITypes } from 'nocodb-sdk';
+import { isLinksOrLTAR, isSelfLinkCol, UITypes } from 'social-pixl-sdk';
 import type { SwaggerColumn } from '../getSwaggerColumnMetasV3';
 import type { SwaggerView } from '~/services/api-docs/shared/swaggerUtils';
 

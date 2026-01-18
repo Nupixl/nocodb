@@ -2,7 +2,7 @@ import { test } from '@playwright/test';
 import { DashboardPage } from '../../../pages/Dashboard';
 import setup, { unsetup } from '../../../setup';
 import { ToolbarPage } from '../../../pages/Dashboard/common/Toolbar';
-import { Api } from 'nocodb-sdk';
+import { Api } from 'social-pixl-sdk';
 import { AccountUsersPage } from '../../../pages/Account/Users';
 import { AccountPage } from '../../../pages/Account';
 import { LoginPage } from '../../../pages/LoginPage';

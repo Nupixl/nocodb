@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ViewSettingOverrideOptions, ViewType } from 'nocodb-sdk'
+import type { ViewSettingOverrideOptions, ViewType } from 'social-pixl-sdk'
 
 interface Props {
   modelValue?: boolean

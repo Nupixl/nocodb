@@ -11,7 +11,7 @@ import {
   NcContext,
   NcRequest,
   ProjectRoles,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { MCPToken, User } from '~/models';
 import { McpService } from '~/mcp/mcp.service';
 import { TenantContext } from '~/decorators/tenant-context.decorator';

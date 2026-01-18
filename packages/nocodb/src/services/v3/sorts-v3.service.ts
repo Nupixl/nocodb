@@ -4,7 +4,7 @@ import type {
   SortReqType,
   SortType,
   SortUpdateV3Type,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { type ViewWebhookManager } from '~/utils/view-webhook-manager';
 import { Column, Sort } from '~/models';

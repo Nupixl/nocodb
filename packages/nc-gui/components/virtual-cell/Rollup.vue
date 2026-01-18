@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { UITypes, getRenderAsTextFunForUiType } from 'nocodb-sdk'
-import type { ColumnType, LinkToAnotherRecordType, RollupType } from 'nocodb-sdk'
+import { UITypes, getRenderAsTextFunForUiType } from 'social-pixl-sdk'
+import type { ColumnType, LinkToAnotherRecordType, RollupType } from 'social-pixl-sdk'
 
 const { metas } = useMetas()
 

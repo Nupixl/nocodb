@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { WelcomeEventType } from 'nocodb-sdk'
+import type { WelcomeEventType } from 'social-pixl-sdk'
 
 const props = defineProps<{
   item: WelcomeEventType

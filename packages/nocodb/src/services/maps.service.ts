@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { AppEvents, ViewTypes } from 'nocodb-sdk';
-import type { MapUpdateReqType, UserType, ViewCreateReqType } from 'nocodb-sdk';
+import { AppEvents, ViewTypes } from 'social-pixl-sdk';
+import type { MapUpdateReqType, UserType, ViewCreateReqType } from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { AppHooksService } from '~/services/app-hooks/app-hooks.service';
 import { validatePayload } from '~/helpers';

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ColumnType } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
 import { type Ref, ref } from 'vue'
 import { forcedNextTick } from '../../utils/browserUtils'
 

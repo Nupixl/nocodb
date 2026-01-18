@@ -1,5 +1,5 @@
 import { Logger } from '@nestjs/common';
-import { AutomationTypes } from 'nocodb-sdk';
+import { AutomationTypes } from 'social-pixl-sdk';
 import type { Knex } from 'knex';
 import { MetaTable, MetaTableOldV2 } from '~/utils/globals';
 import { migrateTableInBatches } from '~/utils/migrationUtils';

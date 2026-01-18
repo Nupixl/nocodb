@@ -1,5 +1,5 @@
-import { unifiedMeta } from 'nocodb-sdk';
-import type { NcContext } from 'nocodb-sdk';
+import { unifiedMeta } from 'social-pixl-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type { Column } from '~/models';
 import { Model } from '~/models';
 

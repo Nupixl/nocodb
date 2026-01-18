@@ -1,4 +1,4 @@
-import { type ColumnType, UITypes } from 'nocodb-sdk'
+import { type ColumnType, UITypes } from 'social-pixl-sdk'
 
 const defaultColumnModelId = 'mtWA9ZXvsuh'
 const table2ColumnModelId = 'mehpRLA42Cz'

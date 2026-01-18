@@ -1,7 +1,7 @@
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { v4 as uuidv4 } from 'uuid';
 import type { DriverClient } from '~/utils/nc-config';
-import type { BoolType, SourceType } from 'nocodb-sdk';
+import type { BoolType, SourceType } from 'social-pixl-sdk';
 import { NcContext } from '~/interface/config';
 import { Base, Model, SyncSource } from '~/models';
 import NocoCache from '~/cache/NocoCache';

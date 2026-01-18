@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { convertToTargetFormat, getDateFormat } from 'nocodb-sdk';
+import { convertToTargetFormat, getDateFormat } from 'social-pixl-sdk';
 import commonFns from './commonFns';
 import type { MapFnArgs } from '../mapFunctionName';
 import { convertUnits } from '~/helpers/convertUnits';

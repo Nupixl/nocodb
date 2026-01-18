@@ -1,4 +1,4 @@
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import request from 'supertest';
 import { assert, expect } from 'chai';
 import { createColumn, createLookupColumn } from '../../factory/column';

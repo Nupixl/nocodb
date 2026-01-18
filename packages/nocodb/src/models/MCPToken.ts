@@ -1,6 +1,6 @@
 import { NcError } from 'src/helpers/catchError';
 import { nanoid } from 'nanoid';
-import type { MCPTokenType, NcContext } from 'nocodb-sdk';
+import type { MCPTokenType, NcContext } from 'social-pixl-sdk';
 import Noco from '~/Noco';
 import NocoCache from '~/cache/NocoCache';
 import {

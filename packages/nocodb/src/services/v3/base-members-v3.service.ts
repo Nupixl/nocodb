@@ -4,7 +4,7 @@ import type {
   BaseMemberCreateV3Type,
   BaseMemberUpdateV3Type,
   ProjectUserReqType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import type { ApiV3DataTransformationBuilder } from '~/utils/api-v3-data-transformation.builder';
 import Noco from '~/Noco';

@@ -5,7 +5,7 @@ import {
   isCreatedOrLastModifiedByCol,
   isCreatedOrLastModifiedTimeCol,
   isVirtualCol,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import type { ComputedRef, Ref } from 'vue'
 import type { EventHook } from '@vueuse/core'
 import { findGroupByPath } from '../components/smartsheet/grid/canvas/utils/groupby'

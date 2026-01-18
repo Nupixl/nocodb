@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type ColumnType, handleTZ } from 'nocodb-sdk'
+import { type ColumnType, handleTZ } from 'social-pixl-sdk'
 
 const props = defineProps<{
   column: ColumnType

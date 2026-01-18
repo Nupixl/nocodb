@@ -1,6 +1,6 @@
 import debug from 'debug';
 import { Injectable } from '@nestjs/common';
-import { RelationTypes, UITypes } from 'nocodb-sdk';
+import { RelationTypes, UITypes } from 'social-pixl-sdk';
 import type { MetaService } from '~/meta/meta.service';
 import Noco from '~/Noco';
 import { MetaTable } from '~/utils/globals';

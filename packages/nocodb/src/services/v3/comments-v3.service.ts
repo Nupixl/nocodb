@@ -3,7 +3,7 @@ import type {
   CommentReqType,
   CommentUpdateReqType,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { CommentsService } from '~/services/comments.service';
 

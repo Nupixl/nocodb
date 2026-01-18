@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Background, Controls, Panel, PanelPosition } from '@vue-flow/additional-components'
 import { VueFlow, useVueFlow } from '@vue-flow/core'
-import type { TableType } from 'nocodb-sdk'
+import type { TableType } from 'social-pixl-sdk'
 import type { ERDConfig } from './utils'
 import { useErdElements } from './utils'
 

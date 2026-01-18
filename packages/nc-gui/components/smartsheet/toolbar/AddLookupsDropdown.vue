@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type ColumnType, type TableType, UITypes } from 'nocodb-sdk'
+import { type ColumnType, type TableType, UITypes } from 'social-pixl-sdk'
 import { generateUniqueColumnName } from '~/helpers/parsers/parserHelpers'
 
 interface Props {

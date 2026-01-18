@@ -1,5 +1,5 @@
 import type { Editor } from '@tiptap/vue-3'
-import { ncIsArray } from 'nocodb-sdk'
+import { ncIsArray } from 'social-pixl-sdk'
 
 // refer - https://stackoverflow.com/a/11752084
 export const isMac = () => /Mac/i.test(navigator.platform)

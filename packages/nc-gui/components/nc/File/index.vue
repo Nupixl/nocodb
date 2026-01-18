@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { AttachmentReqType, PublicAttachmentScope } from 'nocodb-sdk'
+import type { AttachmentReqType, PublicAttachmentScope } from 'social-pixl-sdk'
 import type { UploadFile } from 'ant-design-vue'
 import { useProvideUploadState } from './UploadProviders/useUploadState'
 

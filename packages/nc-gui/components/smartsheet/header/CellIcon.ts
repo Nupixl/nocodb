@@ -1,4 +1,4 @@
-import { type ColumnType } from 'nocodb-sdk'
+import { type ColumnType } from 'social-pixl-sdk'
 import type { PropType } from '@vue/runtime-core'
 
 export const renderIcon = (column: ColumnType, abstractType: any) => {

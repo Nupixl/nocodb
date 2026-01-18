@@ -1,11 +1,11 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { AppEvents } from 'nocodb-sdk';
+import { AppEvents } from 'social-pixl-sdk';
 import type {
   ProjectInviteEvent,
   WelcomeEvent,
 } from '~/services/app-hooks/interfaces';
 import type { OnModuleDestroy, OnModuleInit } from '@nestjs/common';
-import type { UserType } from 'nocodb-sdk';
+import type { UserType } from 'social-pixl-sdk';
 import type { NcRequest } from '~/interface/config';
 import type { Response } from 'express';
 import { AppHooksService } from '~/services/app-hooks/app-hooks.service';

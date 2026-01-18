@@ -4,7 +4,7 @@ import {
   parseProp,
   RelationTypes,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type {
   ConditionParser,
   FilterOperationResult,

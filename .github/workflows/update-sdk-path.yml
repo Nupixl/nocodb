@@ -32,9 +32,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           signoff: true
-          branch: "bot/update-nocodb-sdk-path"
+          branch: "bot/update-social-pixl-sdk-path"
           delete-branch: true
-          title: "Update nocodb-sdk to local path"
+          title: "Update social-pixl-sdk to local path"
           labels: "Bot: Automerge"
       - name: Check outputs
         run: |

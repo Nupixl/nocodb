@@ -1,5 +1,5 @@
 import * as Sentry from '@sentry/vue'
-import type { Api } from 'nocodb-sdk'
+import type { Api } from 'social-pixl-sdk'
 
 class ErrorReporting {
   errors: Error[] = []

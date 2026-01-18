@@ -1,4 +1,4 @@
-import type { FormDefinition, IntegrationsType, SyncCategory } from 'nocodb-sdk'
+import type { FormDefinition, IntegrationsType, SyncCategory } from 'social-pixl-sdk'
 import type { VNode } from '@vue/runtime-dom'
 import type { CSSProperties, FunctionalComponent, SVGAttributes } from 'nuxt/dist/app/compat/capi'
 import { ClientType, IntegrationCategoryType, SyncDataType } from '#imports'

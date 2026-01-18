@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { IconType, type WorkspaceType } from 'nocodb-sdk'
+import { IconType, type WorkspaceType } from 'social-pixl-sdk'
 import 'emoji-mart-vue-fast/css/emoji-mart.css'
 import { Icon } from '@iconify/vue'
 import { isColorDark, stringToColor } from '#imports'

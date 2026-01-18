@@ -1,5 +1,5 @@
 import type { Knex } from 'knex';
-import type { ClientType, NcContext } from 'nocodb-sdk';
+import type { ClientType, NcContext } from 'social-pixl-sdk';
 import type { ICteBlock, ICTEGenerator } from './types';
 import { BaseUser } from '~/models';
 

@@ -1,4 +1,4 @@
-import type { TextOrNullType } from 'nocodb-sdk'
+import type { TextOrNullType } from 'social-pixl-sdk'
 
 export function useTemplatedMessage(
   template: MaybeRefOrGetter<TextOrNullType | undefined>,

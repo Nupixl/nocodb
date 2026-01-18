@@ -1,7 +1,7 @@
 import path from 'path';
 import Url from 'url';
 import { Readable } from 'stream';
-import { AppEvents, PublicAttachmentScope } from 'nocodb-sdk';
+import { AppEvents, PublicAttachmentScope } from 'social-pixl-sdk';
 import { forwardRef, Inject, Injectable, Logger } from '@nestjs/common';
 import { nanoid } from 'nanoid';
 import mime from 'mime/lite';
@@ -11,7 +11,7 @@ import axios from 'axios';
 import hash from 'object-hash';
 import moment from 'moment';
 import { useAgent } from 'request-filtering-agent';
-import type { AttachmentReqType, FileType } from 'nocodb-sdk';
+import type { AttachmentReqType, FileType } from 'social-pixl-sdk';
 import type { NcRequest } from '~/interface/config';
 import { AppHooksService } from '~/services/app-hooks/app-hooks.service';
 import NcPluginMgrv2 from '~/helpers/NcPluginMgrv2';

@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { AppEvents, NcBaseError, WebhookEvents } from 'nocodb-sdk';
+import { AppEvents, NcBaseError, WebhookEvents } from 'social-pixl-sdk';
 import View from '../models/View';
-import type { HookReqType, HookTestReqType, HookType } from 'nocodb-sdk';
+import type { HookReqType, HookTestReqType, HookType } from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { AppHooksService } from '~/services/app-hooks/app-hooks.service';
 import { validatePayload } from '~/helpers';

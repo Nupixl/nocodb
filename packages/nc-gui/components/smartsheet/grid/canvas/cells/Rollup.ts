@@ -5,7 +5,7 @@ import {
   UITypes,
   getMetaWithCompositeKey,
   getRenderAsTextFunForUiType,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 import rfdc from 'rfdc'
 import { getRelatedBaseId } from '../utils/cell'

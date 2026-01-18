@@ -1,4 +1,4 @@
-import { ClientType } from 'nocodb-sdk';
+import { ClientType } from 'social-pixl-sdk';
 import { Logger } from '@nestjs/common';
 import { PgDBErrorExtractor } from './pg.extractor';
 import { SqliteDBErrorExtractor } from './sqlite.extractor';

@@ -1,4 +1,4 @@
-import { XcActionType, XcType } from 'nocodb-sdk';
+import { XcActionType, XcType } from 'social-pixl-sdk';
 import R2Plugin from './R2Plugin';
 import type { XcPluginConfig } from '~/types/nc-plugin';
 

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { AppEvents } from 'nocodb-sdk';
-import type { VisibilityRuleReqType } from 'nocodb-sdk';
+import { AppEvents } from 'social-pixl-sdk';
+import type { VisibilityRuleReqType } from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import type { UIAclEvent } from '~/services/app-hooks/interfaces';
 import { AppHooksService } from '~/services/app-hooks/app-hooks.service';

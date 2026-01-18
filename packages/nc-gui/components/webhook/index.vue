@@ -8,10 +8,10 @@ import {
   PlanLimitTypes,
   hasInputCalls,
   removeUndefinedFromObj,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 import { onKeyDown } from '@vueuse/core'
-import { UITypes, isLinksOrLTAR, isSystemColumn, isVirtualCol } from 'nocodb-sdk'
+import { UITypes, isLinksOrLTAR, isSystemColumn, isVirtualCol } from 'social-pixl-sdk'
 import { extractNextDefaultName } from '~/helpers/parsers/parserHelpers'
 import { jsonThemeDark, jsonThemeLight } from '~/components/monaco/json'
 

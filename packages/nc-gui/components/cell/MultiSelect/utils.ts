@@ -1,4 +1,4 @@
-import type { ColumnType, SelectOptionType, SelectOptionsType } from 'nocodb-sdk'
+import type { ColumnType, SelectOptionType, SelectOptionsType } from 'social-pixl-sdk'
 
 export type LocalSelectOptionType = SelectOptionType & { value?: string; bgColor?: string; textColor?: string }
 

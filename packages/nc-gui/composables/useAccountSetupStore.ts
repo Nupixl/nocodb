@@ -1,4 +1,4 @@
-import type { PluginTestReqType, PluginType } from 'nocodb-sdk'
+import type { PluginTestReqType, PluginType } from 'social-pixl-sdk'
 
 export enum Action {
   Save = 'save',

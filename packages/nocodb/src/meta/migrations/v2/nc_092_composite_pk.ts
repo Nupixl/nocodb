@@ -1,4 +1,4 @@
-import { BaseVersion } from 'nocodb-sdk';
+import { BaseVersion } from 'social-pixl-sdk';
 import type { Knex } from 'knex';
 import { MetaTable } from '~/utils/globals';
 

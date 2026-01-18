@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { VNodeRef } from '@vue/runtime-core'
-import { roundUpToPrecision } from 'nocodb-sdk'
+import { roundUpToPrecision } from 'social-pixl-sdk'
 
 interface Props {
   // when we set a number, then it is number type

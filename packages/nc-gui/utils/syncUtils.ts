@@ -1,4 +1,4 @@
-import type { SyncConfig } from 'nocodb-sdk'
+import type { SyncConfig } from 'social-pixl-sdk'
 import {
   IntegrationsType,
   OnDeleteAction,
@@ -9,7 +9,7 @@ import {
   SyncType,
   SyncTypeMeta,
   generateUniqueCopyName,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 const getSyncFrequency = (trigger: SyncTrigger, cron?: string) => {
   if (trigger === SyncTrigger.Manual) return 'Manual'

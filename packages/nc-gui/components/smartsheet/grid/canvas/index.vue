@@ -11,7 +11,7 @@ import {
   isVirtualCol,
   ncHasProperties,
   readonlyMetaAllowedTypes,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import { flip, offset, shift, useFloating } from '@floating-ui/vue'
 import axios from 'axios'
 import type { CSSProperties, ComputedRef, Ref } from 'vue'

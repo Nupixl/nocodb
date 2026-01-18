@@ -1,7 +1,7 @@
 import TipTapMention from '@tiptap/extension-mention'
 import type MarkdownIt from 'markdown-it'
 import regexp from 'markdown-it-regexp'
-import type { UserType } from 'nocodb-sdk'
+import type { UserType } from 'social-pixl-sdk'
 
 // Todo: Update user mention to field mention
 

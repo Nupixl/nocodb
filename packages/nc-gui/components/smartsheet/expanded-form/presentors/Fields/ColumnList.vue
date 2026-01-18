@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type ColumnType, PermissionEntity, PermissionKey, isLinksOrLTAR, isVirtualCol } from 'nocodb-sdk'
+import { type ColumnType, PermissionEntity, PermissionKey, isLinksOrLTAR, isVirtualCol } from 'social-pixl-sdk'
 
 const props = defineProps<{
   fields: ColumnType[]

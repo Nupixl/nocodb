@@ -1,4 +1,4 @@
-import type { DependencyTableType, NcContext, NcRequest } from 'nocodb-sdk';
+import type { DependencyTableType, NcContext, NcRequest } from 'social-pixl-sdk';
 import type { PagedResponseImpl } from '~/helpers/PagedResponse';
 import type { OPERATION_SCOPES } from '~/controllers/internal/operationScopes';
 import type { Dashboard, Workflow } from '~/models';

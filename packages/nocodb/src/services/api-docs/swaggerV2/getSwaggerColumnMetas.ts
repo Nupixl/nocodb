@@ -1,5 +1,5 @@
-import { RelationTypes, UITypes } from 'nocodb-sdk';
-import { FormulaDataTypes } from 'nocodb-sdk';
+import { RelationTypes, UITypes } from 'social-pixl-sdk';
+import { FormulaDataTypes } from 'social-pixl-sdk';
 import type { SourcesMap } from '~/services/api-docs/types';
 import type { Column, LinkToAnotherRecordColumn, Model } from '~/models';
 import type { NcContext } from '~/interface/config';

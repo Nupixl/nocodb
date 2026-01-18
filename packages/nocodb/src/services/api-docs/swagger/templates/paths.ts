@@ -1,4 +1,4 @@
-import { isLinksOrLTAR, ModelTypes } from 'nocodb-sdk';
+import { isLinksOrLTAR, ModelTypes } from 'social-pixl-sdk';
 import {
   columnNameParam,
   columnNameQueryParam,

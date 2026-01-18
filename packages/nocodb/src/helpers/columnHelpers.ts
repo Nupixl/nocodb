@@ -5,9 +5,9 @@ import {
   RelationTypes,
   UITypes,
   WebhookActions,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { pluralize, singularize } from 'inflection';
-import { REGEXSTR_INTL_LETTER, REGEXSTR_NUMERIC_ARABIC } from 'nocodb-sdk';
+import { REGEXSTR_INTL_LETTER, REGEXSTR_NUMERIC_ARABIC } from 'social-pixl-sdk';
 import { NcError } from './ncError';
 import type {
   BoolType,
@@ -16,7 +16,7 @@ import type {
   NcRequest,
   RollupColumnReqType,
   TableType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type LinkToAnotherRecordColumn from '~/models/LinkToAnotherRecordColumn';
 import type LookupColumn from '~/models/LookupColumn';
 import type Model from '~/models/Model';

@@ -2,7 +2,7 @@
 import { toRaw, unref } from '@vue/runtime-core'
 import type { UploadChangeParam, UploadFile } from 'ant-design-vue'
 import { Upload } from 'ant-design-vue'
-import { type TableType, charsetOptions, charsetOptionsMap, ncHasProperties } from 'nocodb-sdk'
+import { type TableType, charsetOptions, charsetOptionsMap, ncHasProperties } from 'social-pixl-sdk'
 import { defineAsyncComponent } from 'vue'
 import rfdc from 'rfdc'
 import type { ProgressMessageObjType } from '../../helpers/parsers/TemplateGenerator'

@@ -309,7 +309,7 @@ async function generateFormBoilerplate(type: string, subType: string) {
     );
   }
 
-  const boilerplate = `import { FormBuilderInputType } from 'nocodb-sdk';
+  const boilerplate = `import { FormBuilderInputType } from 'social-pixl-sdk';
 export default [
   {
     type: FormBuilderInputType.Input,

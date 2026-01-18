@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { hideExtraFieldsMetaKey, isLinksOrLTAR } from 'nocodb-sdk'
+import { hideExtraFieldsMetaKey, isLinksOrLTAR } from 'social-pixl-sdk'
 const { activeField, updateColMeta } = useFormViewStoreOrThrow()
 
 const vShowExtraFields = computed({

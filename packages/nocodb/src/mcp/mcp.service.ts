@@ -3,8 +3,8 @@ import { Injectable } from '@nestjs/common';
 import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { z } from 'zod';
-import { extractRolesObj, NcApiVersion, ProjectRoles } from 'nocodb-sdk';
-import type { NcContext, NcRequest, UserType } from 'nocodb-sdk';
+import { extractRolesObj, NcApiVersion, ProjectRoles } from 'social-pixl-sdk';
+import type { NcContext, NcRequest, UserType } from 'social-pixl-sdk';
 import type { Request, Response } from 'express';
 import type {
   DataDeleteRequest,

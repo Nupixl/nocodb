@@ -2,7 +2,7 @@
 import Placeholder from '@tiptap/extension-placeholder'
 import StarterKit from '@tiptap/starter-kit'
 import { EditorContent, VueRenderer, useEditor } from '@tiptap/vue-3'
-import type { VariableDefinition } from 'nocodb-sdk'
+import type { VariableDefinition } from 'social-pixl-sdk'
 import tippy from 'tippy.js'
 import { WorkflowExpression, WorkflowVariablePicker } from '~/helpers/tiptap-markdown/extensions'
 import { Markdown } from '~/helpers/tiptap-markdown'

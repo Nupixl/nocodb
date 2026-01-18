@@ -1,4 +1,4 @@
-import { ColumnHelper, UITypes, ncIsNaN } from 'nocodb-sdk'
+import { ColumnHelper, UITypes, ncIsNaN } from 'social-pixl-sdk'
 import { renderSingleLineText, roundedRect } from '../utils/canvas'
 
 export const PercentCellRenderer: CellRenderer = {

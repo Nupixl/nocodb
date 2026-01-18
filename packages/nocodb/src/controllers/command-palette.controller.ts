@@ -1,5 +1,5 @@
 import { Controller, HttpCode, Post, Req, UseGuards } from '@nestjs/common';
-import type { UserType } from 'nocodb-sdk';
+import type { UserType } from 'social-pixl-sdk';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { CommandPaletteService } from '~/services/command-palette.service';
 import { Acl } from '~/middlewares/extract-ids/extract-ids.middleware';

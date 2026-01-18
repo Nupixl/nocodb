@@ -4,8 +4,8 @@ import {
   ncIsObject,
   ProjectRoles,
   type UserType,
-} from 'nocodb-sdk';
-import type { MetaType } from 'nocodb-sdk';
+} from 'social-pixl-sdk';
+import type { MetaType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import { NcError } from '~/helpers/catchError';
 import Noco from '~/Noco';

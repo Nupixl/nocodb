@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { UITypes } from 'nocodb-sdk'
-import type { ColumnType } from 'nocodb-sdk'
+import { UITypes } from 'social-pixl-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
 import SingleSelect from '~/components/cell/SingleSelect/index.vue'
 import MultiSelect from '~/components/cell/MultiSelect/index.vue'
 import DatePicker from '~/components/cell/Date/index.vue'

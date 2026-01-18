@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ColumnType } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
 interface Props {
   value?: string | string[] | null
   tableId?: string

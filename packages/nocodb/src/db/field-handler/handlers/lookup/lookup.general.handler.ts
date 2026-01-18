@@ -1,7 +1,7 @@
-import { parseProp, RelationTypes } from 'nocodb-sdk';
+import { parseProp, RelationTypes } from 'social-pixl-sdk';
 import { ComputedFieldHandler } from '../computed';
 import type { Logger } from '@nestjs/common';
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type CustomKnex from '~/db/CustomKnex';
 import type { Column, LinkToAnotherRecordColumn, LookupColumn } from '~/models';
 import type {

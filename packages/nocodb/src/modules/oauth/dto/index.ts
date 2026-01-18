@@ -1,5 +1,5 @@
 import z from 'zod';
-import { OAuthClientType } from 'nocodb-sdk';
+import { OAuthClientType } from 'social-pixl-sdk';
 
 export const CreateOAuthClientSchema = z.object({
   client_name: z

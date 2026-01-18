@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { type ViewType } from 'nocodb-sdk'
-import { ViewTypes, getFirstNonPersonalView } from 'nocodb-sdk'
+import { type ViewType } from 'social-pixl-sdk'
+import { ViewTypes, getFirstNonPersonalView } from 'social-pixl-sdk'
 
 const { extension, tables, getViewsForTable, getData } = useExtensionHelperOrThrow()
 

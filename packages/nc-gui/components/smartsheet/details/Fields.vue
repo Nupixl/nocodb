@@ -10,8 +10,8 @@ import {
   isSystemColumn,
   partialUpdateAllowedTypes,
   readonlyMetaAllowedTypes,
-} from 'nocodb-sdk'
-import type { ButtonType, ColumnType, FilterType, SelectOptionsType, TableType } from 'nocodb-sdk'
+} from 'social-pixl-sdk'
+import type { ButtonType, ColumnType, FilterType, SelectOptionsType, TableType } from 'social-pixl-sdk'
 import Draggable from 'vuedraggable'
 import { onKeyDown, useMagicKeys } from '@vueuse/core'
 import type { NavigationGuardNext, RouteLocationNormalizedLoadedGeneric } from 'vue-router'

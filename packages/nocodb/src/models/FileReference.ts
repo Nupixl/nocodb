@@ -1,4 +1,4 @@
-import { PlanLimitTypes } from 'nocodb-sdk';
+import { PlanLimitTypes } from 'social-pixl-sdk';
 import { Logger } from '@nestjs/common';
 import type { NcContext } from '~/interface/config';
 import Noco from '~/Noco';

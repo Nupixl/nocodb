@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { IconType, type UserType } from 'nocodb-sdk'
+import { IconType, type UserType } from 'social-pixl-sdk'
 import 'emoji-mart-vue-fast/css/emoji-mart.css'
 import { Icon } from '@iconify/vue'
 import { type IconMapKey, isColorDark, stringToColor } from '#imports'

@@ -35,7 +35,7 @@ import {
   PermissionKey,
   RelationTypes,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { v4 as uuidv4 } from 'uuid';
 import type {
   BulkAuditV1OperationTypes,
@@ -51,7 +51,7 @@ import type {
   NcRequest,
   ParsedFormulaNode,
   UpdatePayload,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { Knex } from 'knex';
 import type CustomKnex from '~/db/CustomKnex';
 import type { XKnex } from '~/db/CustomKnex';

@@ -1,5 +1,5 @@
 import type { BaseModelSqlv2 } from 'src/db/BaseModelSqlv2';
-import type { ColumnReqType, NcContext, NcRequest, UserType } from 'nocodb-sdk';
+import type { ColumnReqType, NcContext, NcRequest, UserType } from 'social-pixl-sdk';
 import type { Column } from '~/models';
 import type { ReusableParams } from '~/services/columns.service.type';
 

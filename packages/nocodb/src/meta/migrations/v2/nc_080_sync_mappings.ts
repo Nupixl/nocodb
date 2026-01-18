@@ -1,4 +1,4 @@
-import { OnDeleteAction } from 'nocodb-sdk';
+import { OnDeleteAction } from 'social-pixl-sdk';
 import type { Knex } from 'knex';
 import { MetaTable } from '~/utils/globals';
 

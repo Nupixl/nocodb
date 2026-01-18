@@ -6,10 +6,10 @@ import {
   LongTextAiMetaProp,
   SqlUiFactory,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { Logger } from '@nestjs/common';
 import type { MetaService } from 'src/meta/meta.service';
-import type { ColumnReqType, ColumnType, LookupType } from 'nocodb-sdk';
+import type { ColumnReqType, ColumnType, LookupType } from 'social-pixl-sdk';
 import type { ColumnInternalMeta } from '~/types/column-internal-meta';
 import { NcContext } from '~/interface/config';
 import FormulaColumn from '~/models/FormulaColumn';

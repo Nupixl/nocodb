@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { extractRolesObj, OrgUserRoles } from 'nocodb-sdk';
-import type { UserType } from 'nocodb-sdk';
+import { extractRolesObj, OrgUserRoles } from 'social-pixl-sdk';
+import type { UserType } from 'social-pixl-sdk';
 import { PagedResponseImpl } from '~/helpers/PagedResponse';
 import { ApiToken } from '~/models';
 

@@ -1,4 +1,4 @@
-import { type NcContext } from 'nocodb-sdk';
+import { type NcContext } from 'social-pixl-sdk';
 import { NcError } from 'src/helpers/catchError';
 import { NumberGeneralHandler } from '../number/number.general.handler';
 import type { IBaseModelSqlV2 } from 'src/db/IBaseModelSqlV2';

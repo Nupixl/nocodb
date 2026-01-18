@@ -2,9 +2,9 @@
 /**
  * PaymentUpgradeBadge component - will only visible if feature is not available in current plan
  */
-import type { PlanFeatureTypes, PlanLimitTypes } from 'nocodb-sdk'
+import type { PlanFeatureTypes, PlanLimitTypes } from 'social-pixl-sdk'
 
-import { PlanTitles } from 'nocodb-sdk'
+import { PlanTitles } from 'social-pixl-sdk'
 interface Props {
   /** Required plan to access new feature */
   planTitle?: PlanTitles

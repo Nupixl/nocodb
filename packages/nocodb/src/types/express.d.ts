@@ -1,4 +1,4 @@
-import type { UserType } from 'nocodb-sdk';
+import type { UserType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 declare module 'express-serve-static-core' {
   interface Request {

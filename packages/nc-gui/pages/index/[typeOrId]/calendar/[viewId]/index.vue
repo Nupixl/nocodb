@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ViewTypes } from 'nocodb-sdk'
+import { ViewTypes } from 'social-pixl-sdk'
 
 definePageMeta({
   public: true,

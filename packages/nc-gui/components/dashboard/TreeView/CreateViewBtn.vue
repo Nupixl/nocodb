@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { type TableType, viewTypeAlias } from 'nocodb-sdk'
-import { ViewTypes } from 'nocodb-sdk'
+import { type TableType, viewTypeAlias } from 'social-pixl-sdk'
+import { ViewTypes } from 'social-pixl-sdk'
 
 const props = defineProps<{
   // Prop used to align the dropdown to the left in sidebar

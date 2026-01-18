@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Draggable from 'vuedraggable'
-import { PlanLimitTypes, type SourceType } from 'nocodb-sdk'
+import { PlanLimitTypes, type SourceType } from 'social-pixl-sdk'
 import { ClientType } from '#imports'
 
 interface Props {

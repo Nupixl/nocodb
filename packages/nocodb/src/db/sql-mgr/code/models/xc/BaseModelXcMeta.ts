@@ -1,4 +1,4 @@
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import BaseRender from '../../BaseRender';
 import mapDefaultDisplayValue from '~/helpers/mapDefaultDisplayValue';
 

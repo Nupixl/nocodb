@@ -1,4 +1,4 @@
-import { arrDetailedDiff, type NcContext } from 'nocodb-sdk';
+import { arrDetailedDiff, type NcContext } from 'social-pixl-sdk';
 import type { MetaService } from '~/meta/meta.service';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
 import { ComputedFieldHandler } from '~/db/field-handler/handlers/computed';

@@ -1,6 +1,6 @@
-import { ViewLockType } from 'nocodb-sdk'
+import { ViewLockType } from 'social-pixl-sdk'
 
-export { ClientType, IntegrationCategoryType, SyncDataType } from 'nocodb-sdk'
+export { ClientType, IntegrationCategoryType, SyncDataType } from 'social-pixl-sdk'
 
 export enum Language {
   ar = 'العربية',

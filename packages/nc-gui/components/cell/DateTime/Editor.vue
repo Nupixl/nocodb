@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
-import { dateFormats, isSystemColumn, timeFormats } from 'nocodb-sdk'
+import { dateFormats, isSystemColumn, timeFormats } from 'social-pixl-sdk'
 import { timeCellMaxWidthMap, timeFormatsObj } from './utils'
 const { modelValue, isPk, isUpdatedFromCopyNPaste } = defineProps<Props>()
 

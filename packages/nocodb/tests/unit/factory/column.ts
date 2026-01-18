@@ -1,8 +1,8 @@
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import request from 'supertest';
 
 import { Model } from '../../../src/models';
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type {
   Base,
   Column,

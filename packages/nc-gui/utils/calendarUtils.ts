@@ -1,5 +1,5 @@
 import type dayjs from 'dayjs'
-import type { ColumnType } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
 
 const isRowInDateRange = (
   rowData: Record<string, any>,

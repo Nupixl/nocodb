@@ -3,7 +3,7 @@ import {
   isSelfLinkCol,
   RelationTypes,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { LinkToAnotherRecordColumn } from '~/models';
 import type { SwaggerColumn } from '../getSwaggerColumnMetas';
 import type { SwaggerView } from '~/services/api-docs/shared/swaggerUtils';

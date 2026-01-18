@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { AppEvents, ClientType } from 'nocodb-sdk';
-import { IntegrationsType } from 'nocodb-sdk';
-import type { IntegrationReqType } from 'nocodb-sdk';
+import { AppEvents, ClientType } from 'social-pixl-sdk';
+import { IntegrationsType } from 'social-pixl-sdk';
+import type { IntegrationReqType } from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { AppHooksService } from '~/services/app-hooks/app-hooks.service';
 import { validatePayload } from '~/helpers';

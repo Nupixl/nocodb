@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { DependencyTableType, type LinkToAnotherRecordType, type TableType, isLinksOrLTAR } from 'nocodb-sdk'
-import { UITypes, isSystemColumn } from 'nocodb-sdk'
+import { DependencyTableType, type LinkToAnotherRecordType, type TableType, isLinksOrLTAR } from 'social-pixl-sdk'
+import { UITypes, isSystemColumn } from 'social-pixl-sdk'
 
 const props = defineProps<{
   visible: boolean

@@ -1,5 +1,5 @@
-import type { BaseType, OracleUi, SourceType, TableType } from 'nocodb-sdk'
-import { SqlUiFactory } from 'nocodb-sdk'
+import type { BaseType, OracleUi, SourceType, TableType } from 'social-pixl-sdk'
+import { SqlUiFactory } from 'social-pixl-sdk'
 import { isString } from '@vue/shared'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 

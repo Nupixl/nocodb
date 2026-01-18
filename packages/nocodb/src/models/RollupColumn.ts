@@ -1,4 +1,4 @@
-import type { RollupType } from 'nocodb-sdk';
+import type { RollupType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import Column from '~/models/Column';
 import Noco from '~/Noco';

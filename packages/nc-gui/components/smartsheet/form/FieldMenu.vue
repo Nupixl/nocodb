@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import type { ColumnReqType, ColumnType } from 'nocodb-sdk'
-import { UITypes } from 'nocodb-sdk'
+import type { ColumnReqType, ColumnType } from 'social-pixl-sdk'
+import { UITypes } from 'social-pixl-sdk'
 import { computed } from 'vue'
 
 const props = defineProps<{

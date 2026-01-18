@@ -1,4 +1,4 @@
-import type { ColumnType, CommentType, MetaType, TableType } from 'nocodb-sdk'
+import type { ColumnType, CommentType, MetaType, TableType } from 'social-pixl-sdk'
 import { NcMarkdownParser } from '~/helpers/tiptap'
 
 export interface CommentTypeExtended extends CommentType {

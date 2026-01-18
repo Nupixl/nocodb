@@ -4,7 +4,7 @@ import {
   isLinksOrLTAR,
   isSystemColumn,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { Logger } from '@nestjs/common';
 import type { Knex } from 'knex';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';

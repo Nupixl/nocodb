@@ -1,4 +1,4 @@
-import { DependencyTableType } from 'nocodb-sdk';
+import { DependencyTableType } from 'social-pixl-sdk';
 import { NcError } from '~/helpers/catchError';
 
 export enum DependencySlotTypes {

@@ -8,14 +8,14 @@ import {
   ProjectRoles,
   WorkspaceRolesToProjectRoles,
   WorkspaceUserRoles,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { v4 as uuidv4 } from 'uuid';
 import validator from 'validator';
 import type {
   ProjectUserReqType,
   ProjectUserUpdateReqType,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { validatePayload } from '~/helpers';
 import Noco from '~/Noco';

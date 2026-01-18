@@ -7,7 +7,7 @@ import {
   UITypesSearchTerms,
   isAIPromptCol,
   isSupportedDisplayValueColumn,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import {
   ButtonActionsType,
   UITypes,
@@ -17,7 +17,7 @@ import {
   isSystemColumn,
   isVirtualCol,
   readonlyMetaAllowedTypes,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import { AiWizardTabsType, type PredictedFieldType, type UiTypesType } from '#imports'
 import MdiPlusIcon from '~icons/mdi/plus-circle-outline'
 import MdiMinusIcon from '~icons/mdi/minus-circle-outline'

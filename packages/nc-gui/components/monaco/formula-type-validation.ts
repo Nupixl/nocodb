@@ -1,7 +1,7 @@
 import type { IPosition, Range } from 'monaco-editor'
 import { MarkerSeverity, editor } from 'monaco-editor'
-import type { ColumnType, SqlUiFactory } from 'nocodb-sdk'
-import { FormulaDataTypes, JSEPNode, formulas, validateFormulaAndExtractTreeWithType } from 'nocodb-sdk'
+import type { ColumnType, SqlUiFactory } from 'social-pixl-sdk'
+import { FormulaDataTypes, JSEPNode, formulas, validateFormulaAndExtractTreeWithType } from 'social-pixl-sdk'
 
 interface ValidationOptions {
   columns: ColumnType[]

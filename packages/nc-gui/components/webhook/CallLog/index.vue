@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { HookLogType, HookType, PaginatedType } from 'nocodb-sdk'
+import type { HookLogType, HookType, PaginatedType } from 'social-pixl-sdk'
 
 interface Props {
   hook: HookType

@@ -3,8 +3,8 @@ import {
   ClientType,
   RelationTypes,
   UITypes,
-} from 'nocodb-sdk';
-import type { NcContext } from 'nocodb-sdk';
+} from 'social-pixl-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type CustomKnex from '~/db/CustomKnex';
 import type {
   FormulaQueryBuilderBaseParams,

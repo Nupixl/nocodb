@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ProjectRoles, RoleColors, RoleIcons, RoleLabels } from 'nocodb-sdk'
+import { ProjectRoles, RoleColors, RoleIcons, RoleLabels } from 'social-pixl-sdk'
 import type { SelectValue } from 'ant-design-vue/es/select'
 import type { IconMapKey } from '#imports'
 

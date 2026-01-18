@@ -1,4 +1,4 @@
-import type { DashboardType, DependencyTableType, WorkflowType } from 'nocodb-sdk'
+import type { DashboardType, DependencyTableType, WorkflowType } from 'social-pixl-sdk'
 
 export function useDependencies() {
   const { api } = useApi()

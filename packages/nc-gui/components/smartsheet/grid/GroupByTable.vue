@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type ColumnType, UITypes, isLinksOrLTAR } from 'nocodb-sdk'
+import { type ColumnType, UITypes, isLinksOrLTAR } from 'social-pixl-sdk'
 import Table from './Table.vue'
 import { NavigateDir } from '~/lib/enums'
 

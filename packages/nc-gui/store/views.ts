@@ -1,4 +1,4 @@
-import type { CalendarType, FilterType, GalleryType, KanbanType, MapType, RowColoringInfo, SortType, ViewType } from 'nocodb-sdk'
+import type { CalendarType, FilterType, GalleryType, KanbanType, MapType, RowColoringInfo, SortType, ViewType } from 'social-pixl-sdk'
 import {
   ProjectRoles,
   ViewSettingOverrideOptions,
@@ -6,7 +6,7 @@ import {
   WorkspaceUserRoles,
   ViewTypes as _ViewTypes,
   getFirstNonPersonalView,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 import { useTitle } from '@vueuse/core'
 import type { ViewPageType } from '~/lib/types'

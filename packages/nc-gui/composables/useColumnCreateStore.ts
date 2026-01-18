@@ -1,6 +1,6 @@
 import rfdc from 'rfdc'
-import type { ColumnReqType, ColumnType, TableType } from 'nocodb-sdk'
-import { ButtonActionsType, UITypes, isAIPromptCol, isLinksOrLTAR, isSystemColumn } from 'nocodb-sdk'
+import type { ColumnReqType, ColumnType, TableType } from 'social-pixl-sdk'
+import { ButtonActionsType, UITypes, isAIPromptCol, isLinksOrLTAR, isSystemColumn } from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 import type { RuleObject } from 'ant-design-vue/es/form'
 import { generateUniqueColumnName } from '~/helpers/parsers/parserHelpers'

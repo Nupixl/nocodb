@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ColumnType } from 'nocodb-sdk'
-import { isCreatedOrLastModifiedByCol, isCreatedOrLastModifiedTimeCol } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
+import { isCreatedOrLastModifiedByCol, isCreatedOrLastModifiedTimeCol } from 'social-pixl-sdk'
 
 const props = defineProps<{
   column: ColumnType

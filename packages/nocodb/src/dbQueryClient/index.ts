@@ -1,4 +1,4 @@
-import { ClientType } from 'nocodb-sdk';
+import { ClientType } from 'social-pixl-sdk';
 import { PGDBQueryClient } from '~/dbQueryClient/pg';
 import { MySqlDBQueryClient } from '~/dbQueryClient/mysql';
 import { SqliteDBQueryClient } from '~/dbQueryClient/sqlite';

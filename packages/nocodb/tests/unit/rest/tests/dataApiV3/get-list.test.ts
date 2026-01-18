@@ -5,7 +5,7 @@ import {
   isCreatedOrLastModifiedTimeCol,
   UITypes,
   ViewTypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import {
   createLookupColumn,
   createRollupColumn,

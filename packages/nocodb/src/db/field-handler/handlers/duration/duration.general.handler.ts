@@ -1,7 +1,7 @@
-import { convertDurationToSeconds, parseProp } from 'nocodb-sdk';
+import { convertDurationToSeconds, parseProp } from 'social-pixl-sdk';
 import { NcError } from 'src/helpers/catchError';
 import { NumberGeneralHandler } from '../number/number.general.handler';
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type { IBaseModelSqlV2 } from 'src/db/IBaseModelSqlV2';
 import type { MetaService } from 'src/meta/meta.service';
 import type { Column } from 'src/models';

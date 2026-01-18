@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { VariableDefinition } from 'nocodb-sdk'
-import { WorkflowNodeCategory } from 'nocodb-sdk'
+import type { VariableDefinition } from 'social-pixl-sdk'
+import { WorkflowNodeCategory } from 'social-pixl-sdk'
 
 interface NodeGroup {
   nodeId: string

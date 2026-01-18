@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PluginTestReqType, PluginType } from 'nocodb-sdk'
+import type { PluginTestReqType, PluginType } from 'social-pixl-sdk'
 
 const { id } = defineProps<{
   id: string

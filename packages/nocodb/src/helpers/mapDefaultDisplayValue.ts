@@ -1,8 +1,8 @@
 import {
   isCreatedOrLastModifiedTimeCol,
   isSupportedDisplayValueColumn,
-} from 'nocodb-sdk';
-import type { ColumnType } from 'nocodb-sdk';
+} from 'social-pixl-sdk';
+import type { ColumnType } from 'social-pixl-sdk';
 
 export default function mapDefaultDisplayValue<T extends ColumnType>(
   columnsArr: Array<T>,

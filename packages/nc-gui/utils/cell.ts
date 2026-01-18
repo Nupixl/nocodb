@@ -1,5 +1,5 @@
-import type { ColumnType } from 'nocodb-sdk'
-import { UITypes, ncIsNaN, roundUpToPrecision } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
+import { UITypes, ncIsNaN, roundUpToPrecision } from 'social-pixl-sdk'
 import tinycolor from 'tinycolor2'
 import type { HTMLAttributes } from 'vue'
 
@@ -45,7 +45,7 @@ export {
   isPrimaryKey,
   renderValue,
   isNumericFieldType,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 export const rowHeightInPx: Record<string, number> = {
   1: 32,

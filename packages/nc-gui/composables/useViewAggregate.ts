@@ -8,7 +8,7 @@ import {
   type ViewType,
   ViewTypes,
   getAvailableAggregations,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import type { EventHook } from '@vueuse/core'
 
 const [useProvideViewAggregate, useViewAggregate] = useInjectionState(

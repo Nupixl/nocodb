@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ButtonType, ColumnType, HookType, ScriptType, UnifiedMetaType } from 'nocodb-sdk'
+import type { ButtonType, ColumnType, HookType, ScriptType, UnifiedMetaType } from 'social-pixl-sdk'
 import {
   ButtonActionsType,
   FormulaError,
@@ -8,7 +8,7 @@ import {
   substituteColumnIdWithAliasInFormula,
   substituteColumnIdWithAliasInPrompt,
   validateFormulaAndExtractTreeWithType,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import { searchIcons } from '~/utils/iconUtils'
 
 const props = defineProps<{

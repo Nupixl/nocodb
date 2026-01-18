@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ColumnType, TableType, UITypes } from 'nocodb-sdk'
+import type { ColumnType, TableType, UITypes } from 'social-pixl-sdk'
 
 const reloadData = inject(ReloadViewDataHookInj)!
 

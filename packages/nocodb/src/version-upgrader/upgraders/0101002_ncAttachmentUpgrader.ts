@@ -1,9 +1,9 @@
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import type { XKnex } from '~/db/CustomKnex';
 import type { Knex } from 'knex';
 import type { NcUpgraderCtx } from '~/version-upgrader/NcUpgrader';
 // import type { XKnex } from '~/db/sql-data-mapper';
-import type { SourceType } from 'nocodb-sdk';
+import type { SourceType } from 'social-pixl-sdk';
 import { throwTimeoutError } from '~/version-upgrader/ncUpgradeErrors';
 import NcConnectionMgrv2 from '~/utils/common/NcConnectionMgrv2';
 import Model from '~/models/Model';

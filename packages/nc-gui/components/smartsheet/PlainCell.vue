@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { BoolType, ColumnType, MetaType } from 'nocodb-sdk'
+import type { BoolType, ColumnType, MetaType } from 'social-pixl-sdk'
 
 interface Props {
   column: ColumnType

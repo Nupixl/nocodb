@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PlanFeatureTypes, PlanTitles } from 'nocodb-sdk'
+import { PlanFeatureTypes, PlanTitles } from 'social-pixl-sdk'
 import {
   type BaseType,
   type LinkToAnotherRecordType,
@@ -8,7 +8,7 @@ import {
   UITypes,
   type WorkspaceType,
   WorkspaceUserRoles,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 const props = defineProps<{
   modelValue: boolean

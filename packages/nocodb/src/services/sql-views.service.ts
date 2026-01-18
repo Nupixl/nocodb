@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { ModelTypes } from 'nocodb-sdk';
+import { ModelTypes } from 'social-pixl-sdk';
 import DOMPurify from 'isomorphic-dompurify';
-import type { UserType } from 'nocodb-sdk';
+import type { UserType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import { NcError } from '~/helpers/catchError';
 import getTableNameAlias, { getColumnNameAlias } from '~/helpers/getTableName';

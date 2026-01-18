@@ -1,4 +1,4 @@
-import { NcApiVersion } from 'nocodb-sdk';
+import { NcApiVersion } from 'social-pixl-sdk';
 import { NcErrorV1 } from './NcErrorV1';
 import { NcErrorV3 } from './ncErrorV3';
 import type { ErrorObject } from 'ajv';
@@ -8,7 +8,7 @@ import type {
   PlanLimitExceededDetailsType,
   SourceType,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 export { AjvError } from './NcErrorV1';
 
 export class NcError {

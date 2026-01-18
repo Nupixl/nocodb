@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
-import { isDateMonthFormat } from 'nocodb-sdk'
+import { isDateMonthFormat } from 'social-pixl-sdk'
 import { parseFlexibleDate } from '~/utils/datetimeUtils'
 
 interface Props {

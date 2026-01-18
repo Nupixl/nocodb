@@ -1,4 +1,4 @@
-import { type NcContext } from 'nocodb-sdk';
+import { type NcContext } from 'social-pixl-sdk';
 import type CustomKnex from '~/db/CustomKnex';
 import type { LinkUnlinkRequest } from '~/db/links/types';
 import { getBaseModelSqlFromModelId } from '~/helpers/dbHelpers';

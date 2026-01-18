@@ -1,7 +1,7 @@
 import 'mocha';
 import request from 'supertest';
 import { expect } from 'chai';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import init from '../../../init';
 import { createProject } from '../../../factory/base';
 import { createTable, getAllTables } from '../../../factory/table';

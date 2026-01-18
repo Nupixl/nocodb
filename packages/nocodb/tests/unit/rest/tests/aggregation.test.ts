@@ -1,6 +1,6 @@
 import { beforeEach } from 'mocha';
 import request from 'supertest';
-import { UITypes, ViewTypes } from 'nocodb-sdk';
+import { UITypes, ViewTypes } from 'social-pixl-sdk';
 import { expect } from 'chai';
 import init from '../../init';
 import { createProject } from '../../factory/base';

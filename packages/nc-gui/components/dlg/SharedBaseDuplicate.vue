@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { WorkspaceUserRoles } from 'nocodb-sdk'
+import { WorkspaceUserRoles } from 'social-pixl-sdk'
 
 const props = defineProps<{
   modelValue: boolean

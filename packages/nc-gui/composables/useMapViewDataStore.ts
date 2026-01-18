@@ -1,5 +1,5 @@
 import type { ComputedRef, Ref } from 'vue'
-import type { ColumnType, MapType, PaginatedType, TableType, ViewType } from 'nocodb-sdk'
+import type { ColumnType, MapType, PaginatedType, TableType, ViewType } from 'social-pixl-sdk'
 
 const formatData = (list: Record<string, any>[]) =>
   list.map(

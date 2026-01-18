@@ -1,7 +1,7 @@
 import 'mocha';
 // @ts-ignore
 import { expect } from 'chai';
-import { UITypes, ViewTypes } from 'nocodb-sdk';
+import { UITypes, ViewTypes } from 'social-pixl-sdk';
 import request from 'supertest';
 import { createProject } from '../../factory/base';
 import {
@@ -24,7 +24,7 @@ import {
 } from './viewRowInit';
 import type View from '../../../../src/models/View';
 import type Base from '../../../../src/models/Base';
-import type { ColumnType } from 'nocodb-sdk';
+import type { ColumnType } from 'social-pixl-sdk';
 import type Model from '../../../../src/models/Model';
 let context: any;
 let ctx: {

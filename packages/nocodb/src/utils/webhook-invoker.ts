@@ -1,8 +1,8 @@
 import { Logger } from '@nestjs/common';
-import { hasInputCalls, NOCO_SERVICE_USERS, ServiceUserType } from 'nocodb-sdk';
+import { hasInputCalls, NOCO_SERVICE_USERS, ServiceUserType } from 'social-pixl-sdk';
 import { useAgent } from 'request-filtering-agent';
 import { v4 as uuidv4 } from 'uuid';
-import { ncIsNullOrUndefined } from 'nocodb-sdk';
+import { ncIsNullOrUndefined } from 'social-pixl-sdk';
 import type { AxiosResponse } from 'axios';
 import type {
   HookLogType,
@@ -11,7 +11,7 @@ import type {
   TableType,
   UserType,
   ViewType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { Filter } from '~/models';
 import { parseMetaProp } from '~/utils/modelUtils';
 import { NcError } from '~/helpers/ncError';

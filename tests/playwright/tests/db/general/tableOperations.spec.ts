@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { Api, TableListType, TableType } from 'nocodb-sdk';
+import { Api, TableListType, TableType } from 'social-pixl-sdk';
 import { DashboardPage } from '../../../pages/Dashboard';
 import { deepCompare } from '../../../tests/utils/objectCompareUtil';
 import setup, { unsetup } from '../../../setup';

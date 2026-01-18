@@ -1,4 +1,4 @@
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import Noco from '~/Noco';
 
 export async function getBaseSchema(

@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { nanoid } from 'nanoid';
-import type { MCPTokenType } from 'nocodb-sdk';
+import type { MCPTokenType } from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { NcError } from '~/helpers/catchError';
 import { Base, MCPToken, Workspace } from '~/models';

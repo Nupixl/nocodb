@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type ClientType } from 'nocodb-sdk'
+import { type ClientType } from 'social-pixl-sdk'
 import type { GroupHandler } from './types'
 import { SmartsheetToolbarFilterGroup } from '#components'
 

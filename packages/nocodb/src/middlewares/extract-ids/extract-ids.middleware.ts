@@ -9,7 +9,7 @@ import {
   SourceRestriction,
   ViewLockType,
   WorkspaceUserRoles,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { map } from 'rxjs';
 import RowColorCondition from 'src/models/RowColorCondition';
 import type { Observable } from 'rxjs';

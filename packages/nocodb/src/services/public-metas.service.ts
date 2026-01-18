@@ -7,7 +7,7 @@ import {
   UITypes,
   ViewLockType,
   ViewTypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type {
   CalendarView,
   LinkToAnotherRecordColumn,

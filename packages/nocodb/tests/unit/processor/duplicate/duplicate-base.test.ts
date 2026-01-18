@@ -2,7 +2,7 @@ import type { INestApplication } from '@nestjs/common';
 import 'mocha';
 import type { DuplicateBaseJobData } from '../../../../src/interface/Jobs';
 import type { ITestContext } from './init-duplicate';
-import type { BaseReqType } from 'nocodb-sdk';
+import type { BaseReqType } from 'social-pixl-sdk';
 import { DuplicateProcessor } from '~/modules/jobs/jobs/export-import/duplicate.processor';
 import { BasesService } from '~/services/bases.service';
 import { listRow } from '../../factory/row';
@@ -10,7 +10,7 @@ import { initDuplicate } from './init-duplicate';
 import { getAllTables, getTable } from '../../factory/table';
 import { expect } from 'chai';
 import { listBase } from '../../factory/base';
-import { ProjectStatus } from 'nocodb-sdk';
+import { ProjectStatus } from 'social-pixl-sdk';
 
 function duplicateBaseTests() {
   let context: ITestContext;

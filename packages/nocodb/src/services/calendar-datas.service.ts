@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { UITypes, ViewTypes } from 'nocodb-sdk';
+import { UITypes, ViewTypes } from 'social-pixl-sdk';
 import dayjs from 'dayjs';
-import type { CalendarRangeType, FilterType } from 'nocodb-sdk';
+import type { CalendarRangeType, FilterType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import { CalendarRange, Column, Model, View } from '~/models';
 import { NcError } from '~/helpers/catchError';

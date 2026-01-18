@@ -1,6 +1,6 @@
 import { v7 as uuidv7 } from 'uuid';
 import { Injectable, Logger } from '@nestjs/common';
-import { AuditOperationTypes } from 'nocodb-sdk';
+import { AuditOperationTypes } from 'social-pixl-sdk';
 import { MetaTable } from '~/utils/globals';
 import Noco from '~/Noco';
 import { DriverClient } from '~/utils/nc-config';

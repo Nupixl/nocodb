@@ -1,4 +1,4 @@
-import type { TableType, ViewType } from 'nocodb-sdk'
+import type { TableType, ViewType } from 'social-pixl-sdk'
 
 export interface UseExpandedFormDetachedProps {
   'isOpen'?: boolean

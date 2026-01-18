@@ -6,7 +6,7 @@ import {
   isAIPromptCol,
   parseHelper,
   ratingIconListMap,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 const props = defineProps<{
   audit: AuditType

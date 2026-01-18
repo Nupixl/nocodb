@@ -3,13 +3,13 @@ import {
   isCreatedOrLastModifiedByCol,
   isCreatedOrLastModifiedTimeCol,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import request from 'supertest';
 import { expect } from 'chai';
-import { NcApiVersion } from 'nocodb-sdk';
+import { NcApiVersion } from 'social-pixl-sdk';
 import Model from '../../../src/models/Model';
 import NcConnectionMgrv2 from '../../../src/utils/common/NcConnectionMgrv2';
-import type { ColumnType } from 'nocodb-sdk';
+import type { ColumnType } from 'social-pixl-sdk';
 import type Column from '../../../src/models/Column';
 import type Filter from '../../../src/models/Filter';
 import type { Base, Sort, View } from '../../../src/models';

@@ -1,5 +1,5 @@
-import type { ColumnType, LinkToAnotherRecordType, TableType } from 'nocodb-sdk'
-import { UITypes, getFirstNonPersonalView, isSystemColumn } from 'nocodb-sdk'
+import type { ColumnType, LinkToAnotherRecordType, TableType } from 'social-pixl-sdk'
+import { UITypes, getFirstNonPersonalView, isSystemColumn } from 'social-pixl-sdk'
 import type { SidebarTableNode } from '~/lib/types'
 import { generateUniqueTitle as generateTitle } from '#imports'
 

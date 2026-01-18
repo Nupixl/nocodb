@@ -1,4 +1,4 @@
-import { type FilterType, type TableType, UITypes } from 'nocodb-sdk'
+import { type FilterType, type TableType, UITypes } from 'social-pixl-sdk'
 
 export function useColumnFilteredOrSorted() {
   const { nestedFilters, allFilters, sorts, validFiltersFromUrlParams, meta } = useSmartsheetStoreOrThrow()

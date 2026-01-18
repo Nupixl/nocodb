@@ -4,7 +4,7 @@ import {
   isLinksOrLTAR,
   NcApiVersion,
   type NcRequest,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { AttachmentUrlUploadPreparator } from './attachment-url-upload-preparator';
 import type { Column } from 'src/models';
 import type { IBaseModelSqlV2 } from '../IBaseModelSqlV2';

@@ -1,4 +1,4 @@
-import type { UserType } from 'nocodb-sdk'
+import type { UserType } from 'social-pixl-sdk'
 
 type MarkdownStyle = 'bold' | 'italic' | 'underline' | 'strikethrough' | 'link' | 'mention'
 

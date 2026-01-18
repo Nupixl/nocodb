@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'packages', 'nocodb-sdk', 'package.json'), 'utf8'))
+const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'packages', 'social-pixl-sdk', 'package.json'), 'utf8'))
 
 if (process.env.targetEnv === 'DEV') {
     // nightly build
@@ -13,4 +13,4 @@ if (process.env.targetEnv === 'DEV') {
 } else {
     packageJson.version = process.env.targetVersion
 }
-fs.writeFileSync(path.join(__dirname, '..', 'packages', 'nocodb-sdk', 'package.json'), JSON.stringify(packageJson, 0, 2))
+fs.writeFileSync(path.join(__dirname, '..', 'packages', 'social-pixl-sdk', 'package.json'), JSON.stringify(packageJson, 0, 2))

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ViewLockType, type ViewType } from 'nocodb-sdk'
+import { ViewLockType, type ViewType } from 'social-pixl-sdk'
 
 const props = withDefaults(
   defineProps<{

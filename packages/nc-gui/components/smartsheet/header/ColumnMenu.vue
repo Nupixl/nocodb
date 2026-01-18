@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ColumnReqType, ColumnType } from 'nocodb-sdk'
+import type { ColumnReqType, ColumnType } from 'social-pixl-sdk'
 import {
   PlanFeatureTypes,
   PlanLimitTypes,
@@ -15,7 +15,7 @@ import {
   isSystemColumn,
   partialUpdateAllowedTypes,
   readonlyMetaAllowedTypes,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import { SmartsheetStoreEvents } from '#imports'
 
 const props = defineProps<{ virtual?: boolean; isOpen: boolean; isHiddenCol?: boolean; column: ColumnType }>()

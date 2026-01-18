@@ -3,7 +3,7 @@ import type {
   BoolType,
   FormType,
   MetaType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import { PresignedUrl } from '~/models';
 import FormViewColumn from '~/models/FormViewColumn';

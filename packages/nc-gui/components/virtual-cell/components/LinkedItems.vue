@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { type ColumnType, type LinkToAnotherRecordType, isDateOrDateTimeCol } from 'nocodb-sdk'
-import { PermissionEntity, PermissionKey, RelationTypes, isLinksOrLTAR } from 'nocodb-sdk'
+import { type ColumnType, type LinkToAnotherRecordType, isDateOrDateTimeCol } from 'social-pixl-sdk'
+import { PermissionEntity, PermissionKey, RelationTypes, isLinksOrLTAR } from 'social-pixl-sdk'
 
 interface Prop {
   modelValue?: boolean

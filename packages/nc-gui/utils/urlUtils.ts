@@ -1,6 +1,6 @@
 import isURL from 'validator/lib/isURL'
 import { decode } from 'html-entities'
-import { isValidURL } from 'nocodb-sdk'
+import { isValidURL } from 'social-pixl-sdk'
 import { formulaTextSegmentsCache, replaceUrlsWithLinkCache } from '../components/smartsheet/grid/canvas/utils/canvas'
 import { getI18n } from '../plugins/a.i18n'
 export { isValidURL }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ButtonActionsType, type ButtonType, type ColumnType } from 'nocodb-sdk'
+import { ButtonActionsType, type ButtonType, type ColumnType } from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 
 const column = inject(ColumnInj) as Ref<

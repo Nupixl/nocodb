@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { AppEvents, extractRolesObj, OrgUserRoles } from 'nocodb-sdk';
+import { AppEvents, extractRolesObj, OrgUserRoles } from 'social-pixl-sdk';
 import type { User } from '~/models';
-import type { ApiTokenReqType } from 'nocodb-sdk';
+import type { ApiTokenReqType } from 'social-pixl-sdk';
 import type { NcRequest } from '~/interface/config';
 import { AppHooksService } from '~/services/app-hooks/app-hooks.service';
 import { validatePayload } from '~/helpers';

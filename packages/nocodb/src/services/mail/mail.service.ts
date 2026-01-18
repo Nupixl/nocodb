@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { ncIsArray, RoleLabels } from 'nocodb-sdk';
+import { ncIsArray, RoleLabels } from 'social-pixl-sdk';
 import { render } from '@react-email/render';
-import type { NcRequest } from 'nocodb-sdk';
+import type { NcRequest } from 'social-pixl-sdk';
 import type { MailParams, RawMailParams } from '~/interface/Mail';
 import type { ComponentProps } from 'react';
 import * as MailTemplates from '~/services/mail/templates';

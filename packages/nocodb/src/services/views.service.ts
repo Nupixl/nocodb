@@ -6,12 +6,12 @@ import {
   ProjectRoles,
   ViewLockType,
   ViewTypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type {
   SharedViewReqType,
   UserType,
   ViewUpdateReqType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import type { MetaService } from '~/meta/meta.service';
 import { validatePayload } from '~/helpers';

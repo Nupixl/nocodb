@@ -1,4 +1,4 @@
-import { timeFormats } from 'nocodb-sdk'
+import { timeFormats } from 'social-pixl-sdk'
 
 export const timeFormatsObj = {
   [timeFormats[0]]: 'hh:mm A',

@@ -1,5 +1,5 @@
 import type { Input as AntInput } from 'ant-design-vue'
-import { formulas } from 'nocodb-sdk'
+import { formulas } from 'social-pixl-sdk'
 
 const formulaList = Object.keys(formulas)
 

@@ -3,7 +3,7 @@ import {
   NcApiVersion,
   RelationTypes,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { Injectable, Logger } from '@nestjs/common';
 import { LTARColsUpdater } from 'src/db/BaseModelSqlv2/ltar-cols-updater';
 import type {

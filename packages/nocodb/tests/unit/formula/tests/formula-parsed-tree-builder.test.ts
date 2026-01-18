@@ -1,4 +1,4 @@
-import { FormulaDataTypes, JSEPNode } from 'nocodb-sdk';
+import { FormulaDataTypes, JSEPNode } from 'social-pixl-sdk';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import {
@@ -11,7 +11,7 @@ import type {
   FnParsedTreeNode,
   TAliasToColumn,
 } from '../../../../src/db/formulav2/formula-query-builder.types';
-import type { NcContext, ParsedFormulaNode, UITypes } from 'nocodb-sdk';
+import type { NcContext, ParsedFormulaNode, UITypes } from 'social-pixl-sdk';
 import type { Model } from '../../../../src/models';
 
 const mapFunctionNameStub = sinon.stub();

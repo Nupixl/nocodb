@@ -11,7 +11,7 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { BaseCreateV3Type, BaseUpdateV3Type } from 'nocodb-sdk';
+import { BaseCreateV3Type, BaseUpdateV3Type } from 'social-pixl-sdk';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { Acl } from '~/middlewares/extract-ids/extract-ids.middleware';
 import { MetaApiLimiterGuard } from '~/guards/meta-api-limiter.guard';

@@ -1,6 +1,6 @@
 import MarkdownIt from 'markdown-it'
 import mdTaskList from 'markdown-it-task-lists'
-import type { UserType } from 'nocodb-sdk'
+import type { UserType } from 'social-pixl-sdk'
 import { mdImageAsText, mdLinkRuleSetupExt } from '.'
 import { parseUserMention } from '~/helpers/tiptap-markdown/extensions'
 

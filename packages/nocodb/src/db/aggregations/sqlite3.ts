@@ -7,7 +7,7 @@ import {
   FormulaDataTypes,
   NumericalAggregations,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { Column } from '~/models';
 import type { Knex } from 'knex';
 

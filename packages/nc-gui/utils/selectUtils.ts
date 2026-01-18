@@ -1,5 +1,5 @@
-import type { Api, ColumnType, SelectOptionType, SelectOptionsType } from 'nocodb-sdk'
-import { enumColors } from 'nocodb-sdk'
+import type { Api, ColumnType, SelectOptionType, SelectOptionsType } from 'social-pixl-sdk'
+import { enumColors } from 'social-pixl-sdk'
 
 export const appendSelectOptions = async (params: {
   api: Api<any>

@@ -1,7 +1,7 @@
 import colors from 'windicss/colors'
-import { enumColors as enumColor } from 'nocodb-sdk'
+import { enumColors as enumColor } from 'social-pixl-sdk'
 import tinycolor from 'tinycolor2'
-export { enumColors as enumColor } from 'nocodb-sdk'
+export { enumColors as enumColor } from 'social-pixl-sdk'
 
 export const theme = {
   light: ['#ffdce5', '#fee2d5', '#ffeab6', '#d1f7c4', '#ede2fe', '#eee', '#cfdffe', '#d0f1fd', '#c2f5e8', '#ffdaf6'],

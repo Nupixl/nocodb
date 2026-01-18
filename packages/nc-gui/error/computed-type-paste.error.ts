@@ -1,1 +1,1 @@
-export { ComputedTypePasteError } from 'nocodb-sdk'
+export { ComputedTypePasteError } from 'social-pixl-sdk'

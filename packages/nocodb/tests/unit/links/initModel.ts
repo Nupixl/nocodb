@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import request from 'supertest';
 
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { createProject } from '../factory/base';
 import { createLtarColumn2, customColumns } from '../factory/column';
 import { createBulkRows } from '../factory/row';

@@ -1,5 +1,5 @@
 // Generated: 2024-12-19T10:30:00Z
-import { UITypes, ViewTypes } from 'nocodb-sdk';
+import { UITypes, ViewTypes } from 'social-pixl-sdk';
 import { createProject } from '../../factory/base';
 import { customColumns } from '../../factory/column';
 import { createBulkRows } from '../../factory/row';

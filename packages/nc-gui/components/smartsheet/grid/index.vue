@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ColumnType, GridType } from 'nocodb-sdk'
+import type { ColumnType, GridType } from 'social-pixl-sdk'
 import InfiniteTable from './InfiniteTable.vue'
 import Table from './Table.vue'
 import CanvasTable from './canvas/index.vue'

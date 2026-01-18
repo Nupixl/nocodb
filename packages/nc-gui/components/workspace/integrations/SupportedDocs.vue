@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { IntegrationsType } from 'nocodb-sdk'
+import { IntegrationsType } from 'social-pixl-sdk'
 const { activeIntegrationItem } = useIntegrationStore()
 
 const supportedDocs = computed(() => {

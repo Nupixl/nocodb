@@ -1,6 +1,6 @@
 import type { Edge, Node } from '@vue-flow/core'
-import type { WorkflowNodeDefinition, WorkflowType } from 'nocodb-sdk'
-import { GeneralNodeID, INIT_WORKFLOW_NODES } from 'nocodb-sdk'
+import type { WorkflowNodeDefinition, WorkflowType } from 'social-pixl-sdk'
+import { GeneralNodeID, INIT_WORKFLOW_NODES } from 'social-pixl-sdk'
 import { generateRandomUUID } from '~/utils/generateName'
 
 /**

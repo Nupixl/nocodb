@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { StringOrNullType } from 'nocodb-sdk'
+import type { StringOrNullType } from 'social-pixl-sdk'
 
 interface Props {
   /**

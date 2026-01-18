@@ -5,7 +5,7 @@ name: Check DCO
 on:
   pull_request:
     paths:
-      - "packages/nocodb-sdk/**"
+      - "packages/social-pixl-sdk/**"
       - "packages/nc-gui/**"
       - "packages/nc-lib-gui/**"
       - "packages/nocodb/**"

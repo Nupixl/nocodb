@@ -1,4 +1,4 @@
-import { type ColumnType, type SerializerOrParserFnProps, formatAggregation, formatBytes } from 'nocodb-sdk'
+import { type ColumnType, type SerializerOrParserFnProps, formatAggregation, formatBytes } from 'social-pixl-sdk'
 import { aggregationCache } from '../components/smartsheet/grid/canvas/utils/canvas'
 
 export { formatBytes }

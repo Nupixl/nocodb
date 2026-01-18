@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import axios from 'axios'
-import { type PaginatedType, UITypes } from 'nocodb-sdk'
+import { type PaginatedType, UITypes } from 'social-pixl-sdk'
 
 const props = defineProps<{
   scrollLeft?: number

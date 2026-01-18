@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { CSSProperties } from '@vue/runtime-dom'
 
-import { type PaginatedType } from 'nocodb-sdk'
+import { type PaginatedType } from 'social-pixl-sdk'
 
 interface Props {
   columns: NcTableColumnProps[]

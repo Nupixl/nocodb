@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ViewLockType, type ViewType, ViewTypes } from 'nocodb-sdk'
+import { ViewLockType, type ViewType, ViewTypes } from 'social-pixl-sdk'
 import { useViewsStore } from '~/store/views'
 
 const { isViewToolbar } = defineProps<{

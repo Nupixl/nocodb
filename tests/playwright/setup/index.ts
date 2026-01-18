@@ -1,6 +1,6 @@
 import { Page, selectors } from '@playwright/test';
 import axios, { AxiosResponse } from 'axios';
-import { Api, BaseType, ProjectListType, ProjectTypes, UserType, WorkspaceType } from 'nocodb-sdk';
+import { Api, BaseType, ProjectListType, ProjectTypes, UserType, WorkspaceType } from 'social-pixl-sdk';
 import { getDefaultPwd } from '../tests/utils/general';
 import { Knex, knex } from 'knex';
 import { promises as fs } from 'fs';

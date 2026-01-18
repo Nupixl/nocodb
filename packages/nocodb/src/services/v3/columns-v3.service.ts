@@ -4,13 +4,13 @@ import {
   NcApiVersion,
   UITypes,
   WebhookActions,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type {
   ColumnReqType,
   FieldUpdateV3Type,
   FieldV3Type,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import type { ReusableParams } from '~/services/columns.service';
 import { NcError } from '~/helpers/ncError';

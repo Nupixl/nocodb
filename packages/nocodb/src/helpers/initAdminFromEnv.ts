@@ -1,7 +1,7 @@
 import { promisify } from 'util';
 import { v4 as uuidv4 } from 'uuid';
 import bcrypt from 'bcryptjs';
-import { validatePassword } from 'nocodb-sdk';
+import { validatePassword } from 'social-pixl-sdk';
 import boxen from 'boxen';
 import isEmail from 'validator/lib/isEmail';
 import { T } from '~/utils';

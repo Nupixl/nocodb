@@ -1,4 +1,4 @@
-import { ColumnHelper, UITypes } from 'nocodb-sdk'
+import { ColumnHelper, UITypes } from 'social-pixl-sdk'
 import type { WritableComputedRef } from '@vue/reactivity'
 import type { RuleObject } from 'ant-design-vue/es/form'
 import { AiWizardTabsType, type PredictedFieldType } from '#imports'

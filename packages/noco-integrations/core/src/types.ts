@@ -6,7 +6,7 @@ import {
   IntegrationsType as IntegrationType,
   SyncCategory,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { IntegrationWrapper } from './integration';
 
 export interface IntegrationManifest {

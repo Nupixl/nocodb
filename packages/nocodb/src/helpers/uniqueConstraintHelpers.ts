@@ -2,7 +2,7 @@ import {
   isUniqueConstraintSupportedType,
   UITypes,
   UNIQUE_CONSTRAINT_SUPPORTED_TYPES,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import type { Source } from '~/models';
 import { NcError } from '~/helpers/catchError';

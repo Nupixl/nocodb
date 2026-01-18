@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { NcApiVersion, UITypes } from 'nocodb-sdk';
+import { NcApiVersion, UITypes } from 'social-pixl-sdk';
 import { createProject } from '../../../factory/base';
 import {
   createLtarColumn,
@@ -12,7 +12,7 @@ import init from '../../../init';
 import { addUsers, getUsers, prepareRecords } from './helpers';
 import type { ITestContext } from '../../../init';
 import type { Model } from '../../../../../src/models';
-import type { ColumnType } from 'nocodb-sdk';
+import type { ColumnType } from 'social-pixl-sdk';
 
 export const beforeEach = async () => {
   const context = await init();

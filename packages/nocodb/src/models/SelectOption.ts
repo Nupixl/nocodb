@@ -1,4 +1,4 @@
-import type { SelectOptionType } from 'nocodb-sdk';
+import type { SelectOptionType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import Noco from '~/Noco';
 import NocoCache from '~/cache/NocoCache';

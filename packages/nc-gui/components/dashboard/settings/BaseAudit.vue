@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Tooltip as ATooltip, Empty } from 'ant-design-vue'
-import type { AuditType } from 'nocodb-sdk'
-import { timeAgo } from 'nocodb-sdk'
+import type { AuditType } from 'social-pixl-sdk'
+import { timeAgo } from 'social-pixl-sdk'
 
 interface Props {
   sourceId: string

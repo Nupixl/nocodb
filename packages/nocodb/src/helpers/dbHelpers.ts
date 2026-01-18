@@ -14,12 +14,12 @@ import {
   parseProp,
   RelationTypes,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { v4 as uuidv4 } from 'uuid';
 import Validator from 'validator';
 import type { MetaService } from '~/meta/meta.service';
 import type { Knex } from 'knex';
-import type { SortType } from 'nocodb-sdk';
+import type { SortType } from 'social-pixl-sdk';
 import type { BaseModelSqlv2 } from '~/db/BaseModelSqlv2';
 import type CustomKnex from '~/db/CustomKnex';
 import type { XKnex } from '~/db/CustomKnex';

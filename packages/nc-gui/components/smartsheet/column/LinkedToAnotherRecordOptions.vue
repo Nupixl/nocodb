@@ -10,7 +10,7 @@ import {
   UITypes,
   ViewTypes,
   WorkspaceUserRoles,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 const props = defineProps<{
   value: any

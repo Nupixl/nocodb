@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
 import setup, { unsetup } from '../../../setup';
-import { UITypes } from 'nocodb-sdk';
-import { Api } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
+import { Api } from 'social-pixl-sdk';
 let api: Api<any>;
 
 // configuration

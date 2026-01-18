@@ -4,8 +4,8 @@ import {
   EventType,
   IntegrationsType,
   validateAndExtractSSLProp,
-} from 'nocodb-sdk';
-import type { BaseReqType, IntegrationType } from 'nocodb-sdk';
+} from 'social-pixl-sdk';
+import type { BaseReqType, IntegrationType } from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { AppHooksService } from '~/services/app-hooks/app-hooks.service';
 import { populateMeta, validatePayload } from '~/helpers';

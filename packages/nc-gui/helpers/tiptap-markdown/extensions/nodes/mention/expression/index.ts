@@ -1,5 +1,5 @@
 import TipTapMention from '@tiptap/extension-mention'
-import type { VariableDefinition } from 'nocodb-sdk'
+import type { VariableDefinition } from 'social-pixl-sdk'
 
 export const WorkflowExpression = TipTapMention.extend({
   name: 'workflowExpression',

@@ -1,4 +1,4 @@
-import { type AuditType, type UserType, type WorkspaceUserType } from 'nocodb-sdk'
+import { type AuditType, type UserType, type WorkspaceUserType } from 'social-pixl-sdk'
 
 const defaultAuditLogsQuery = {
   type: [],

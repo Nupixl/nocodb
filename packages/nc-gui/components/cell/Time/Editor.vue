@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
-import { isSystemColumn } from 'nocodb-sdk'
+import { isSystemColumn } from 'social-pixl-sdk'
 
 interface Props {
   modelValue?: string | null | undefined

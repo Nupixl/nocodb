@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type ColumnType, PermissionEntity, PermissionKey, UITypes } from 'nocodb-sdk'
+import { type ColumnType, PermissionEntity, PermissionKey, UITypes } from 'social-pixl-sdk'
 import type { Row as RowType } from '#imports'
 
 const { $e } = useNuxtApp()

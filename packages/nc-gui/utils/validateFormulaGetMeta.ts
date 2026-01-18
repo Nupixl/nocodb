@@ -1,4 +1,4 @@
-import type { TableType, UnifiedMetaType } from 'nocodb-sdk'
+import type { TableType, UnifiedMetaType } from 'social-pixl-sdk'
 
 export const validateFormulaGetMeta = (
   getMeta: (

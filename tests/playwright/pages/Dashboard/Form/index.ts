@@ -1,5 +1,5 @@
 import { expect, Locator } from '@playwright/test';
-import { StringValidationType, UITypes } from 'nocodb-sdk';
+import { StringValidationType, UITypes } from 'social-pixl-sdk';
 import { DashboardPage } from '..';
 import BasePage from '../../Base';
 import { ToolbarPage } from '../common/Toolbar';

@@ -4,7 +4,7 @@ import {
   durationOptions,
   ratingIconList,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 
 interface Field {
   id: string;

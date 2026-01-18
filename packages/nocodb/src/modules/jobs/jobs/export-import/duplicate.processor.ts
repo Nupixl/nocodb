@@ -9,7 +9,7 @@ import {
   parseProp,
   RelationTypes,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { Injectable, NotImplementedException } from '@nestjs/common';
 import type { Job } from 'bull';
 import type { NcContext, NcRequest } from '~/interface/config';

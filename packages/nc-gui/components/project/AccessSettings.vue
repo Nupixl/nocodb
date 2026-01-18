@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { MetaType, PlanLimitExceededDetailsType, Roles, WorkspaceUserRoles } from 'nocodb-sdk'
+import type { MetaType, PlanLimitExceededDetailsType, Roles, WorkspaceUserRoles } from 'social-pixl-sdk'
 import {
   OrderedProjectRoles,
   OrgUserRoles,
@@ -9,7 +9,7 @@ import {
   WorkspaceUserRoles as WorkspaceUserRolesEnum,
   extractBaseRoleFromWorkspaceRole,
   getEffectiveBaseRole,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 const props = defineProps<{
   baseId?: string

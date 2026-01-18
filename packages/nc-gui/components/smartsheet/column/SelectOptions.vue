@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Draggable from 'vuedraggable'
-import { type SelectOptionsType, UITypes } from 'nocodb-sdk'
+import { type SelectOptionsType, UITypes } from 'social-pixl-sdk'
 import InfiniteLoading from 'v3-infinite-loading'
 
 interface Option {

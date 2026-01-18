@@ -14,7 +14,7 @@ import {
   isOrderCol,
   isSystemColumn,
   isVirtualCol,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 import axios from 'axios'
 import { useColumnDrag } from './useColumnDrag'

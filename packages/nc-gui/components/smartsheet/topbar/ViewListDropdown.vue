@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type TableType, type ViewType, ViewTypes, viewTypeAlias } from 'nocodb-sdk'
+import { type TableType, type ViewType, ViewTypes, viewTypeAlias } from 'social-pixl-sdk'
 
 const { isMobileMode } = useGlobal()
 

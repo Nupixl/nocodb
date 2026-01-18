@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { VNodeRef } from '@vue/runtime-core'
-import { ColumnHelper, UITypes, roundUpToPrecision } from 'nocodb-sdk'
+import { ColumnHelper, UITypes, roundUpToPrecision } from 'social-pixl-sdk'
 
 interface Props {
   modelValue: number | null | undefined

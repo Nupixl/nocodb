@@ -1,5 +1,5 @@
-import type { BoolType, MetaType } from 'nocodb-sdk';
-import type { CalendarType } from 'nocodb-sdk';
+import type { BoolType, MetaType } from 'social-pixl-sdk';
+import type { CalendarType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import { extractProps } from '~/helpers/extractProps';
 import { prepareForDb, prepareForResponse } from '~/utils/modelUtils';

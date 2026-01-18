@@ -1,5 +1,5 @@
 import { expect, Locator } from '@playwright/test';
-import { ProjectTypes, ViewTypes } from 'nocodb-sdk';
+import { ProjectTypes, ViewTypes } from 'social-pixl-sdk';
 import { DashboardPage } from '..';
 import BasePage from '../../Base';
 import { DocsSidebarPage } from './DocsSidebar';

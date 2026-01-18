@@ -9,7 +9,7 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { MapUpdateReqType, ViewCreateReqType } from 'nocodb-sdk';
+import { MapUpdateReqType, ViewCreateReqType } from 'social-pixl-sdk';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { MapsService } from '~/services/maps.service';
 import { Acl } from '~/middlewares/extract-ids/extract-ids.middleware';

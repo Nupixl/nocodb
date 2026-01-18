@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Draggable from 'vuedraggable'
-import type { ColumnType, SelectOptionType, SelectOptionsType, UserFieldRecordType } from 'nocodb-sdk'
-import { UITypes } from 'nocodb-sdk'
+import type { ColumnType, SelectOptionType, SelectOptionsType, UserFieldRecordType } from 'social-pixl-sdk'
+import { UITypes } from 'social-pixl-sdk'
 import type { FormFieldsLimitOptionsType } from '~/lib/types'
 
 const props = defineProps<{

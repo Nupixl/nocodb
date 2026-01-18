@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type CalendarRangeType, FormulaDataTypes, PlanFeatureTypes, PlanTitles, UITypes, ViewTypes } from 'nocodb-sdk'
+import { type CalendarRangeType, FormulaDataTypes, PlanFeatureTypes, PlanTitles, UITypes, ViewTypes } from 'social-pixl-sdk'
 import type { SelectProps } from 'ant-design-vue'
 
 const meta = inject(MetaInj, ref())

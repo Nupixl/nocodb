@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { validatePassword } from 'nocodb-sdk'
+import { validatePassword } from 'social-pixl-sdk'
 import type { RuleObject } from 'ant-design-vue/es/form'
 
 definePageMeta({

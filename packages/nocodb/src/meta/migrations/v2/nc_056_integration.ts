@@ -1,4 +1,4 @@
-import { IntegrationsType, ProjectRoles } from 'nocodb-sdk';
+import { IntegrationsType, ProjectRoles } from 'social-pixl-sdk';
 import { customAlphabet } from 'nanoid';
 import type { Knex } from 'knex';
 import { MetaTable } from '~/utils/globals';

@@ -1,6 +1,6 @@
 import debug from 'debug';
 import { Injectable } from '@nestjs/common';
-import { EventType } from 'nocodb-sdk';
+import { EventType } from 'social-pixl-sdk';
 import type { Job } from 'bull';
 import type { NcContext, NcRequest } from '~/interface/config';
 import { MetaDiffsService } from '~/services/meta-diffs.service';

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ColumnType } from 'nocodb-sdk'
-import { isVirtualCol } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
+import { isVirtualCol } from 'social-pixl-sdk'
 
 defineProps<{
   column: ColumnType

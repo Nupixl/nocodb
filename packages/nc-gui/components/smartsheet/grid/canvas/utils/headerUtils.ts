@@ -1,5 +1,5 @@
-import type { LinkToAnotherRecordType, TableType } from 'nocodb-sdk'
-import { RelationTypes, UITypes, UITypesName, isLinksOrLTAR } from 'nocodb-sdk'
+import type { LinkToAnotherRecordType, TableType } from 'social-pixl-sdk'
+import { RelationTypes, UITypes, UITypesName, isLinksOrLTAR } from 'social-pixl-sdk'
 import type { CanvasGridColumn } from '~/lib/types'
 
 export function columnTypeName(column: CanvasGridColumn) {

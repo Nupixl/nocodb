@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { expect } from 'chai';
-import { convertMS2Duration } from 'nocodb-sdk';
+import { convertMS2Duration } from 'social-pixl-sdk';
 import {
   beforeEachCheckbox,
   beforeEachDateBased,
@@ -12,7 +12,7 @@ import {
 import { ncAxios } from './ncAxios';
 import { getColumnId, idc, initArraySeq, prepareRecords } from './helpers';
 import type { ITestContext } from './helpers';
-import type { ColumnType } from 'nocodb-sdk';
+import type { ColumnType } from 'social-pixl-sdk';
 import type { Column, Model } from '../../../../../src/models';
 import type { INcAxios } from './ncAxios';
 

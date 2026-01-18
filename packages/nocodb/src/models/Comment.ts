@@ -1,4 +1,4 @@
-import type { CommentType } from 'nocodb-sdk';
+import type { CommentType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import Noco from '~/Noco';
 import { MetaTable } from '~/utils/globals';

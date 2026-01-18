@@ -1,4 +1,4 @@
-import { type NcContext, parseProp } from 'nocodb-sdk';
+import { type NcContext, parseProp } from 'social-pixl-sdk';
 import type { LinksColumn } from '~/models';
 import { type Column } from '~/models';
 import Noco from '~/Noco';

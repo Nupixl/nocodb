@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { AIRecordType } from 'nocodb-sdk'
+import type { AIRecordType } from 'social-pixl-sdk'
 import { NcMarkdownParser } from '~/helpers/tiptap'
 
 const props = defineProps<{

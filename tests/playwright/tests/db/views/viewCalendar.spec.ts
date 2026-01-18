@@ -4,7 +4,7 @@ import { ToolbarPage } from '../../../pages/Dashboard/common/Toolbar';
 
 import setup, { NcContext, unsetup } from '../../../setup';
 import { TopbarPage } from '../../../pages/Dashboard/common/Topbar';
-import { Api, ProjectListType, UITypes } from 'nocodb-sdk';
+import { Api, ProjectListType, UITypes } from 'social-pixl-sdk';
 import { isEE } from '../../../setup/db';
 
 const columns = [

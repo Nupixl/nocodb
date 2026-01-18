@@ -1,5 +1,5 @@
-import type { MetaType } from 'nocodb-sdk';
-import type { MapType } from 'nocodb-sdk';
+import type { MetaType } from 'social-pixl-sdk';
+import type { MapType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import View from '~/models/View';
 import MapViewColumn from '~/models/MapViewColumn';

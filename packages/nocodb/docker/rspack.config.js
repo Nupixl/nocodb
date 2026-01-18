@@ -75,7 +75,7 @@ module.exports = {
     },
     externals: [
         nodeExternals({
-            allowlist: ['nocodb-sdk'],
+            allowlist: ['social-pixl-sdk'],
         }),
     ],
     plugins: [

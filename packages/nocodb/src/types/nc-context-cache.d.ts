@@ -1,7 +1,7 @@
-import 'nocodb-sdk';
+import 'social-pixl-sdk';
 import type { Permission } from '~/models';
 
-declare module 'nocodb-sdk' {
+declare module 'social-pixl-sdk' {
   interface NcContext {
     /**
      * Enable per-request in-memory caching when set to true

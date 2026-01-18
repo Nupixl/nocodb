@@ -1,4 +1,4 @@
-import { isValidURL } from 'nocodb-sdk';
+import { isValidURL } from 'social-pixl-sdk';
 import Validator from 'validator';
 
 export const customValidators = {

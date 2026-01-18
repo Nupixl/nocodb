@@ -1,5 +1,5 @@
-import { WebhookActions } from 'nocodb-sdk';
-import type { NcContext, NcRequest } from 'nocodb-sdk';
+import { WebhookActions } from 'social-pixl-sdk';
+import type { NcContext, NcRequest } from 'social-pixl-sdk';
 import type { MetaService } from '~/meta/meta.service';
 import type { Model } from '~/models';
 import type { IViewsV3Service } from '~/services/v3/views-v3.types';

@@ -1,4 +1,4 @@
-import { type BoolType, SSLUsage } from 'nocodb-sdk'
+import { type BoolType, SSLUsage } from 'social-pixl-sdk'
 import { ClientType } from '~/lib/enums'
 
 // todo: move to noco-sdk
@@ -62,7 +62,7 @@ interface DatabricksConnection {
 
 const defaultHost = 'localhost'
 
-export { getTestDatabaseName } from 'nocodb-sdk'
+export { getTestDatabaseName } from 'social-pixl-sdk'
 
 export const clientTypes = [
   {

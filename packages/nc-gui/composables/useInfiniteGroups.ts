@@ -7,7 +7,7 @@ import {
   type TableType,
   UITypes,
   type ViewType,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import { createGroupUniqueIdentifier, generateGroupPath } from '../components/smartsheet/grid/canvas/utils/groupby'
 import type { CanvasGroup } from '#imports'
 import { groupKeysManager } from '#imports'

@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid';
-import type { ApiTokenType } from 'nocodb-sdk';
+import type { ApiTokenType } from 'social-pixl-sdk';
 import {
   CacheDelDirection,
   CacheGetType,

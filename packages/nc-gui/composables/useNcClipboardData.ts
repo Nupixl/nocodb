@@ -1,6 +1,6 @@
 import { useStorage } from '@vueuse/core'
-import type { SerializerOrParserFnProps } from 'nocodb-sdk'
-import { extractProps } from 'nocodb-sdk'
+import type { SerializerOrParserFnProps } from 'social-pixl-sdk'
+import { extractProps } from 'social-pixl-sdk'
 
 /**
  * - ncCurrentClipboardDataId: current copied clipboard data id

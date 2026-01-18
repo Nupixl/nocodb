@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type ColumnType, PermissionEntity, PermissionKey, UITypes, ViewTypes, isVirtualCol } from 'nocodb-sdk'
+import { type ColumnType, PermissionEntity, PermissionKey, UITypes, ViewTypes, isVirtualCol } from 'social-pixl-sdk'
 import type { Attachment } from '../../lib/types'
 import type { Row as RowType } from '#imports'
 

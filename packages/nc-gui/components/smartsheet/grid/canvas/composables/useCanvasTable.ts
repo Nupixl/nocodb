@@ -9,8 +9,8 @@ import {
   isSystemColumn,
   isVirtualCol,
   ncHasProperties,
-} from 'nocodb-sdk'
-import type { ButtonType, ColumnType, FormulaType, TableType, UserType, ViewType } from 'nocodb-sdk'
+} from 'social-pixl-sdk'
+import type { ButtonType, ColumnType, FormulaType, TableType, UserType, ViewType } from 'social-pixl-sdk'
 import type { WritableComputedRef } from '@vue/reactivity'
 import { SpriteLoader } from '../loaders/SpriteLoader'
 import { ImageWindowLoader } from '../loaders/ImageLoader'

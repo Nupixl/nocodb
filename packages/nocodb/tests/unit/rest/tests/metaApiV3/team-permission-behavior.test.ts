@@ -6,8 +6,8 @@ import {
   ProjectRoles,
   UITypes,
   WorkspaceUserRoles,
-} from 'nocodb-sdk';
-import { WorkspaceRoles } from 'nocodb-sdk-v2';
+} from 'social-pixl-sdk';
+import { WorkspaceRoles } from 'social-pixl-sdk-v2';
 import { isEE } from '../../../utils/helpers';
 import init from '../../../init';
 import { createUser } from '../../../factory/user';

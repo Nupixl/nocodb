@@ -1,9 +1,9 @@
-import { extractProjectRolePower, hasMinimumRoleAccess } from 'nocodb-sdk';
+import { extractProjectRolePower, hasMinimumRoleAccess } from 'social-pixl-sdk';
 import { NcError } from 'src/helpers/catchError';
-import type { ProjectRoles } from 'nocodb-sdk';
+import type { ProjectRoles } from 'social-pixl-sdk';
 
-// Re-export getProjectRole from nocodb-sdk to keep backward compatibility
-export { getProjectRole } from 'nocodb-sdk';
+// Re-export getProjectRole from social-pixl-sdk to keep backward compatibility
+export { getProjectRole } from 'social-pixl-sdk';
 
 /**
  * Get the power of the project role of the user.

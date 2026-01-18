@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { WorkflowType } from 'nocodb-sdk'
+import type { WorkflowType } from 'social-pixl-sdk'
 
 const props = defineProps<{
   workflow: WorkflowType

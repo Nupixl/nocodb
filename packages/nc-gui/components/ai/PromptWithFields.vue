@@ -4,7 +4,7 @@ import StarterKit from '@tiptap/starter-kit'
 import Mention from '@tiptap/extension-mention'
 import { EditorContent, useEditor } from '@tiptap/vue-3'
 import tippy from 'tippy.js'
-import { type ColumnType, UITypes } from 'nocodb-sdk'
+import { type ColumnType, UITypes } from 'social-pixl-sdk'
 import { suggestion } from '~/helpers/tiptap'
 import { FieldMentionList, Paragraph } from '~/helpers/tiptap-markdown/extensions'
 

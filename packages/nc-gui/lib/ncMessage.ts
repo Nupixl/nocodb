@@ -2,7 +2,7 @@ import { message } from 'ant-design-vue/es'
 import type { MessageArgsProps } from 'ant-design-vue/es'
 import type { VueNode } from 'ant-design-vue/es/_util/type'
 import type { VNode } from 'vue'
-import { isPrimitiveValue } from 'nocodb-sdk'
+import { isPrimitiveValue } from 'social-pixl-sdk'
 import NcAlert, { type NcAlertProps } from '../components/nc/Alert.vue'
 import { getI18n } from '~/plugins/a.i18n'
 

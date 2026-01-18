@@ -3,7 +3,7 @@ import { DashboardPage } from '../../../pages/Dashboard';
 import setup, { unsetup } from '../../../setup';
 import { FieldsPage } from '../../../pages/Dashboard/Details/FieldsPage';
 import { getTextExcludeIconText } from '../../utils/general';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { enableQuickRun } from '../../../setup/db';
 
 const allFieldList = [

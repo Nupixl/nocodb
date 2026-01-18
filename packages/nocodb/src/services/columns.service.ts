@@ -32,16 +32,16 @@ import {
   UITypes,
   validateFormulaAndExtractTreeWithType,
   WebhookActions,
-} from 'nocodb-sdk';
-import { getProjectRole } from 'nocodb-sdk';
+} from 'social-pixl-sdk';
+import { getProjectRole } from 'social-pixl-sdk';
 import rfdc from 'rfdc';
-import type { ClientType } from 'nocodb-sdk';
+import type { ClientType } from 'social-pixl-sdk';
 import type {
   ColumnReqType,
   LinkToAnotherColumnReqType,
   LinkToAnotherRecordType,
   UserType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { BaseModelSqlv2 } from '~/db/BaseModelSqlv2';
 import type CustomKnex from '~/db/CustomKnex';
 import type SqlMgrv2 from '~/db/sql-mgr/v2/SqlMgrv2';

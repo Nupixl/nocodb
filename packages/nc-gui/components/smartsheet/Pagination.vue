@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import axios from 'axios'
-import type { PaginatedType } from 'nocodb-sdk'
+import type { PaginatedType } from 'social-pixl-sdk'
 
 interface Props {
   paginationData: PaginatedType

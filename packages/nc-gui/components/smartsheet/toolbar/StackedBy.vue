@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { KanbanType } from 'nocodb-sdk'
-import { UITypes } from 'nocodb-sdk'
+import type { KanbanType } from 'social-pixl-sdk'
+import { UITypes } from 'social-pixl-sdk'
 import type { SelectProps } from 'ant-design-vue'
 
 provide(IsKanbanInj, ref(true))

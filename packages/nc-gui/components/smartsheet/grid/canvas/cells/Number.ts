@@ -1,4 +1,4 @@
-import { parseIntValue } from 'nocodb-sdk'
+import { parseIntValue } from 'social-pixl-sdk'
 import { renderSingleLineText, renderTagLabel } from '../utils/canvas'
 
 export const FloatCellRenderer: CellRenderer = {

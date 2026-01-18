@@ -1,4 +1,4 @@
-import { ColumnHelper, type ColumnType, UITypes } from 'nocodb-sdk'
+import { ColumnHelper, type ColumnType, UITypes } from 'social-pixl-sdk'
 import { renderTag } from '../utils/canvas'
 
 function getIconsData({

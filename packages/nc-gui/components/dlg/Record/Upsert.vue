@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onKeyDown } from '@vueuse/core'
-import { PermissionEntity, PermissionKey, type TableType } from 'nocodb-sdk'
+import { PermissionEntity, PermissionKey, type TableType } from 'social-pixl-sdk'
 
 const props = withDefaults(
   defineProps<{

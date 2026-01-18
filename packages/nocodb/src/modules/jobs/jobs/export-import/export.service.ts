@@ -14,10 +14,10 @@ import {
   UITypes,
   ViewTypes,
   type WidgetType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { unparse } from 'papaparse';
 import { elapsedTime, initTime } from '../../helpers';
-import type { LookupType, NcRequest, RollupType } from 'nocodb-sdk';
+import type { LookupType, NcRequest, RollupType } from 'social-pixl-sdk';
 import type { BaseModelSqlv2 } from '~/db/BaseModelSqlv2';
 import type { NcContext } from '~/interface/config';
 import type { Column, LinkToAnotherRecordColumn } from '~/models';

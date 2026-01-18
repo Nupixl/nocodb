@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type ColumnType, columnTypeName, isSupportedDisplayValueColumn, isSystemColumn } from 'nocodb-sdk'
+import { type ColumnType, columnTypeName, isSupportedDisplayValueColumn, isSystemColumn } from 'social-pixl-sdk'
 
 interface Props {
   value?: boolean

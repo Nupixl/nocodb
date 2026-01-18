@@ -1,5 +1,5 @@
-import { RelationTypes, UITypes, getMetaWithCompositeKey, isLinksOrLTAR, isVirtualCol } from 'nocodb-sdk'
-import type { ColumnType, LinkToAnotherRecordType, LookupType, TableType } from 'nocodb-sdk'
+import { RelationTypes, UITypes, getMetaWithCompositeKey, isLinksOrLTAR, isVirtualCol } from 'social-pixl-sdk'
+import type { ColumnType, LinkToAnotherRecordType, LookupType, TableType } from 'social-pixl-sdk'
 import { getRelatedBaseId, getSingleMultiselectColOptions, getUserColOptions, renderAsCellLookupOrLtarValue } from '../utils/cell'
 import { renderSingleLineText } from '../utils/canvas'
 import { PlainCellRenderer } from './Plain'

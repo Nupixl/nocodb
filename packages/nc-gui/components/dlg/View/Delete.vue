@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { DependencyTableType } from 'nocodb-sdk'
+import { DependencyTableType } from 'social-pixl-sdk'
 interface Props {
   modelValue: boolean
   view?: Record<string, any>

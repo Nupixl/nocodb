@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { lastValueFrom, Observable } from 'rxjs';
-import { extractRolesObj } from 'nocodb-sdk';
+import { extractRolesObj } from 'social-pixl-sdk';
 import type { Request } from 'express';
 import type { ExecutionContext } from '@nestjs/common';
 import { JwtStrategy } from '~/strategies/jwt.strategy';

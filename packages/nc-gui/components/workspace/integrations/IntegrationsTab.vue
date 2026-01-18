@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { VNodeRef } from '@vue/runtime-core'
-import { IntegrationCategoryType } from 'nocodb-sdk'
+import { IntegrationCategoryType } from 'social-pixl-sdk'
 import NcModal from '~/components/nc/Modal.vue'
 
 import { type IntegrationItemType, SyncDataType } from '#imports'

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import tippy from 'tippy.js'
-import { ProjectRoles, WorkspaceRolesToProjectRoles } from 'nocodb-sdk'
-import type { CommentType, WorkspaceUserRoles } from 'nocodb-sdk'
+import { ProjectRoles, WorkspaceRolesToProjectRoles } from 'social-pixl-sdk'
+import type { CommentType, WorkspaceUserRoles } from 'social-pixl-sdk'
 
 const { user, appInfo } = useGlobal()
 

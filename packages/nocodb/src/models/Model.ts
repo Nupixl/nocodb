@@ -6,13 +6,13 @@ import {
   NcApiVersion,
   UITypes,
   ViewTypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import dayjs from 'dayjs';
 import { Logger } from '@nestjs/common';
 import hash from 'object-hash';
-import type { NcRequest } from 'nocodb-sdk';
+import type { NcRequest } from 'social-pixl-sdk';
 import type { Knex } from 'knex';
-import type { BoolType, TableReqType, TableType } from 'nocodb-sdk';
+import type { BoolType, TableReqType, TableType } from 'social-pixl-sdk';
 import type { XKnex } from '~/db/CustomKnex';
 import type { LinksColumn, LinkToAnotherRecordColumn } from '~/models/index';
 import { NcContext } from '~/interface/config';

@@ -1,7 +1,7 @@
 import 'mocha';
 import { expect } from 'chai';
 import request from 'supertest';
-import { SqlUiFactory } from 'nocodb-sdk';
+import { SqlUiFactory } from 'social-pixl-sdk';
 import init from '../../../../init';
 import { Base } from '~/models';
 

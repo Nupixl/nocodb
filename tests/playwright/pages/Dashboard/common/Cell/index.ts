@@ -1,5 +1,5 @@
 import { expect, Locator } from '@playwright/test';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { GridPage } from '../../Grid';
 import BasePage from '../../../Base';
 import { AttachmentCellPageObject } from './AttachmentCell';

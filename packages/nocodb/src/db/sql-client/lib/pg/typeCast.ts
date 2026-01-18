@@ -1,4 +1,4 @@
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import { NcError } from '~/helpers/ncError';
 import { DATE_FORMATS, TIME_FORMATS } from '~/db/sql-client/lib/pg/constants';
 

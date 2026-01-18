@@ -1,4 +1,4 @@
-import type { FilterType } from 'nocodb-sdk';
+import type { FilterType } from 'social-pixl-sdk';
 import { builderGenerator } from '~/utils/data-transformation.builder';
 
 export const filterBuilder = builderGenerator<

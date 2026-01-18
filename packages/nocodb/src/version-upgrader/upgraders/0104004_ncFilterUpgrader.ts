@@ -1,7 +1,7 @@
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import type { MetaService } from '~/meta/meta.service';
 import type { NcUpgraderCtx } from '~/version-upgrader/NcUpgrader';
-import type { SelectOptionsType } from 'nocodb-sdk';
+import type { SelectOptionsType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import { MetaTable } from '~/utils/globals';
 import Column from '~/models/Column';

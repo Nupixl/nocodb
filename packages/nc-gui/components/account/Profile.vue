@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { IconType, PublicAttachmentScope } from 'nocodb-sdk'
+import { IconType, PublicAttachmentScope } from 'social-pixl-sdk'
 
 const { user } = useGlobal()
 

@@ -3,7 +3,7 @@ import { DashboardPage } from '../../../pages/Dashboard';
 import { GridPage } from '../../../pages/Dashboard/Grid';
 import setup, { unsetup } from '../../../setup';
 import { ToolbarPage } from '../../../pages/Dashboard/common/Toolbar';
-import { Api } from 'nocodb-sdk';
+import { Api } from 'social-pixl-sdk';
 
 test.describe('Single select', () => {
   let dashboard: DashboardPage, grid: GridPage;

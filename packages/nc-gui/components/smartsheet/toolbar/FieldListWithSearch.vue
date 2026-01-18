@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type ButtonType, type ColumnType, isSystemColumn } from 'nocodb-sdk'
+import { type ButtonType, type ColumnType, isSystemColumn } from 'social-pixl-sdk'
 
 const props = withDefaults(
   defineProps<{

@@ -1,9 +1,9 @@
-import { ModelTypes, UITypes, ViewTypes } from 'nocodb-sdk';
-import { isVirtualCol, RelationTypes } from 'nocodb-sdk';
+import { ModelTypes, UITypes, ViewTypes } from 'social-pixl-sdk';
+import { isVirtualCol, RelationTypes } from 'social-pixl-sdk';
 import { pluralize, singularize } from 'inflection';
-import { isLinksOrLTAR } from 'nocodb-sdk';
+import { isLinksOrLTAR } from 'social-pixl-sdk';
 import { getUniqueColumnAliasName, getUniqueColumnName } from './getUniqueName';
-import type { UserType } from 'nocodb-sdk';
+import type { UserType } from 'social-pixl-sdk';
 import type { RollupColumn } from '~/models';
 import type LinkToAnotherRecordColumn from '~/models/LinkToAnotherRecordColumn';
 import type Source from '~/models/Source';

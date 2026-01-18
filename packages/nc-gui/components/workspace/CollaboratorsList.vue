@@ -7,7 +7,7 @@ import {
   PlanTitles,
   WorkspaceUserRoles,
   type WorkspaceUserType,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 const props = defineProps<{
   workspaceId?: string

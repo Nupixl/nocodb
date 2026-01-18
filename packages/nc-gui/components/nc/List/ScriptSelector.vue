@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ScriptType } from 'nocodb-sdk'
+import type { ScriptType } from 'social-pixl-sdk'
 
 interface Props {
   baseId?: string

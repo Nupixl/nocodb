@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 import { DashboardPage } from '../../../pages/Dashboard';
 import { airtableApiBase, airtableApiKey } from '../../../constants';
 import setup, { NcContext, unsetup } from '../../../setup';
-import { Api, ProjectListType } from 'nocodb-sdk';
+import { Api, ProjectListType } from 'social-pixl-sdk';
 import { BaseInfoApiUtil, ProjectInfo } from '../../../tests/utils/baseInfoApiUtil';
 import { deepCompare } from '../../../tests/utils/objectCompareUtil';
 import { isEE } from '../../../setup/db';

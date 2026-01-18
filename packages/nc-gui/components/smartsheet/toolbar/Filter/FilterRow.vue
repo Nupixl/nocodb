@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { UITypes } from 'nocodb-sdk'
-import type { ClientType } from 'nocodb-sdk'
+import { UITypes } from 'social-pixl-sdk'
+import type { ClientType } from 'social-pixl-sdk'
 import type { RowHandler } from './types'
 
 interface Props {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type ColumnType, UITypes, UITypesName, isAIPromptCol, substituteColumnIdWithAliasInPrompt } from 'nocodb-sdk'
+import { type ColumnType, UITypes, UITypesName, isAIPromptCol, substituteColumnIdWithAliasInPrompt } from 'social-pixl-sdk'
 
 const props = defineProps<{
   modelValue: any

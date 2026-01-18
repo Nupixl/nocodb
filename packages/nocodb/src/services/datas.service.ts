@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { isLinksOrLTAR, NcSDKErrorV2 } from 'nocodb-sdk';
-import { NcApiVersion } from 'nocodb-sdk';
+import { isLinksOrLTAR, NcSDKErrorV2 } from 'social-pixl-sdk';
+import { NcApiVersion } from 'social-pixl-sdk';
 import type { BaseModelSqlv2 } from '~/db/BaseModelSqlv2';
 import type { PathParams } from '~/helpers/dataHelpers';
 import type { NcContext } from '~/interface/config';

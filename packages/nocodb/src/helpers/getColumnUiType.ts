@@ -1,6 +1,6 @@
 import type Source from '~/models/Source';
 import type Column from '~/models/Column';
-import type { ColumnType } from 'nocodb-sdk';
+import type { ColumnType } from 'social-pixl-sdk';
 import ModelXcMetaFactory from '~/db/sql-mgr/code/models/xc/ModelXcMetaFactory';
 
 export default function getColumnUiType(

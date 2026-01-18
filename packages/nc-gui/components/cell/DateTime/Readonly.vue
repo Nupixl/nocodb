@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { dateFormats, timeFormats } from 'nocodb-sdk'
+import { dateFormats, timeFormats } from 'social-pixl-sdk'
 import dayjs from 'dayjs'
 import { timeCellMaxWidthMap, timeFormatsObj } from './utils'
 

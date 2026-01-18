@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ColumnReqType, ColumnType, TableType } from 'nocodb-sdk'
+import type { ColumnReqType, ColumnType, TableType } from 'social-pixl-sdk'
 import {
   PermissionEntity,
   PermissionKey,
@@ -7,7 +7,7 @@ import {
   UITypesName,
   partialUpdateAllowedTypes,
   readonlyMetaAllowedTypes,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 
 interface Props {
   column: ColumnType

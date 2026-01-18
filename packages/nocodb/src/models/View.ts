@@ -9,9 +9,9 @@ import {
   parseProp,
   UITypes,
   ViewTypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { Logger } from '@nestjs/common';
-import { isSupportedDisplayValueColumn } from 'nocodb-sdk';
+import { isSupportedDisplayValueColumn } from 'social-pixl-sdk';
 import type {
   BoolType,
   ColumnReqType,
@@ -20,7 +20,7 @@ import type {
   NcRequest,
   ROW_COLORING_MODE,
   ViewType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import { NcError } from '~/helpers/ncError';
 import { RowColorViewHelpers } from '~/helpers/rowColorViewHelpers';

@@ -5,9 +5,9 @@ import {
   IntegrationsType,
   type IntegrationType,
   type SourceType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { Logger } from '@nestjs/common';
-import type { ClientType } from 'nocodb-sdk';
+import type { ClientType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import type {
   IntegrationManifest,

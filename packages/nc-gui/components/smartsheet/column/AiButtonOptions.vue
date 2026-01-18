@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { UITypes, isVirtualCol } from 'nocodb-sdk'
-import { type ColumnType } from 'nocodb-sdk'
+import { UITypes, isVirtualCol } from 'social-pixl-sdk'
+import { type ColumnType } from 'social-pixl-sdk'
 import { generateUniqueColumnName } from '~/helpers/parsers/parserHelpers'
 
 const props = defineProps<{

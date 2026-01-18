@@ -4,7 +4,7 @@ import setup, { NcContext, unsetup } from '../../../setup';
 import makeServer from '../../../setup/server';
 import { WebhookFormPage } from '../../../pages/Dashboard/WebhookForm';
 import { isSubset } from '../../../tests/utils/general';
-import { Api, UITypes } from 'nocodb-sdk';
+import { Api, UITypes } from 'social-pixl-sdk';
 import { enableQuickRun, isEE, isMysql, isSqlite } from '../../../setup/db';
 
 const hookPath = 'http://localhost:9090/hook';

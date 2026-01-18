@@ -1,4 +1,4 @@
-import { NcApiVersion, type NcContext } from 'nocodb-sdk';
+import { NcApiVersion, type NcContext } from 'social-pixl-sdk';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
 import { HANDLE_WEBHOOK } from '~/services/hook-handler.service';
 import Noco from '~/Noco';

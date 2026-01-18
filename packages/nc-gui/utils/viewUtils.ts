@@ -1,5 +1,5 @@
-import { ViewTypes } from 'nocodb-sdk'
-import type { RowColoringInfo, ViewSettingOverrideOptions } from 'nocodb-sdk'
+import { ViewTypes } from 'social-pixl-sdk'
+import type { RowColoringInfo, ViewSettingOverrideOptions } from 'social-pixl-sdk'
 import { iconMap } from './iconUtils'
 import type { Language } from '~/lib/types'
 import UsersIcon from '~icons/nc-icons/users'

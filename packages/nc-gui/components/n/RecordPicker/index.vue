@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { TableType, ViewType } from 'nocodb-sdk'
-import { ViewTypes, getFirstNonPersonalView } from 'nocodb-sdk'
+import type { TableType, ViewType } from 'social-pixl-sdk'
+import { ViewTypes, getFirstNonPersonalView } from 'social-pixl-sdk'
 
 const props = withDefaults(
   defineProps<{

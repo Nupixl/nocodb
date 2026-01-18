@@ -1,6 +1,6 @@
 import type { PropType } from '@vue/runtime-core'
-import type { ColumnType, LinkToAnotherRecordType, LookupType, RollupType } from 'nocodb-sdk'
-import { ButtonActionsType, RelationTypes, UITypes } from 'nocodb-sdk'
+import type { ColumnType, LinkToAnotherRecordType, LookupType, RollupType } from 'social-pixl-sdk'
+import { ButtonActionsType, RelationTypes, UITypes } from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 
 import CountIcon from '~icons/mdi/counter'

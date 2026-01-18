@@ -1,5 +1,5 @@
-import { UniqueConstraintViolationError } from 'nocodb-sdk';
-import { ViewTypes } from 'nocodb-sdk';
+import { UniqueConstraintViolationError } from 'social-pixl-sdk';
+import { ViewTypes } from 'social-pixl-sdk';
 import type { Column } from '~/models';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
 import type { XKnex } from '~/db/CustomKnex';

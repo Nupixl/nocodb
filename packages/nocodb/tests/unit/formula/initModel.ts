@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import request from 'supertest';
 
-import { parseProp, UITypes } from 'nocodb-sdk';
+import { parseProp, UITypes } from 'social-pixl-sdk';
 import { Model } from '../../../src/models';
 import Base from '../../../src/models/Base';
 import { createProject } from '../factory/base';

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { nextTick } from '@vue/runtime-core'
-import { ProjectRoles, RoleColors, RoleIcons, RoleLabels, WorkspaceRolesToProjectRoles } from 'nocodb-sdk'
-import type { BaseType, SourceType, WorkspaceUserRoles } from 'nocodb-sdk'
+import { ProjectRoles, RoleColors, RoleIcons, RoleLabels, WorkspaceRolesToProjectRoles } from 'social-pixl-sdk'
+import type { BaseType, SourceType, WorkspaceUserRoles } from 'social-pixl-sdk'
 import { LoadingOutlined } from '@ant-design/icons-vue'
 
 interface Props {

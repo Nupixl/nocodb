@@ -9,7 +9,7 @@ import {
 } from '@nestjs/common';
 
 import { ConfigService } from '@nestjs/config';
-import { NcRequest } from 'nocodb-sdk';
+import { NcRequest } from 'social-pixl-sdk';
 import type { AppConfig } from '~/interface/config';
 import { GlobalGuard } from '~/guards/global/global.guard';
 

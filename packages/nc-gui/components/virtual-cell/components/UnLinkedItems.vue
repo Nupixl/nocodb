@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import type { ColumnType, LinkToAnotherRecordType } from 'nocodb-sdk'
-import { PermissionEntity, PermissionKey, RelationTypes, isDateOrDateTimeCol, isLinksOrLTAR } from 'nocodb-sdk'
+import type { ColumnType, LinkToAnotherRecordType } from 'social-pixl-sdk'
+import { PermissionEntity, PermissionKey, RelationTypes, isDateOrDateTimeCol, isLinksOrLTAR } from 'social-pixl-sdk'
 import InboxIcon from '~icons/nc-icons/inbox'
 
 const props = defineProps<{ modelValue: boolean; column: any; hideBackBtn?: boolean }>()

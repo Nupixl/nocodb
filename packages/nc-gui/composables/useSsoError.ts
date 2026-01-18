@@ -1,4 +1,4 @@
-import type { NcErrorType } from 'nocodb-sdk'
+import type { NcErrorType } from 'social-pixl-sdk'
 
 export interface SsoError {
   type: NcErrorType

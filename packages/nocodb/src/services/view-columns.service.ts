@@ -5,7 +5,7 @@ import {
   EventType,
   NcBaseError,
   ViewTypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import { Logger } from '@nestjs/common';
 import GridViewColumn from '../models/GridViewColumn';
 import GalleryViewColumn from '../models/GalleryViewColumn';
@@ -20,7 +20,7 @@ import type {
   KanbanColumnReqType,
   ViewColumnReqType,
   ViewColumnUpdateReqType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext, NcRequest } from '~/interface/config';
 import type { MetaService } from '~/meta/meta.service';
 import type { ViewWebhookManager } from '~/utils/view-webhook-manager';

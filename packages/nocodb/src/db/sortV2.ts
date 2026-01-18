@@ -1,4 +1,4 @@
-import { isAIPromptCol, UITypes } from 'nocodb-sdk';
+import { isAIPromptCol, UITypes } from 'social-pixl-sdk';
 import type { Knex } from 'knex';
 import type { ButtonColumn, FormulaColumn, RollupColumn } from '~/models';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';

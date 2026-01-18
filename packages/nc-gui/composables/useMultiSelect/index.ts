@@ -1,6 +1,6 @@
 import type { MaybeRef } from '@vueuse/core'
-import type { AttachmentType, ColumnType, LinkToAnotherRecordType, PaginatedType, TableType, ViewType } from 'nocodb-sdk'
-import { ColumnHelper, UITypes, isSystemColumn, isVirtualCol, populateUniqueFileName } from 'nocodb-sdk'
+import type { AttachmentType, ColumnType, LinkToAnotherRecordType, PaginatedType, TableType, ViewType } from 'social-pixl-sdk'
+import { ColumnHelper, UITypes, isSystemColumn, isVirtualCol, populateUniqueFileName } from 'social-pixl-sdk'
 import { parse } from 'papaparse'
 import type { Ref } from 'vue'
 import { computed } from 'vue'

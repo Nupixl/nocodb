@@ -1,5 +1,5 @@
 import type { Knex } from 'knex';
-import type { ClientType, NcContext } from 'nocodb-sdk';
+import type { ClientType, NcContext } from 'social-pixl-sdk';
 import type CustomKnex from '~/db/CustomKnex';
 
 export interface ICteBlock<T = any> {

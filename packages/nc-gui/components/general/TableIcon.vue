@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { TableType } from 'nocodb-sdk'
+import type { TableType } from 'social-pixl-sdk'
 
 const { meta: tableMeta } = defineProps<{
   meta?: TableType

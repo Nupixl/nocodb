@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PlanFeatureTypes, PlanTitles } from 'nocodb-sdk'
+import { PlanFeatureTypes, PlanTitles } from 'social-pixl-sdk'
 import { LockType } from '#imports'
 
 const { type, hideTick } = defineProps<{

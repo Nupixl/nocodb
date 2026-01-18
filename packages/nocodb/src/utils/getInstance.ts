@@ -1,4 +1,4 @@
-import { ModelTypes } from 'nocodb-sdk';
+import { ModelTypes } from 'social-pixl-sdk';
 import { CacheGetType, CacheScope, MetaTable } from './globals';
 import Noco from '~/Noco';
 import NocoCache from '~/cache/NocoCache';

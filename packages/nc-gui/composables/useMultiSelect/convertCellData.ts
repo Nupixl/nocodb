@@ -1,5 +1,5 @@
-import type { AttachmentType, ColumnType, SerializerOrParserFnProps } from 'nocodb-sdk'
-import { ColumnHelper, UITypes, populateUniqueFileName } from 'nocodb-sdk'
+import type { AttachmentType, ColumnType, SerializerOrParserFnProps } from 'social-pixl-sdk'
+import { ColumnHelper, UITypes, populateUniqueFileName } from 'social-pixl-sdk'
 
 import type { AppInfo } from '~/composables/useGlobal/types'
 

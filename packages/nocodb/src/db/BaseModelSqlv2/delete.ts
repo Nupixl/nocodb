@@ -4,9 +4,9 @@ import {
   extractFilterFromXwhere,
   isLinksOrLTAR,
   UITypes,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { Knex } from 'knex';
-import type { NcRequest } from 'nocodb-sdk';
+import type { NcRequest } from 'social-pixl-sdk';
 import type CustomKnex from '~/db/CustomKnex';
 import type { IBaseModelSqlV2 } from '~/db/IBaseModelSqlV2';
 import type { LinkToAnotherRecordColumn } from '~/models';

@@ -1,4 +1,4 @@
-import { isAIPromptCol } from 'nocodb-sdk'
+import { isAIPromptCol } from 'social-pixl-sdk'
 import { isBoxHovered, renderIconButton, renderMarkdown, renderMultiLineText, renderTagLabel } from '../utils/canvas'
 import { AILongTextCellRenderer } from './AILongText'
 

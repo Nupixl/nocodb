@@ -52,8 +52,8 @@ jobs:
         run: sed -i '/^use-node-version/d' .npmrc
       - name: install dependencies
         run: pnpm bootstrap
-      - name: build nocodb-sdk
-        working-directory: ./packages/nocodb-sdk
+      - name: build social-pixl-sdk
+        working-directory: ./packages/social-pixl-sdk
         run: |
           pnpm run generate:sdk
           pnpm run build:main

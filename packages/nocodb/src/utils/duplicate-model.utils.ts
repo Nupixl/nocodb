@@ -4,7 +4,7 @@ import {
   type NcContext,
   ProjectRoles,
   SqlUiFactory,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { DuplicateModelJobData } from '~/interface/Jobs';
 import { Base, BaseUser, Model, Source } from '~/models';
 import { NcError } from '~/helpers/ncError';

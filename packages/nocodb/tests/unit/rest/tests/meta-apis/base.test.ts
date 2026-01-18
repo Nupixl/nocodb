@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import request from 'supertest';
 import { v4 as uuidv4 } from 'uuid';
 
-import { OrgUserRoles, ProjectRoles } from 'nocodb-sdk';
+import { OrgUserRoles, ProjectRoles } from 'social-pixl-sdk';
 
 import init from '../../../init';
 import { BaseUser } from '../../../../../src/models';

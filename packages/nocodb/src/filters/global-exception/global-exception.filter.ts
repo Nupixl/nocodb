@@ -9,7 +9,7 @@ import {
   NcSDKError,
   NcSDKErrorV2,
   BadRequest as SdkBadRequest,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { ArgumentsHost, ExceptionFilter } from '@nestjs/common';
 import type { Request, Response } from 'express';
 import NocoCache from '~/cache/NocoCache';

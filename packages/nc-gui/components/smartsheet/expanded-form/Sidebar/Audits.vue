@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type AuditType, PlanLimitTypes } from 'nocodb-sdk'
+import { type AuditType, PlanLimitTypes } from 'social-pixl-sdk'
 
 const { user } = useGlobal()
 

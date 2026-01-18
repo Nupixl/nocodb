@@ -1,4 +1,4 @@
-import { arrGetDuplicate, type NcContext } from 'nocodb-sdk';
+import { arrGetDuplicate, type NcContext } from 'social-pixl-sdk';
 import { NcError } from '~/helpers/ncError';
 
 export function parseMetaProp(

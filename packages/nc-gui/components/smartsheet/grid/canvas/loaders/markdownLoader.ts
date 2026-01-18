@@ -1,5 +1,5 @@
 import { LRUCache } from 'lru-cache'
-import type { UserType } from 'nocodb-sdk'
+import type { UserType } from 'social-pixl-sdk'
 import type { Block } from '../utils/markdownUtils'
 import { parseMarkdown } from '../utils/markdownUtils'
 import { NcMarkdownParser } from '~/helpers/tiptap'

@@ -1,4 +1,4 @@
-import type { CustomUrlType } from 'nocodb-sdk';
+import type { CustomUrlType } from 'social-pixl-sdk';
 import Noco from '~/Noco';
 
 export default class CustomUrl implements CustomUrlType {

@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { DependencyTableType } from 'nocodb-sdk';
+import { DependencyTableType } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import DependencyTracker from '~/models/DependencyTracker';
 import { NcError } from '~/helpers/catchError';

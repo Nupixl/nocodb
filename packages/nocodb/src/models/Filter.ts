@@ -3,7 +3,7 @@ import type {
   COMPARISON_OPS,
   COMPARISON_SUB_OPS,
   FilterType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import Model from '~/models/Model';
 import Column from '~/models/Column';

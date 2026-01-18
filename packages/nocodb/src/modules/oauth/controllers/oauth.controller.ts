@@ -11,7 +11,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { Response } from 'express';
-import { NcRequest } from 'nocodb-sdk';
+import { NcRequest } from 'social-pixl-sdk';
 import { PublicApiLimiterGuard } from '~/guards/public-api-limiter.guard';
 import { OAuthClient } from '~/models';
 import { NcError } from '~/helpers/ncError';

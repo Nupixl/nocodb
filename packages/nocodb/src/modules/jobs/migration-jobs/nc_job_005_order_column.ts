@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import debug from 'debug';
 import PQueue from 'p-queue';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import type { MetaService } from '~/meta/meta.service';
 import type { Knex } from 'knex';
 import type SqlMgrv2 from '~/db/sql-mgr/v2/SqlMgrv2';

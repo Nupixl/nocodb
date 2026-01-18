@@ -1,4 +1,4 @@
-import { ViewTypes } from 'nocodb-sdk';
+import { ViewTypes } from 'social-pixl-sdk';
 import type { SourcesMap } from '~/services/api-docs/types';
 import type {
   Base,

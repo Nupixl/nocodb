@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import 'mocha';
-import { ClientType, UITypes } from 'nocodb-sdk';
+import { ClientType, UITypes } from 'social-pixl-sdk';
 import { Model, Source } from '../../../../src/models';
 import {
   createColumn,

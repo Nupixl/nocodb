@@ -6,7 +6,7 @@ import type {
   MetaType,
   PlanLimitExceededDetailsType,
   TableType,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import {
   EventType,
   PermissionEntity,
@@ -18,7 +18,7 @@ import {
   isReadOnlyColumn,
   isSystemColumn,
   isVirtualCol,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 import dayjs from 'dayjs'
 

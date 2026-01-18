@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import type { ColumnType, GalleryType, KanbanType, LookupType } from 'nocodb-sdk'
-import { UITypes, ViewTypes, isLinksOrLTAR, isSystemColumn } from 'nocodb-sdk'
+import type { ColumnType, GalleryType, KanbanType, LookupType } from 'social-pixl-sdk'
+import { UITypes, ViewTypes, isLinksOrLTAR, isSystemColumn } from 'social-pixl-sdk'
 import Draggable from 'vuedraggable'
 
 import type { SelectProps } from 'ant-design-vue'

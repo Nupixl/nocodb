@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from '@vue/reactivity'
-import type { ColumnType } from 'nocodb-sdk'
+import type { ColumnType } from 'social-pixl-sdk'
 import type { Ref } from 'vue'
 import { ref } from 'vue'
 import { forcedNextTick } from '../../utils/browserUtils'

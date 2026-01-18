@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ExpandedFormMode, type ViewType } from 'nocodb-sdk'
+import { ExpandedFormMode, type ViewType } from 'social-pixl-sdk'
 
 interface ItemType {
   icon: IconMapKey

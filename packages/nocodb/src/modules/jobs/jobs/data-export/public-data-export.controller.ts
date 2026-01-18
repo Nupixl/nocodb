@@ -8,7 +8,7 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { ViewTypes } from 'nocodb-sdk';
+import { ViewTypes } from 'social-pixl-sdk';
 import type { DataExportJobData } from '~/interface/Jobs';
 import { BasesService } from '~/services/bases.service';
 import { View } from '~/models';

@@ -1,4 +1,4 @@
-import type { FilterReqType, HookReqType, HookType } from 'nocodb-sdk'
+import type { FilterReqType, HookReqType, HookType } from 'social-pixl-sdk'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
 export const useWebhooksStore = defineStore('webhooksStore', () => {

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
-import type { ColumnType, OracleUi, TableType } from 'nocodb-sdk'
+import type { ColumnType, OracleUi, TableType } from 'social-pixl-sdk'
 import {
   PermissionEntity,
   PermissionKey,
@@ -12,7 +12,7 @@ import {
   isSystemColumn,
   isVirtualCol,
   parseStringDate,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import type { CheckboxChangeEvent } from 'ant-design-vue/es/checkbox/interface'
 import { srcDestMappingColumns, tableColumns } from './utils'
 

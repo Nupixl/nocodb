@@ -1,5 +1,5 @@
-import type { Api } from 'nocodb-sdk'
-import { NcErrorType } from 'nocodb-sdk'
+import type { Api } from 'social-pixl-sdk'
+import { NcErrorType } from 'social-pixl-sdk'
 import type { UseGlobalReturn } from '../composables/useGlobal/types'
 import type { Actions } from '~/composables/useGlobal/types'
 

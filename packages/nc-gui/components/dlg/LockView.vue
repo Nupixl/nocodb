@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { VNodeRef } from '@vue/runtime-core'
-import type { ViewType } from 'nocodb-sdk'
-import { viewTypeAlias } from 'nocodb-sdk'
+import type { ViewType } from 'social-pixl-sdk'
+import { viewTypeAlias } from 'social-pixl-sdk'
 import { LockType } from '#imports'
 
 const props = defineProps<{

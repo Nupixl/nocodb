@@ -1,4 +1,4 @@
-import { ProjectTypes } from 'nocodb-sdk'
+import { ProjectTypes } from 'social-pixl-sdk'
 
 export const useCopySharedBase = createSharedComposable(() => {
   const workspaceStore = useWorkspace()

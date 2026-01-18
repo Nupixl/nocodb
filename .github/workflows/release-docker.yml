@@ -102,7 +102,7 @@ jobs:
         if: ${{ github.event.inputs.targetEnv == 'DEV' || inputs.targetEnv == 'DEV' }}
         run: |
           export NODE_OPTIONS="--max_old_space_size=16384"
-          NOCODB_SDK_PKG_NAME=nocodb-sdk-daily
+          NOCODB_SDK_PKG_NAME=social-pixl-sdk-daily
           targetEnv=${{ github.event.inputs.targetEnv || inputs.targetEnv }} targetVersion=${{ github.event.inputs.tag || inputs.tag }} node scripts/bumpNocodbSdkVersion.js &&
           pnpm --filter=${NOCODB_SDK_PKG_NAME} install --ignore-scripts --no-frozen-lockfile --ignore-workspace && pnpm --filter=${NOCODB_SDK_PKG_NAME} run build &&
           targetEnv=${{ github.event.inputs.targetEnv || inputs.targetEnv }} node scripts/upgradeNocodbSdk.js &&
@@ -115,10 +115,10 @@ jobs:
         working-directory: ${{ env.working-directory }}
         run: |
           cd ../noco-integrations/core
-          # extract nocodb-sdk or nocodbsdk-daily package name based on env
-          NOCODB_SDK_PKG_NAME=nocodb-sdk
+          # extract social-pixl-sdk or nocodbsdk-daily package name based on env
+          NOCODB_SDK_PKG_NAME=social-pixl-sdk
           if [[ ${{ github.event.inputs.targetEnv || inputs.targetEnv }} == 'DEV' ]]; then
-            NOCODB_SDK_PKG_NAME=nocodb-sdk-daily
+            NOCODB_SDK_PKG_NAME=social-pixl-sdk-daily
           fi
           pnpm install ${NOCODB_SDK_PKG_NAME}@${{ github.event.inputs.tag || inputs.tag }}
           cd ../../..

@@ -1,6 +1,6 @@
 import RedisCacheMgr from './RedisCacheMgr';
 import RedisMockCacheMgr from './RedisMockCacheMgr';
-import type { NcContext } from 'nocodb-sdk';
+import type { NcContext } from 'social-pixl-sdk';
 import type CacheMgr from './CacheMgr';
 import { CACHE_PREFIX, CacheGetType } from '~/utils/globals';
 import { getRedisURL } from '~/helpers/redisHelpers';

@@ -3,10 +3,10 @@ import {
   NcBaseErrorv2,
   NcErrorBase,
   NcErrorType,
-} from 'nocodb-sdk';
+} from 'social-pixl-sdk';
 import type { ZodError } from 'zod';
 import type { ErrorObject } from 'ajv';
-import type { NcErrorArgs } from 'nocodb-sdk';
+import type { NcErrorArgs } from 'social-pixl-sdk';
 import { defaultLimitConfig } from '~/helpers/extractLimitAndOffset';
 import { generateReadablePermissionErr } from '~/utils/acl';
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { DeploymentStatus } from 'nocodb-sdk'
+import { DeploymentStatus } from 'social-pixl-sdk'
 
 const props = defineProps<{
   visible: boolean

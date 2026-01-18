@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { DashboardType, WorkflowType } from 'nocodb-sdk'
-import { DependencyTableType } from 'nocodb-sdk'
+import type { DashboardType, WorkflowType } from 'social-pixl-sdk'
+import { DependencyTableType } from 'social-pixl-sdk'
 
 interface Props {
   status?: 'loading' | 'error' | 'done'

@@ -16,8 +16,8 @@ import {
 import { AnyFilesInterceptor } from '@nestjs/platform-express';
 import { Response } from 'express';
 import contentDisposition from 'content-disposition';
-import { PublicAttachmentScope } from 'nocodb-sdk';
-import type { AttachmentReqType, FileType } from 'nocodb-sdk';
+import { PublicAttachmentScope } from 'social-pixl-sdk';
+import type { AttachmentReqType, FileType } from 'social-pixl-sdk';
 import { UploadAllowedInterceptor } from '~/interceptors/is-upload-allowed/is-upload-allowed.interceptor';
 import { GlobalGuard } from '~/guards/global/global.guard';
 import { AttachmentsService } from '~/services/attachments.service';

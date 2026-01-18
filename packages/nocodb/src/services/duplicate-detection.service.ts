@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { UITypes } from 'nocodb-sdk';
+import { UITypes } from 'social-pixl-sdk';
 import type { NcContext } from '~/interface/config';
 import type CustomKnex from '~/db/CustomKnex';
 import type { Column } from '~/models';

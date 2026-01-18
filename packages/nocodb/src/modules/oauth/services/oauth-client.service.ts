@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import type { NcContext, NcRequest } from 'nocodb-sdk';
+import type { NcContext, NcRequest } from 'social-pixl-sdk';
 import type {
   CreateOAuthClientDto,
   UpdateOAuthClientDto,

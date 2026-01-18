@@ -1,5 +1,5 @@
 import { promisify } from 'util';
-import { OrgUserRoles } from 'nocodb-sdk';
+import { OrgUserRoles } from 'social-pixl-sdk';
 import { Injectable } from '@nestjs/common';
 import * as bcrypt from 'bcryptjs';
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ColumnHelper, UITypes, roundUpToPrecision } from 'nocodb-sdk'
+import { ColumnHelper, UITypes, roundUpToPrecision } from 'social-pixl-sdk'
 
 interface Props {
   modelValue: number | null | undefined

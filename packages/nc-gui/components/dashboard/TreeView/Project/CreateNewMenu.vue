@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { SourceType } from 'nocodb-sdk'
+import type { SourceType } from 'social-pixl-sdk'
 
 interface Props {
   visible: boolean

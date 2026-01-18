@@ -12,7 +12,7 @@ import {
   isSystemColumn,
   isVirtualCol,
   populateUniqueFileName,
-} from 'nocodb-sdk'
+} from 'social-pixl-sdk'
 import { generateUniqueColumnName } from '../../../../../helpers/parsers/parserHelpers'
 import convertCellData from '../../../../../composables/useMultiSelect/convertCellData'
 import type { Cell } from '../../../../../composables/useMultiSelect/cellRange'

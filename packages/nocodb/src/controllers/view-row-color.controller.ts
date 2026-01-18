@@ -8,8 +8,8 @@ import {
   Post,
   UseGuards,
 } from '@nestjs/common';
-import { NcContext } from 'nocodb-sdk';
-import type { FilterType } from 'nocodb-sdk';
+import { NcContext } from 'social-pixl-sdk';
+import type { FilterType } from 'social-pixl-sdk';
 import { TenantContext } from '~/decorators/tenant-context.decorator';
 import { Acl } from '~/middlewares/extract-ids/extract-ids.middleware';
 import { ViewRowColorService } from '~/services/view-row-color.service';
