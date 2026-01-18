@@ -40,9 +40,12 @@ RUN echo "node-linker=hoisted" > .npmrc
 # Install all dependencies without running scripts
 RUN pnpm install --no-frozen-lockfile --ignore-scripts
 
-# Build sqlite3 bindings for the target Node ABI at the root level where it's hoisted
+# Build sqlite3 bindings for the target Node ABI using node-gyp rebuild
 WORKDIR /usr/src/app
-RUN npm_config_build_from_source=true pnpm rebuild sqlite3
+RUN if [ -d "node_modules/sqlite3" ]; then \
+      cd node_modules/sqlite3 && \
+      npm_config_build_from_source=true npx node-gyp rebuild; \
+    fi
 
 # Build the SDK first
 WORKDIR /usr/src/app/packages/social-pixl-sdk
