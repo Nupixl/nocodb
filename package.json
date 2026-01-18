@@ -16,7 +16,7 @@
   },
   "license": "Sustainable Use License",
   "engines": {
-    "node": "22.12.0"
+    "node": ">=22.12.0"
   },
   "devDependencies": {
     "husky": "^8.0.3",
