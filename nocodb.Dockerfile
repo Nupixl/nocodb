@@ -40,8 +40,9 @@ RUN echo "node-linker=hoisted" > .npmrc
 # Install all dependencies without running scripts
 RUN pnpm install --no-frozen-lockfile --ignore-scripts
 
-# Build sqlite3 bindings for the target Node ABI
-RUN npm_config_build_from_source=true pnpm --filter social-pixl rebuild sqlite3
+# Build sqlite3 bindings for the target Node ABI at the root level where it's hoisted
+WORKDIR /usr/src/app
+RUN npm_config_build_from_source=true pnpm rebuild sqlite3
 
 # Build the SDK first
 WORKDIR /usr/src/app/packages/social-pixl-sdk
@@ -62,17 +63,12 @@ ENV NC_DOCKER=0.6 \
     NODE_ENV=production \
     PORT=8080
 
-# Install additional runtime dependencies and build tools for native modules
+# Install runtime dependencies only (sqlite3 was built in builder stage)
 RUN apt-get update && apt-get install -y \
     dumb-init \
     curl \
     wget \
-    python3 \
-    python3-distutils \
-    make \
-    g++ \
-    libsqlite3-dev \
-    pkg-config \
+    libsqlite3-0 \
     && curl -L "https://github.com/TomWright/dasel/releases/download/v2.8.1/dasel_linux_$(dpkg --print-architecture)" -o /usr/local/bin/dasel \
     && chmod +x /usr/local/bin/dasel \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -83,7 +79,7 @@ RUN corepack enable && corepack prepare pnpm@9.15.4 --activate
 # Copy litestream binary
 COPY --link --from=lt-builder /usr/src/lt /usr/local/bin/litestream
 
-# Copy the built application and dependencies from builder stage
+# Copy the built application and dependencies from builder stage (including compiled sqlite3 bindings)
 COPY --from=builder /usr/src/app/node_modules ./node_modules
 COPY --from=builder /usr/src/app/packages/nocodb ./packages/nocodb
 COPY --from=builder /usr/src/app/packages/social-pixl-sdk ./packages/social-pixl-sdk
