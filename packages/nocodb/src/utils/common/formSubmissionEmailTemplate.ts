@@ -3,7 +3,7 @@ export default `<!doctype html>
 <head>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>NocoDB forms: someone has responded to Form</title>
+    <title>Social Pixl forms: someone has responded to Form</title>
     <style>
         @media only screen and (max-width: 620px) {
             table[class=body] h1 {

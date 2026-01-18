@@ -1,7 +1,7 @@
 <h1 align="center" style="border-bottom: none">
     <div>
-        <a style="color:#36f" href="https://www.nocodb.com">
-            <img src="/packages/nc-gui/assets/img/brand/nocodb-full.png" height="80" />
+        <a style="color:#36f" href="https://www.socialpixl.com">
+            <img src="/packages/nc-gui/assets/img/brand/social-pixl-full.png" height="80" />
             <br>
         </a>
         <br>
@@ -9,7 +9,7 @@
 </h1>
 
 <p align="center">
-NocoDB is the fastest and easiest way to build databases online.
+Social Pixl is the fastest and easiest way to build databases online.
 </p>
 
 

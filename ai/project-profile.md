@@ -1,8 +1,8 @@
 # Project Profile
 
 ## Identity
-- Name: NocoDB
-- Owner: NocoDB Inc
+- Name: Social Pixl
+- Owner: Social Pixl Inc
 - Primary Goal: Fastest and easiest way to build databases online.
 
 ## Project Type
@@ -27,7 +27,7 @@
 
 ## Data & Security Notes
 - Auth: JWT / Social Auth
-- RLS: Built-in NocoDB RBAC
+- RLS: Built-in Social Pixl RBAC
 - Secrets Handling: .env files
 
 ## Current Priorities
@@ -35,4 +35,5 @@
 - P1: Explore codebase
 
 ## Change Log (Last 5)
+- 2026-01-17: Rebranded project to Social Pixl.
 - 2026-01-17: Initial bootstrap of AI governance files.

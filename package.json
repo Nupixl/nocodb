@@ -1,18 +1,18 @@
 {
-  "name": "nocodb-root",
-  "description": "NocoDB Root",
+  "name": "social-pixl-root",
+  "description": "Social Pixl Root",
   "private": true,
   "author": {
-    "name": "NocoDB Inc",
-    "url": "https://nocodb.com/"
+    "name": "Social Pixl Inc",
+    "url": "https://socialpixl.com/"
   },
-  "homepage": "https://github.com/nocodb/nocodb",
+  "homepage": "https://github.com/Nupixl/social-pixl",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nocodb/nocodb.git"
+    "url": "https://github.com/Nupixl/social-pixl.git"
   },
   "bugs": {
-    "url": "https://github.com/nocodb/nocodb/issues"
+    "url": "https://github.com/Nupixl/social-pixl/issues"
   },
   "license": "Sustainable Use License",
   "engines": {
@@ -34,10 +34,10 @@
     ]
   },
   "scripts": {
-    "bootstrap": "pnpm --filter=nocodb-sdk install && pnpm --filter=nocodb-sdk run build && pnpm --filter=nocodb --filter=nc-mail-templates --filter=nc-gui --filter=playwright install && pnpm run integrations:build && pnpm run registerIntegrations",
+    "bootstrap": "pnpm --filter=social-pixl-sdk install && pnpm --filter=social-pixl-sdk run build && pnpm --filter=social-pixl --filter=nc-mail-templates --filter=social-pixl-gui --filter=playwright install && pnpm run integrations:build && pnpm run registerIntegrations",
     "integrations:build": "cd ./packages/noco-integrations/ && pnpm i && pnpm run build",
-    "start:frontend": "pnpm --filter=nc-gui run dev",
-    "start:backend": "pnpm --filter=nocodb run start",
+    "start:frontend": "pnpm --filter=social-pixl-gui run dev",
+    "start:backend": "pnpm --filter=social-pixl run start",
     "lint:staged:playwright": "cd ./tests/playwright; pnpm dlx lint-staged; cd -",
     "start:mysql": "docker-compose -f ./tests/playwright/scripts/docker-compose-mysql-playwright.yml up -d",
     "stop:mysql": "docker-compose -f ./tests/playwright/scripts/docker-compose-mysql-playwright.yml down",
@@ -45,7 +45,7 @@
     "stop:pg": "docker-compose -f ./tests/playwright/scripts/docker-compose-pg.yml down",
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
-    "registerIntegrations": "pnpm --filter=nocodb run registerIntegrations",
+    "registerIntegrations": "pnpm --filter=social-pixl run registerIntegrations",
     "install:local-sdk": "node scripts/installLocalSdk.js"
   },
   "pnpm": {
