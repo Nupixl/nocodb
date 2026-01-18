@@ -393,10 +393,10 @@ importers:
         version: 1.4.1
       social-pixl-sdk:
         specifier: workspace:^
-        version: link:../nocodb-sdk
+        version: link:../social-pixl-sdk
       social-pixl-sdk-v2:
         specifier: workspace:^
-        version: link:../nocodb-sdk-v2
+        version: link:../social-pixl-sdk-v2
       socket.io-client:
         specifier: ^4.8.1
         version: 4.8.1
@@ -1190,7 +1190,7 @@ importers:
         version: 2.3.3(asn1.js@5.4.1)(debug@4.4.1)(encoding@0.1.13)
       social-pixl-sdk:
         specifier: workspace:^
-        version: link:../nocodb-sdk
+        version: link:../social-pixl-sdk
       socket.io:
         specifier: ^4.8.1
         version: 4.8.1
@@ -1370,7 +1370,7 @@ importers:
         specifier: ^3.5.1
         version: 3.6.0(javascript-obfuscator@5.1.0)(webpack@5.99.6(@swc/core@1.11.29(@swc/helpers@0.5.17)))
 
-  packages/nocodb-sdk:
+  packages/social-pixl-sdk:
     dependencies:
       '@vue-flow/core':
         specifier: ^1.47.0
@@ -1416,7 +1416,7 @@ importers:
         version: 11.1.0
       validator:
         specifier: ^13.12.0
-        version: 13.15.15
+        version: 13.15.26
     devDependencies:
       '@types/jest':
         specifier: ^29.5.14
@@ -1468,7 +1468,7 @@ importers:
         version: 5.0.10
       ts-jest:
         specifier: ^29.2.5
-        version: 29.3.4(@babel/core@7.27.3)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.27.3))(jest@29.7.0(@types/node@22.15.23))(typescript@5.8.3)
+        version: 29.2.5(@babel/core@7.27.3)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.27.3))(jest@29.7.0(@types/node@22.15.23))(typescript@5.8.3)
       tsc-alias:
         specifier: ^1.8.10
         version: 1.8.16
@@ -1476,7 +1476,7 @@ importers:
         specifier: 5.8.3
         version: 5.8.3
 
-  packages/nocodb-sdk-v2:
+  packages/social-pixl-sdk-v2:
     dependencies:
       axios:
         specifier: 1.9.0
@@ -1517,7 +1517,7 @@ importers:
         version: 3.1.0(mysql2@3.14.1)(pg@8.16.0)(sqlite3@5.1.7)
       social-pixl-sdk:
         specifier: workspace:^
-        version: link:../../packages/nocodb-sdk
+        version: link:../../packages/social-pixl-sdk
       sqlite3:
         specifier: ^5.1.7
         version: 5.1.7
@@ -16926,30 +16926,6 @@ packages:
       esbuild:
         optional: true
 
-  ts-jest@29.3.4:
-    resolution: {integrity: sha512-Iqbrm8IXOmV+ggWHOTEbjwyCf2xZlUMv5npExksXohL+tk8va4Fjhb+X2+Rt9NBmgO7bJ8WpnMLOwih/DnMlFA==}
-    engines: {node: ^14.15.0 || ^16.10.0 || ^18.0.0 || >=20.0.0}
-    hasBin: true
-    peerDependencies:
-      '@babel/core': '>=7.0.0-beta.0 <8'
-      '@jest/transform': ^29.0.0
-      '@jest/types': ^29.0.0
-      babel-jest: ^29.0.0
-      esbuild: '*'
-      jest: ^29.0.0
-      typescript: 5.8.3
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-      '@jest/transform':
-        optional: true
-      '@jest/types':
-        optional: true
-      babel-jest:
-        optional: true
-      esbuild:
-        optional: true
-
   ts-loader@9.5.2:
     resolution: {integrity: sha512-Qo4piXvOTWcMGIgRiuFa6nHNm+54HbYaZCKqc9eeZCLRy3XqafQgwX2F7mofrbJG3g7EEb+lkiR+z2Lic2s3Zw==}
     engines: {node: '>=12.0.0'}
@@ -27704,13 +27680,17 @@ snapshots:
     dependencies:
       acorn: 8.14.1
 
+  acorn-jsx@5.3.2(acorn@8.15.0):
+    dependencies:
+      acorn: 8.15.0
+
   acorn-loose@8.5.2:
     dependencies:
       acorn: 8.15.0
 
   acorn-walk@8.3.4:
     dependencies:
-      acorn: 8.14.1
+      acorn: 8.15.0
 
   acorn@8.14.1: {}
 
@@ -30650,8 +30630,8 @@ snapshots:
 
   espree@10.3.0:
     dependencies:
-      acorn: 8.14.1
-      acorn-jsx: 5.3.2(acorn@8.14.1)
+      acorn: 8.15.0
+      acorn-jsx: 5.3.2(acorn@8.15.0)
       eslint-visitor-keys: 4.2.0
 
   espree@9.6.1:
@@ -37106,7 +37086,7 @@ snapshots:
 
   rimraf@5.0.10:
     dependencies:
-      glob: 10.4.5
+      glob: 10.5.0
 
   rollup-plugin-inject@3.0.2:
     dependencies:
@@ -38602,26 +38582,6 @@ snapshots:
       '@jest/types': 29.6.3
       babel-jest: 29.7.0(@babel/core@7.27.3)
 
-  ts-jest@29.3.4(@babel/core@7.27.3)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.27.3))(jest@29.7.0(@types/node@22.15.23))(typescript@5.8.3):
-    dependencies:
-      bs-logger: 0.2.6
-      ejs: 3.1.10
-      fast-json-stable-stringify: 2.1.0
-      jest: 29.7.0(@types/node@22.15.23)
-      jest-util: 29.7.0
-      json5: 2.2.3
-      lodash.memoize: 4.1.2
-      make-error: 1.3.6
-      semver: 7.7.2
-      type-fest: 4.41.0
-      typescript: 5.8.3
-      yargs-parser: 21.1.1
-    optionalDependencies:
-      '@babel/core': 7.27.3
-      '@jest/transform': 29.7.0
-      '@jest/types': 29.6.3
-      babel-jest: 29.7.0(@babel/core@7.27.3)
-
   ts-loader@9.5.2(typescript@5.8.3)(webpack@5.99.6(@swc/core@1.11.29(@swc/helpers@0.5.17))(esbuild@0.25.5)):
     dependencies:
       chalk: 4.1.2
@@ -39268,7 +39228,7 @@ snapshots:
       picomatch: 4.0.2
       strip-ansi: 7.1.0
       tiny-invariant: 1.3.3
-      tinyglobby: 0.2.13
+      tinyglobby: 0.2.14
       vite: 6.3.5(@types/node@22.15.23)(jiti@2.4.2)(sass@1.89.0)(terser@5.40.0)(yaml@2.8.0)
       vscode-uri: 3.1.0
     optionalDependencies:
