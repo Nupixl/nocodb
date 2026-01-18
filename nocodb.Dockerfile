@@ -38,9 +38,6 @@ RUN echo "node-linker=hoisted" > .npmrc
 # Install all dependencies without running scripts
 RUN pnpm install --no-frozen-lockfile --ignore-scripts
 
-# Rebuild native modules
-RUN pnpm rebuild sqlite3
-
 # Build the SDK first
 WORKDIR /usr/src/app/packages/social-pixl-sdk
 RUN pnpm run build
@@ -60,11 +57,14 @@ ENV NC_DOCKER=0.6 \
     NODE_ENV=production \
     PORT=8080
 
-# Install additional runtime dependencies
+# Install additional runtime dependencies and build tools for native modules
 RUN apt-get update && apt-get install -y \
     dumb-init \
     curl \
     wget \
+    python3 \
+    make \
+    g++ \
     && curl -L "https://github.com/TomWright/dasel/releases/download/v2.8.1/dasel_linux_$(dpkg --print-architecture)" -o /usr/local/bin/dasel \
     && chmod +x /usr/local/bin/dasel \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -79,6 +79,9 @@ COPY --link --from=lt-builder /usr/src/lt /usr/local/bin/litestream
 COPY --from=builder /usr/src/app/node_modules ./node_modules
 COPY --from=builder /usr/src/app/packages/nocodb ./packages/nocodb
 COPY --from=builder /usr/src/app/packages/social-pixl-sdk ./packages/social-pixl-sdk
+
+# Rebuild native modules in the runner environment
+RUN pnpm rebuild sqlite3
 
 # Setup start script
 WORKDIR /usr/src/app/packages/nocodb
