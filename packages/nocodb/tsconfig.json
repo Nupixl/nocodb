@@ -22,6 +22,9 @@
     "esModuleInterop": true,
     "jsx": "react",
     "paths": {
+      "nc-gui/*": ["../nc-gui/*"],
+      "social-pixl-sdk": ["../social-pixl-sdk"],
+      "social-pixl-sdk/*": ["../social-pixl-sdk/*"],
       "src/*": ["src/*"],
       "~/*": ["src/*"],
       "@/*": ["src/*"],
