@@ -2,7 +2,7 @@
   "name": "social-pixl",
   "version": "0.301.1",
   "description": "Social Pixl Backend",
-  "_comment": "Trigger Railway redeploy with node-gyp sqlite3 fix",
+  "_comment": "Trigger Railway redeploy with database config fix",
   "main": "dist/bundle.js",
   "author": {
     "name": "Social Pixl Inc",
