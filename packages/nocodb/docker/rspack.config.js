@@ -96,6 +96,7 @@ module.exports = {
         }),
         'cloudflare:sockets',
         'better-sqlite3',
+        'sqlite3',
         'tedious',
         'oracledb',
         'pg-query-stream',
