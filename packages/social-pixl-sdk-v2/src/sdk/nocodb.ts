@@ -1,4 +1,4 @@
-import { InternalApi } from './lib/Api.ts';
+import { InternalApi } from '../lib/Api';
 import type { InternalAPI, NocoDBOptions } from './types';
 import { Workspace } from './workspace';
 

@@ -1,14 +1,14 @@
 {
   "name": "social-pixl-sdk-v2",
   "version": "0.0.1",
-  "description": "NocoDB SDK",
+  "description": "Social Pixl SDK",
   "type": "module",
   "license": "Sustainable Use License",
   "author": {
-    "name": "NocoDB Inc",
-    "url": "https://nocodb.com/"
+    "name": "Social Pixl Inc",
+    "url": "https://socialpixl.com/"
   },
-  "homepage": "https://github.com/nocodb/nocodb",
+  "homepage": "https://github.com/Nupixl/social-pixl",
   "files": ["dist"],
   "exports": {
     ".": {
@@ -21,7 +21,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "generate:sdk": "node script/build.js",
-    "build": "rslib build",
+    "build": "pnpm generate:sdk && rslib build",
     "check": "biome check --write",
     "dev": "rslib build --watch",
     "format": "biome format --write"

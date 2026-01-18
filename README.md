@@ -14,12 +14,12 @@ Social Pixl is the fastest and easiest way to build databases online.
 
 
 <p align="center">
-    <a href="http://www.nocodb.com"><b>Website</b></a> •
+    <a href="https://www.socialpixl.com"><b>Website</b></a> •
     <a href="https://discord.gg/5RgZmkW"><b>Discord</b></a> •
-    <a href="https://community.nocodb.com/"><b>Community</b></a> •
-    <a href="https://twitter.com/nocodb"><b>Twitter</b></a> •
-    <a href="https://www.reddit.com/r/NocoDB/"><b>Reddit</b></a> •
-    <a href="https://docs.nocodb.com/"><b>Documentation</b></a>
+    <a href="https://community.socialpixl.com/"><b>Community</b></a> •
+    <a href="https://twitter.com/socialpixl"><b>Twitter</b></a> •
+    <a href="https://www.reddit.com/r/SocialPixl/"><b>Reddit</b></a> •
+    <a href="https://docs.socialpixl.com/"><b>Documentation</b></a>
 </p>
 
 ![video avi](https://github.com/nocodb/nocodb/assets/86527202/e2fad786-f211-4dcb-9bd3-aaece83a6783)
@@ -75,7 +75,7 @@ docker run -d \
 ```
 
 ## Auto-upstall
-Auto-upstall is a single command that sets up NocoDB on a server for production usage.
+Auto-upstall is a single command that sets up Social Pixl on a server for production usage.
 Behind the scenes it auto-generates docker-compose for you.
 
 ```bash
@@ -84,8 +84,8 @@ bash <(curl -sSL http://install.nocodb.com/noco.sh) <(mktemp)
 
 Auto-upstall does the following: 🕊
 - 🐳 Automatically installs all pre-requisites like docker, docker-compose
-- 🚀 Automatically installs NocoDB with PostgreSQL, Redis, Minio, Traefik gateway using Docker Compose. 🐘 🗄️ 🌐
-- 🔄 Automatically upgrades NocoDB to the latest version when you run the command again.
+- 🚀 Automatically installs Social Pixl with PostgreSQL, Redis, Minio, Traefik gateway using Docker Compose. 🐘 🗄️ 🌐
+- 🔄 Automatically upgrades Social Pixl to the latest version when you run the command again.
 - 🔒 Automatically setups SSL and also renews it. Needs a domain or subdomain as input while installation.
 > install.nocodb.com/noco.sh script can be found [here in our github](https://raw.githubusercontent.com/nocodb/nocodb/develop/docker-compose/1_Auto_Upstall/noco.sh)
 
@@ -104,7 +104,7 @@ Auto-upstall does the following: 🕊
 | 🪟 Windows x64 <br>(Binary)   | `iwr http://get.nocodb.com/win-x64.exe -OutFile Noco-win-x64.exe && .\Noco-win-x64.exe`                                                                                                                                                                                                                                                                                    |
 
 
-> When running locally access nocodb by visiting: [http://localhost:8080/dashboard](http://localhost:8080/dashboard)
+> When running locally access Social Pixl by visiting: [http://localhost:8080/dashboard](http://localhost:8080/dashboard)
 
 For more installation methods, please refer to [our docs](https://docs.nocodb.com/category/installation)
 
@@ -139,7 +139,7 @@ For more installation methods, please refer to [our docs](https://docs.nocodb.co
 
 ### App Store for Workflow Automations
 
-We provide different integrations in three main categories. See <a href="https://docs.nocodb.com/account-settings/oss-specific-details/#app-store" target="_blank">App Store</a> for details.
+We provide different integrations in three main categories. See <a href="https://docs.socialpixl.com/account-settings/oss-specific-details/#app-store" target="_blank">App Store</a> for details.
 
 - ⚡ &nbsp;Chat: Slack, Discord, Mattermost, and etc
 - ⚡ &nbsp;Email: AWS SES, SMTP, MailerSend, and etc
@@ -147,10 +147,10 @@ We provide different integrations in three main categories. See <a href="https:/
 
 ### Programmatic Access
 
-We provide the following ways to let users programmatically invoke actions. You can use a token (either JWT or Social Auth) to sign your requests for authorization to NocoDB.
+We provide the following ways to let users programmatically invoke actions. You can use a token (either JWT or Social Auth) to sign your requests for authorization to Social Pixl.
 
 - ⚡ &nbsp;REST APIs
-- ⚡ &nbsp;NocoDB SDK
+- ⚡ &nbsp;Social Pixl SDK
 
 # Contributing
 

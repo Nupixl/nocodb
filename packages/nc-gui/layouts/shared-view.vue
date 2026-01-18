@@ -22,7 +22,7 @@ onMounted(() => {
   // if we are, communicate to the parent page whenever we navigate to a new url,
   // so that the parent page can respond to it properly.
   // E.g. by making the browser navigate to that url, and not just the iframe.
-  // This is useful for integrating NocoDB into other products,
+  // This is useful for integrating Social Pixl into other products,
   // such as Outline (https://github.com/outline/outline/pull/4184).
   if (window.parent !== window) {
     const notifyLocationChange = (value: string) =>
@@ -45,7 +45,7 @@ onMounted(() => {
   if (sharedView.value?.title) {
     document.title = `${sharedView.value.title}`
   } else {
-    document.title = 'NocoDB'
+    document.title = 'Social Pixl'
   }
 })
 </script>
@@ -110,7 +110,7 @@ export default {
 
             <a
               v-if="!appInfo.isOnPrem"
-              href="https://app.nocodb.com/#/signin"
+              href="https://app.socialpixl.com/#/signin"
               target="_blank"
               class="!no-underline xs:hidden"
               rel="noopener"

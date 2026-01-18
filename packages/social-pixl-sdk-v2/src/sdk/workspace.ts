@@ -1,5 +1,5 @@
 import { NocoDBBase } from './base';
-import type { Base, BaseCreate, BaseUpdate } from './lib/Api';
+import type { Base, BaseCreate, BaseUpdate } from '../lib/Api';
 import type { InternalAPI } from './types';
 
 export class Workspace {

@@ -46,8 +46,6 @@ onUnmounted(() => {
           <PaymentUpgradeSidebarBanner v-if="isEeUI" />
           <LazyGeneralMaintenanceAlert />
 
-          <GeneralGift v-if="!isEeUI" />
-
           <DashboardSidebarBeforeUserInfo />
           <DashboardSidebarVersion v-if="appInfo.isOnPrem" />
         </div>

@@ -2,7 +2,7 @@
   "packages": [
     "packages/nc-gui",
     "packages/nocodb",
-    "packages/nocodb-sdk"
+    "packages/social-pixl-sdk"
   ],
   "version": "independent"
 }

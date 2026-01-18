@@ -43,7 +43,7 @@ function copy_gui_artifacts() {
 }
 
 function package_nocodb() {
-    # build nocodb ( pack nocodb-sdk and nc-gui )
+    # build nocodb ( pack social-pixl-sdk and nc-gui )
     cd ${SCRIPT_DIR}/packages/nocodb
     pnpm run docker:build || ERROR="package_nocodb failed"
 }
@@ -78,7 +78,7 @@ build_gui 1>> ${LOG_FILE} 2>> ${LOG_FILE}
 echo "Info: Copy nc-gui build to nocodb dir" | tee -a ${LOG_FILE}
 copy_gui_artifacts 1>> ${LOG_FILE} 2>> ${LOG_FILE}
 
-echo "Info: Build nocodb, package nocodb-sdk and nc-gui" | tee -a ${LOG_FILE}
+echo "Info: Build nocodb, package social-pixl-sdk and nc-gui" | tee -a ${LOG_FILE}
 package_nocodb 1>> ${LOG_FILE} 2>> ${LOG_FILE}
 
 if [[ ${ERROR} == "" ]]; then

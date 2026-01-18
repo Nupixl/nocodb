@@ -306,11 +306,6 @@ useEventListener(document, 'keydown', async (e: KeyboardEvent) => {
             <DashboardSidebarFeed />
           </NcTooltip>
         </DashboardMiniSidebarItemWrapper> -->
-        <DashboardMiniSidebarItemWrapper v-if="isChatWootEnabled">
-          <NcTooltip :title="`${$t('labels.chatWithNocoDBSupport')}!`" placement="right" hide-on-click :arrow="false">
-            <DashboardSidebarChatSupport />
-          </NcTooltip>
-        </DashboardMiniSidebarItemWrapper>
         <div class="px-2 w-full">
           <NcDivider class="!my-2 !border-nc-border-gray-dark" />
         </div>
