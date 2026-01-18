@@ -1,6 +1,7 @@
 [build]
 builder = "DOCKERFILE"
 dockerfilePath = "packages/nocodb/Dockerfile"
+dockerContext = "packages/nocodb"
 buildCommand = ""
 
 [deploy]
