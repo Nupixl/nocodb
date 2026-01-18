@@ -20,7 +20,7 @@
   },
   "license": "Sustainable Use License",
   "scripts": {
-    "build": "pnpm run docker:build",
+    "build": "pnpm --filter social-pixl-sdk build && rspack --config docker/rspack.config.js",
     "build:obfuscate": "EE=true rspack --config rspack.config.js",
     "build:cli:module": "EE=true rspack --config rspack.cli.config.js",
     "obfuscate:build:publish": "pnpm run build:obfuscate && pnpm publish .",
