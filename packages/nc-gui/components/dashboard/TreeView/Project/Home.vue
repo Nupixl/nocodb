@@ -80,13 +80,13 @@ const hasTableCreatePermission = computed(() => {
             class="flex items-center nc-workspace-menu overflow-hidden py-1.25 pr-0.25 justify-center w-full"
           >
             <a
-              class="w-24 min-w-10 transition-all duration-200 p-1 transform"
-              href="https://github.com/nocodb/nocodb"
+              class="w-8 min-w-8 transition-all duration-200 p-1 transform"
+              href="https://nupixl.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img v-if="isDark" width="96" alt="NocoDB" src="~/assets/img/brand/text.png" />
-              <img v-else width="96" alt="NocoDB" src="~/assets/img/brand/nocodb.png" />
+              <img v-if="isDark" alt="Nupixl" src="~/assets/img/brand/nupixl-white.png" />
+              <img v-else alt="Nupixl" src="~/assets/img/brand/nupixl-color.png" />
             </a>
 
             <div class="flex flex-grow"></div>

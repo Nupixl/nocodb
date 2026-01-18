@@ -68,12 +68,12 @@ export default {
           <div class="flex items-center gap-6 h-7 max-w-[calc(100%_-_280px)] xs:max-w-[calc(100%_-_90px)]">
             <a
               class="transition-all duration-200 cursor-pointer transform hover:scale-105"
-              href="https://github.com/nocodb/nocodb"
+              href="https://nupixl.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img v-if="isDark" width="96" alt="NocoDB" src="~/assets/img/brand/text.png" class="flex-none min-w-[96px]" />
-              <img v-else width="96" alt="NocoDB" src="~/assets/img/brand/nocodb.png" class="flex-none min-w-[96px]" />
+              <img v-if="isDark" alt="Nupixl" src="~/assets/img/brand/nupixl-white.png" class="flex-none w-7 h-7" />
+              <img v-else alt="Nupixl" src="~/assets/img/brand/nupixl-color.png" class="flex-none w-7 h-7" />
             </a>
 
             <div class="flex items-center gap-2 text-nc-content-gray-emphasis text-sm truncate">

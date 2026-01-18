@@ -292,11 +292,6 @@ useEventListener(document, 'keydown', async (e: KeyboardEvent) => {
         <DashboardMiniSidebarTheme />
       </DashboardMiniSidebarItemWrapper>
 
-      <DashboardMiniSidebarItemWrapper>
-        <NcTooltip :title="$t('general.help')" placement="right" hide-on-click :arrow="false">
-          <DashboardMiniSidebarHelp />
-        </NcTooltip>
-      </DashboardMiniSidebarItemWrapper>
       <template v-if="!isMobileMode">
         <!--   Disabled for now since feed is not actively maintained -->
         <!--
