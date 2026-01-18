@@ -257,14 +257,34 @@ export async function metaUrlToDbConfig(urlString): Promise<DbConfig> {
       }
     }
 
+    // Extract protocol and map to client type using driverClientMapping
+    const protocol = url.protocol.replace(':', '');
+    const client = (driverClientMapping[protocol] || protocol) as DriverClient;
+
+    // Extract username and password from URL auth if present
+    const connectionConfig: any = {
+      ...defaultConnectionConfig,
+      ...parsedQuery,
+      host: url.hostname,
+      port: +url.port,
+    };
+
+    // If URL has username/password in auth (e.g., postgresql://user:pass@host:port/db)
+    if (url.username) {
+      connectionConfig.user = connectionConfig.user || url.username;
+    }
+    if (url.password) {
+      connectionConfig.password = connectionConfig.password || url.password;
+    }
+    // Extract database name from pathname if present (e.g., /database)
+    if (url.pathname && url.pathname !== '/') {
+      const dbName = url.pathname.replace(/^\//, '');
+      connectionConfig.database = connectionConfig.database || parsedQuery.database || dbName;
+    }
+
     dbConfig = {
-      client: url.protocol.replace(':', '') as DriverClient,
-      connection: {
-        ...defaultConnectionConfig,
-        ...parsedQuery,
-        host: url.hostname,
-        port: +url.port,
-      },
+      client: client,
+      connection: connectionConfig,
       acquireConnectionTimeout: 600000,
       ...defaultConnectionOptions,
       ...(url.searchParams.has('search_path')
