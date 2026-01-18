@@ -32,14 +32,15 @@ RUN corepack enable && corepack prepare pnpm@9.15.4 --activate
 # Copy the entire monorepo
 COPY . .
 
-# Configure pnpm to use hoisted node_modules for modclean compatibility
+# Configure pnpm to use hoisted node_modules
 RUN echo "node-linker=hoisted" > .npmrc
 
-# Install all dependencies
-RUN pnpm install --no-frozen-lockfile
+# Install all dependencies without running scripts
+RUN pnpm install --no-frozen-lockfile --ignore-scripts
 
-# Build the SDK first (required by nocodb)
-RUN pnpm --filter social-pixl-sdk build
+# Build the SDK first
+WORKDIR /usr/src/app/packages/social-pixl-sdk
+RUN pnpm run build
 
 # Build nocodb
 WORKDIR /usr/src/app/packages/nocodb
@@ -69,7 +70,6 @@ RUN apt-get update && apt-get install -y \
 COPY --link --from=lt-builder /usr/src/lt /usr/local/bin/litestream
 
 # Copy the built application and dependencies from builder stage
-# With hoisted linker, most dependencies are in the root node_modules
 COPY --from=builder /usr/src/app/node_modules ./node_modules
 COPY --from=builder /usr/src/app/packages/nocodb ./packages/nocodb
 COPY --from=builder /usr/src/app/packages/social-pixl-sdk ./packages/social-pixl-sdk
