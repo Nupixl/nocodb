@@ -24,7 +24,12 @@ module.exports = {
     minimizer: [new TerserPlugin()],
     nodeEnv: false
   },
-  externals: [nodeExternals()],
+  externals: [
+    nodeExternals({
+      modulesDir: path.resolve(__dirname, '../../node_modules'),
+    }),
+    nodeExternals(),
+  ],
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.json'],
   },
