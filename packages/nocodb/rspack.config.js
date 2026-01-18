@@ -75,6 +75,7 @@ module.exports = {
       configFile: resolve('tsconfig.json'),
     },
     alias: {
+      'nc-gui': resolve(__dirname, '../nc-gui'),
       '@noco-local-integrations': resolve(__dirname, '../noco-integrations/packages'),
     },
   },

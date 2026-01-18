@@ -49,6 +49,11 @@ module.exports = {
         tsConfig: {
             configFile: path.resolve('tsconfig.json'),
         },
+        alias: {
+            'nc-gui': path.resolve(__dirname, '../../nc-gui'),
+            'social-pixl-sdk': path.resolve(__dirname, '../../social-pixl-sdk'),
+            '~': path.resolve(__dirname, '../src'),
+        },
     },
     output: {
         path: path.resolve('./docker'),
