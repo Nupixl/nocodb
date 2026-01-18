@@ -38,6 +38,9 @@ RUN echo "node-linker=hoisted" > .npmrc
 # Install all dependencies without running scripts
 RUN pnpm install --no-frozen-lockfile --ignore-scripts
 
+# Rebuild native modules
+RUN pnpm rebuild sqlite3
+
 # Build the SDK first
 WORKDIR /usr/src/app/packages/social-pixl-sdk
 RUN pnpm run build
