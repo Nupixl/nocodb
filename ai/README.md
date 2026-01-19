@@ -156,10 +156,13 @@ Tasks (Enhanced)
 │   └── Completion Promise
 └── Timing and logging
 
-Protocol Sessions (New)
+Protocol Sessions (Enhanced)
 ├── Session ID
 ├── Protocol Name
-├── Feature/Task links
+├── Project (Link) - Primary
+├── Feature (Link) - Optional
+├── Task (Link) - Optional
+├── Subtask (Link) - Optional
 ├── Status, Scope
 └── Metrics and outcomes
 
@@ -202,6 +205,10 @@ Subtasks (Enhanced)
 └── Timing
 ```
 
+Table IDs:
+- Subtasks: mn3z4898a6gp3tk
+- Views: 2 (Grid, Kanban: Subtask Status Board)
+
 ---
 
 ## 🔗 Key Relationships
@@ -209,11 +216,14 @@ Subtasks (Enhanced)
 ```mermaid
 graph TD
     A[Projects] -->|1:N| B[Features]
+    A -->|1:N| F[Protocol Sessions]
     B -->|1:N| C[Tasks]
     C -->|1:N| D[Task Checklists]
     C -->|1:N| E[Subtasks]
     C -->|M:N| C
-    F[Protocol Sessions] -->|1:N| C
+    F -->|Optional| B
+    F -->|Optional| C
+    F -->|Optional| E
     F -->|1:N| G[Agent Iterations Log]
     F -->|1:N| H[Human Checkpoints]
     D -->|1:N| G
@@ -286,6 +296,68 @@ CallMcpTool: user-NocoDB Base - Social Pixl / deleteRecords
 {
   tableId: "table_id_here",
   recordIds: ["record_id_1", "record_id_2"]
+}
+```
+
+### Schema & View Management (NEW) 🛠️
+
+#### Add Column
+```javascript
+CallMcpTool: user-NocoDB Base - Social Pixl / columnAdd
+{
+  tableId: "table_id_here",
+  column: {
+    title: "New Field",
+    type: "SingleLineText"
+  }
+}
+```
+
+#### List Views
+```javascript
+CallMcpTool: user-NocoDB Base - Social Pixl / viewList
+{
+  tableId: "table_id_here"
+}
+```
+
+#### Update View
+```javascript
+CallMcpTool: user-NocoDB Base - Social Pixl / viewUpdate
+{
+  viewId: "view_id_here",
+  view: {
+    title: "Updated View Title"
+  }
+}
+```
+
+### Collaboration & Users (NEW) 👥
+
+#### List Users
+```javascript
+CallMcpTool: user-NocoDB Base - Social Pixl / userList
+{}
+```
+
+#### Invite User
+```javascript
+CallMcpTool: user-NocoDB Base - Social Pixl / userInvite
+{
+  invites: [{
+    email: "user@example.com",
+    base_role: "editor"
+  }]
+}
+```
+
+#### Add Comment
+```javascript
+CallMcpTool: user-NocoDB Base - Social Pixl / commentAdd
+{
+  tableId: "table_id_here",
+  rowId: "row_id_here",
+  comment: "This is an automated comment from the agent."
 }
 ```
 
@@ -500,9 +572,11 @@ Use this checklist to track your implementation:
 - ✅ **Ralph Protocol Support**: All tracking fields in place
 
 ### Kanban Boards Created
+- 🎨 **Project Board** - High-level project status tracking
+- 🎨 **Features Board** - Visual feature roadmap
 - 🎨 **Task Board by Status** - Visual workflow management
 - 🤖 **Ralph Protocol Board** - Real-time protocol tracking
-- 🎨 **Features Board** - Visual feature roadmap
+- 🎨 **Subtask Board** - Granular subtask status tracking
 
 ### Quick Start
 1. **View Your Kanban Boards**: https://social-pixl-production.up.railway.app
@@ -514,6 +588,7 @@ Use this checklist to track your implementation:
 - Project: `mfk971t8h2y1wl8`
 - Features: `m8bvci8fysoixv4`
 - Task: `mj2wedhjln0dhgd`
+- Subtasks: `mn3z4898a6gp3tk`
 - Protocol Sessions: `ms4eb1nv9fpoeiz`
 
 ---

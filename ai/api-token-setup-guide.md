@@ -1,10 +1,27 @@
 # NocoDB API Token Setup Guide
 ## Getting Full API Access for Schema Operations
 
-**Current Status**: Token is valid but has guest-level permissions only  
-**Need**: Token with full workspace/base permissions for schema modifications
+**Current Status**: ✅ **MCP Fully Expansive** - Schema operations now supported via MCP.
+**Preferred Method**: Use the `user-NocoDB Base - Social Pixl` MCP for most agent-led operations.
 
 ---
+
+## 🚀 Why Use the MCP Over Manual API Tokens?
+
+The Social Pixl MCP has been expanded with:
+- **Schema Management**: `columnAdd`, `viewUpdate`, etc.
+- **Collaboration**: `commentAdd`, `userInvite`, etc.
+- **Automation**: `hookList`.
+
+Agents can now perform schema migrations and project management tasks directly through the standard MCP interface without you needing to manually manage API tokens or write curl scripts.
+
+---
+
+## 📋 When to Still Use This Guide
+You may still need this guide if:
+- You are writing external automation scripts (Python, Shell).
+- You are using tools that don't support the MCP protocol.
+- You need to perform administrative tasks not yet exposed via MCP (like creating entire new bases or workspaces).
 
 ## 🔍 Current Token Analysis
 

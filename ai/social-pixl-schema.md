@@ -150,7 +150,7 @@ Social Pixl serves as the **single source of truth** for all project management 
 
 ### Table 5: Protocol Sessions (New Table)
 
-**Purpose**: Track all protocol executions
+**Purpose**: Track all protocol executions at Project, Feature, Task, or Subtask levels.
 
 **Fields**:
 
@@ -159,8 +159,10 @@ Social Pixl serves as the **single source of truth** for all project management 
 | Id | ID | Auto | Primary key |
 | Session ID | Single Line Text | Auto-generated | Unique session identifier |
 | Protocol Name | Single Select | Ralph, Test, Security, Deploy, Debug, Audit, Performance | Which protocol |
-| Feature | Link to Features | - | Related feature (optional) |
-| Task | Link to Tasks | - | Related task (optional) |
+| Project | Link to Projects | Required | The project this session belongs to |
+| Feature | Link to Features | Optional | Related feature |
+| Task | Link to Tasks | Optional | Related task |
+| Subtask | Link to Subtasks | Optional | Related subtask |
 | Status | Single Select | Active, Paused, Complete, Terminated, Failed | Session status |
 | Invoked By User | Long Text | - | User's exact invocation phrase |
 | Scope | Long Text | - | What protocol is working on |

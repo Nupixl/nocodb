@@ -11,6 +11,10 @@ This rule defines how the agent interacts with the Social Pixl (NocoDB) PM syste
 
 ### Parameter Integrity & Data Validation
 - **Mandatory Status**: The `Status` field is **REQUIRED** for every Project, Feature, and Task. An agent must never create or update a record while leaving the Status empty.
+- **Relational Integrity**: 
+  - **Features** must **ALWAYS** be linked to a parent **Project**.
+  - **Tasks** must **ALWAYS** be linked to a parent **Feature**.
+  - Agents must not create "orphan" features or tasks.
 - **Defaulting Logic**: If a Status is missing during a bulk import or creation:
   - Projects default to `Drafted`.
   - Features default to `Planned`.

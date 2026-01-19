@@ -22,11 +22,10 @@
 - 1 Protocol Session created
 - All relationships working
 
-### ⏳ **Phase 3: Views** (MANUAL - 10 minutes)
-- View creation API endpoints not available
-- All fields ready for views
-- Manual guide created: `CREATE-VIEWS-MANUALLY.md`
-- Estimated time: 10 minutes in UI
+### ✅ **Phase 3: Views** (COMPLETE)
+- View management is now supported via MCP.
+- Views can be listed, updated, and deleted programmatically.
+- Kanban boards can still be optimized manually for color coding.
 
 ---
 
@@ -35,6 +34,7 @@
 ### **Table 1: Project** ✅
 **Table ID**: `mfk971t8h2y1wl8`  
 **Fields**: 16 total
+**Views**: 2 (Grid, Kanban: Project Status Board)
 
 **Core Fields**:
 - Id, Title, Description
@@ -118,12 +118,15 @@
 
 ### **Table 4: Protocol Sessions** ✅
 **Table ID**: `ms4eb1nv9fpoeiz`  
-**Fields**: 13 total
+**Fields**: 15 total
 
 **Core Fields**:
 - Id, Session ID
 - Protocol Name
+- Project (Link to Projects) - **PRIMARY LINK**
 - Feature (Link to Features)
+- Task (Link to Tasks)
+- Subtask (Link to Subtasks)
 - Status
 
 **Execution Fields**:
@@ -140,11 +143,12 @@
 
 ---
 
-### **Table 5: Subtask** ⏸️
-**Table ID**: `mpp8oinun8mci5s`  
-**Fields**: 2 (basic - not enhanced yet)
+### **Table 5: Subtask** ✅
+**Table ID**: `mn3z4898a6gp3tk`  
+**Fields**: 5 total
+**Views**: 2 (Grid, Kanban: Subtask Status Board)
 
-**Status**: Available for future enhancement
+**Status**: Active
 
 ---
 

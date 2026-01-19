@@ -2,8 +2,23 @@
 ## Step-by-Step Setup Instructions
 
 **Purpose**: Practical guide to implement the Social Pixl schema in your NocoDB instance  
-**Time Required**: 2-3 hours for complete setup  
-**Prerequisites**: Access to Social Pixl (NocoDB) UI
+**Status**: ✅ **Automated Implementation Supported**  
+**Prerequisites**: Access to Social Pixl (NocoDB) instance
+
+---
+
+## 🤖 Automated vs. Manual Setup
+
+### 🚀 Recommended: Automated Setup (Agent)
+Since the NocoDB MCP has been expanded with schema management tools, **you can now ask the agent to perform this entire implementation guide for you.**
+
+**How to trigger**:
+> "I want you to implement Phase 1 of the Social Pixl schema. Use the `social-pixl-implementation-guide.md` as your specification."
+
+The agent will use `columnAdd` and other MCP tools to create all tables and fields programmatically.
+
+### 🎨 Manual Setup (UI)
+If you prefer to set things up yourself or need to configure visual elements (like Kanban column colors or specific view filters), follow the detailed steps below.
 
 ---
 

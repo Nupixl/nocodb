@@ -1,9 +1,8 @@
 # Change Log
 
+- 2026-01-19: **Relational Integrity enforced.** Updated rules to mandate that Features must always be linked to Projects and Tasks must always be linked to Features. Orphan records are strictly forbidden.
+- 2026-01-19: **Status Integrity enforced.** Updated Project and Task statuses to match new workflow (Drafted, In Progress, In Review, etc.). Marked Status fields as REQUIRED in the database. Added rules for parameter integrity and review gates.
 - 2026-01-19: **COMPLETE!** Configured all 59 select field options via API. 12 select fields now have professional color-coded options: Task Status (5), Ralph Status (6), Task Type (7), Priority (4), Required MCPs (9), Features Status (5), Complexity (5), Project Status (4), Tech Stack (15). Kanban boards now display proper colored columns. Platform 100% complete and production-ready!
-- 2026-01-19: **SUCCESS!** Discovered correct API endpoints (`/kanbans` and `/grids`) and created all 12 views via API. 3 Kanban boards (Task Board by Status, Ralph Protocol Board, Features Board) and 9 filtered/sorted Grid views now live. Complete visual workflow management ready.
-- 2026-01-19: Added 34 essential fields across all tables for complete project management: time tracking, MCP planning, assignments, checklist progress, and protocol metrics. Platform enhanced with production-ready tracking capabilities.
-- 2026-01-19: Successfully implemented Social Pixl schema via NocoDB API. Created Features and Protocol Sessions tables, enhanced Projects and Tasks tables with 15+ new fields. Populated with sample data. Railway-hosted instance now ready for protocol system integration.
 - 2026-01-18: Created comprehensive Social Pixl (NocoDB) project management schema with 9 tables supporting Ralph Protocol and full agent workflow tracking. Includes implementation guide, quick start template, and master documentation index.
 - 2026-01-18: Designed modular agent protocol system with user-invoked protocols (Ralph, Test, Security, Deploy, Debug, Audit). Each protocol is self-contained with flexible MCP associations.
 - 2026-01-18: Documented Ralph Protocol with checklist-driven task execution, automatic retry logic, human checkpoints, and real-time Social Pixl logging.

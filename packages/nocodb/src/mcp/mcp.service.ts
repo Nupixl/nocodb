@@ -16,6 +16,13 @@ import { BasesV3Service } from '~/services/v3/bases-v3.service';
 import { TablesV3Service } from '~/services/v3/tables-v3.service';
 import { DataV3Service } from '~/services/v3/data-v3.service';
 import { DataTableService } from '~/services/data-table.service';
+import { ColumnsV3Service } from '~/services/v3/columns-v3.service';
+import { ViewsService } from '~/services/views.service';
+import { KanbansService } from '~/services/kanbans.service';
+import { GridsService } from '~/services/grids.service';
+import { HooksService } from '~/services/v3/hooks-v3.service';
+import { BaseMembersV3Service } from '~/services/v3/base-members-v3.service';
+import { CommentsV3Service } from '~/services/v3/comments-v3.service';
 import { hasMinimumRole } from '~/utils/roleHelper';
 import NcPluginMgrv2 from '~/helpers/NcPluginMgrv2';
 import { serialize } from '~/helpers/serialize';
@@ -31,6 +38,13 @@ export class McpService {
     protected readonly datasV3Service: DataV3Service,
     protected readonly dataTableService: DataTableService,
     protected readonly auditService: AuditsService,
+    protected readonly columnsV3Service: ColumnsV3Service,
+    protected readonly viewsService: ViewsService,
+    protected readonly kanbansService: KanbansService,
+    protected readonly gridsService: GridsService,
+    protected readonly hooksService: HooksService,
+    protected readonly baseMembersV3Service: BaseMembersV3Service,
+    protected readonly commentsV3Service: CommentsV3Service,
   ) {}
 
   async handleRequest(
@@ -721,6 +735,486 @@ export class McpService {
               baseId: context.base_id,
               body: recordsArray as DataDeleteRequest[],
               cookie: req,
+            });
+
+            return {
+              content: [
+                { type: 'text', text: JSON.stringify(result, null, 2) },
+              ],
+            };
+          } catch (error) {
+            return {
+              content: [{ type: 'text', text: `Error: ${error.message}` }],
+              isError: true,
+            };
+          }
+        },
+      );
+
+      // --- Column Management Tools ---
+
+      // Add Column
+      server.registerTool(
+        'columnAdd',
+        {
+          title: 'Add Column',
+          description: 'Add a new column to a table',
+          inputSchema: {
+            tableId: z.string().describe('Table ID'),
+            column: z
+              .object({
+                title: z.string().describe('Column title'),
+                type: z.string().describe('Column type (UIDT)'),
+                column_name: z.string().optional().describe('Database column name'),
+                help: z.string().optional().describe('Help text'),
+                pv: z.boolean().optional().describe('Is primary value'),
+                rqd: z.boolean().optional().describe('Is required'),
+                unq: z.boolean().optional().describe('Is unique'),
+                ai: z.boolean().optional().describe('Is auto increment'),
+                cdf: z.any().optional().describe('Default value'),
+                meta: z.any().optional().describe('Column metadata'),
+              })
+              .describe('Column definition object'),
+          },
+        },
+        async ({ tableId, column }) => {
+          try {
+            const result = await this.columnsV3Service.columnAdd(context, {
+              req,
+              tableId,
+              column: column as any,
+              user,
+            });
+
+            return {
+              content: [
+                { type: 'text', text: JSON.stringify(result, null, 2) },
+              ],
+            };
+          } catch (error) {
+            return {
+              content: [{ type: 'text', text: `Error: ${error.message}` }],
+              isError: true,
+            };
+          }
+        },
+      );
+
+      // Update Column
+      server.registerTool(
+        'columnUpdate',
+        {
+          title: 'Update Column',
+          description: 'Update an existing column definition',
+          inputSchema: {
+            columnId: z.string().describe('Column ID'),
+            column: z
+              .object({
+                title: z.string().optional().describe('Column title'),
+                type: z.string().optional().describe('Column type (UIDT)'),
+                column_name: z.string().optional().describe('Database column name'),
+                help: z.string().optional().describe('Help text'),
+                pv: z.boolean().optional().describe('Is primary value'),
+                rqd: z.boolean().optional().describe('Is required'),
+                unq: z.boolean().optional().describe('Is unique'),
+                ai: z.boolean().optional().describe('Is auto increment'),
+                cdf: z.any().optional().describe('Default value'),
+                meta: z.any().optional().describe('Column metadata'),
+              })
+              .describe('Updated column definition'),
+          },
+        },
+        async ({ columnId, column }) => {
+          try {
+            const result = await this.columnsV3Service.columnUpdate(context, {
+              req,
+              columnId,
+              column: column as any,
+              user,
+            });
+
+            return {
+              content: [
+                { type: 'text', text: JSON.stringify(result, null, 2) },
+              ],
+            };
+          } catch (error) {
+            return {
+              content: [{ type: 'text', text: `Error: ${error.message}` }],
+              isError: true,
+            };
+          }
+        },
+      );
+
+      // Delete Column
+      server.registerTool(
+        'columnDelete',
+        {
+          title: 'Delete Column',
+          description: 'Delete a column from a table',
+          annotations: {
+            destructiveHint: true,
+          },
+          inputSchema: {
+            columnId: z.string().describe('Column ID'),
+          },
+        },
+        async ({ columnId }) => {
+          try {
+            const result = await this.columnsV3Service.columnDelete(context, {
+              req,
+              columnId,
+              user,
+            });
+
+            return {
+              content: [
+                { type: 'text', text: JSON.stringify(result, null, 2) },
+              ],
+            };
+          } catch (error) {
+            return {
+              content: [{ type: 'text', text: `Error: ${error.message}` }],
+              isError: true,
+            };
+          }
+        },
+      );
+
+      // --- View Management Tools ---
+
+      // List Views
+      server.registerTool(
+        'viewList',
+        {
+          title: 'List Views',
+          description: 'List all views for a table',
+          inputSchema: {
+            tableId: z.string().describe('Table ID'),
+          },
+        },
+        async ({ tableId }) => {
+          try {
+            const result = await this.viewsService.viewList(context, {
+              tableId,
+              user: user as any,
+            });
+
+            return {
+              content: [
+                { type: 'text', text: JSON.stringify(result, null, 2) },
+              ],
+            };
+          } catch (error) {
+            return {
+              content: [{ type: 'text', text: `Error: ${error.message}` }],
+              isError: true,
+            };
+          }
+        },
+      );
+
+      // Update View
+      server.registerTool(
+        'viewUpdate',
+        {
+          title: 'Update View',
+          description: 'Update view configuration',
+          inputSchema: {
+            viewId: z.string().describe('View ID'),
+            view: z
+              .object({
+                title: z.string().optional().describe('View title'),
+                type: z.string().optional().describe('View type'),
+                is_default: z.boolean().optional().describe('Is default view'),
+                lock_type: z.string().optional().describe('Lock type'),
+              })
+              .describe('Updated view definition'),
+          },
+        },
+        async ({ viewId, view }) => {
+          try {
+            const result = await this.viewsService.viewUpdate(context, {
+              viewId,
+              view: view as any,
+              user,
+              req,
+            });
+
+            return {
+              content: [
+                { type: 'text', text: JSON.stringify(result, null, 2) },
+              ],
+            };
+          } catch (error) {
+            return {
+              content: [{ type: 'text', text: `Error: ${error.message}` }],
+              isError: true,
+            };
+          }
+        },
+      );
+
+      // Delete View
+      server.registerTool(
+        'viewDelete',
+        {
+          title: 'Delete View',
+          description: 'Delete a view',
+          annotations: {
+            destructiveHint: true,
+          },
+          inputSchema: {
+            viewId: z.string().describe('View ID'),
+          },
+        },
+        async ({ viewId }) => {
+          try {
+            const result = await this.viewsService.viewDelete(context, {
+              viewId,
+              user,
+              req,
+            });
+
+            return {
+              content: [
+                { type: 'text', text: JSON.stringify(result, null, 2) },
+              ],
+            };
+          } catch (error) {
+            return {
+              content: [{ type: 'text', text: `Error: ${error.message}` }],
+              isError: true,
+            };
+          }
+        },
+      );
+
+      // Create View
+      server.registerTool(
+        'viewCreate',
+        {
+          title: 'Create View',
+          description: 'Create a new view (Grid or Kanban) for a table',
+          inputSchema: {
+            tableId: z.string().describe('Table ID'),
+            title: z.string().describe('View title'),
+            type: z
+              .enum(['grid', 'kanban'])
+              .describe('View type (default: grid)')
+              .default('grid'),
+            groupingColumnId: z
+              .string()
+              .optional()
+              .describe('Required for Kanban view: ID of the SingleSelect column to group by'),
+          },
+        },
+        async ({ tableId, title, type, groupingColumnId }) => {
+          try {
+            let result;
+            if (type === 'kanban') {
+              if (!groupingColumnId) {
+                throw new Error('groupingColumnId is required for Kanban view');
+              }
+              result = await this.kanbansService.kanbanViewCreate(context, {
+                tableId,
+                kanban: {
+                  title,
+                  fk_grp_col_id: groupingColumnId,
+                } as any,
+                user,
+                req,
+              });
+            } else {
+              result = await this.gridsService.gridViewCreate(context, {
+                tableId,
+                grid: {
+                  title,
+                } as any,
+                user,
+                req,
+              });
+            }
+
+            return {
+              content: [
+                { type: 'text', text: JSON.stringify(result, null, 2) },
+              ],
+            };
+          } catch (error) {
+            return {
+              content: [{ type: 'text', text: `Error: ${error.message}` }],
+              isError: true,
+            };
+          }
+        },
+      );
+
+      // --- Collaboration Tools ---
+
+      // List Comments
+      server.registerTool(
+        'commentList',
+        {
+          title: 'List Comments',
+          description: 'List comments for a row',
+          inputSchema: {
+            tableId: z.string().describe('Table ID'),
+            rowId: z.string().describe('Row ID'),
+          },
+        },
+        async ({ tableId, rowId }) => {
+          try {
+            const result = await this.commentsV3Service.commentList(context, {
+              query: {
+                fk_model_id: tableId,
+                row_id: rowId,
+              },
+            });
+
+            return {
+              content: [
+                { type: 'text', text: JSON.stringify(result, null, 2) },
+              ],
+            };
+          } catch (error) {
+            return {
+              content: [{ type: 'text', text: `Error: ${error.message}` }],
+              isError: true,
+            };
+          }
+        },
+      );
+
+      // Add Comment
+      server.registerTool(
+        'commentAdd',
+        {
+          title: 'Add Comment',
+          description: 'Add a comment to a row',
+          inputSchema: {
+            tableId: z.string().describe('Table ID'),
+            rowId: z.string().describe('Row ID'),
+            comment: z.string().describe('Comment text'),
+          },
+        },
+        async ({ tableId, rowId, comment }) => {
+          try {
+            const result = await this.commentsV3Service.commentRow(context, {
+              body: {
+                fk_model_id: tableId,
+                row_id: rowId,
+                comment,
+              },
+              user,
+              req,
+            });
+
+            return {
+              content: [
+                { type: 'text', text: JSON.stringify(result, null, 2) },
+              ],
+            };
+          } catch (error) {
+            return {
+              content: [{ type: 'text', text: `Error: ${error.message}` }],
+              isError: true,
+            };
+          }
+        },
+      );
+
+      // List Users/Collaborators
+      server.registerTool(
+        'userList',
+        {
+          title: 'List Users',
+          description: 'List collaborators in the base',
+          inputSchema: {
+            mode: z
+              .enum(['full', 'viewer'])
+              .optional()
+              .describe('Mode (default: full)'),
+          },
+        },
+        async ({ mode = 'full' }) => {
+          try {
+            const result = await this.baseMembersV3Service.userList(context, {
+              baseId: context.base_id,
+              mode: mode as 'full' | 'viewer',
+            });
+
+            return {
+              content: [
+                { type: 'text', text: JSON.stringify(result, null, 2) },
+              ],
+            };
+          } catch (error) {
+            return {
+              content: [{ type: 'text', text: `Error: ${error.message}` }],
+              isError: true,
+            };
+          }
+        },
+      );
+
+      // Invite User
+      server.registerTool(
+        'userInvite',
+        {
+          title: 'Invite User',
+          description: 'Invite new collaborators to the base',
+          inputSchema: {
+            invites: z
+              .array(
+                z.object({
+                  email: z.string().optional().describe('User email'),
+                  user_id: z.string().optional().describe('User ID'),
+                  base_role: z.string().describe('Base role (e.g. owner, creator, editor, commenter, viewer)'),
+                }),
+              )
+              .describe('Array of users to invite'),
+          },
+        },
+        async ({ invites }) => {
+          try {
+            const result = await this.baseMembersV3Service.userInvite(context, {
+              baseId: context.base_id,
+              baseMembers: invites as any,
+              req,
+            });
+
+            return {
+              content: [
+                { type: 'text', text: JSON.stringify(result, null, 2) },
+              ],
+            };
+          } catch (error) {
+            return {
+              content: [{ type: 'text', text: `Error: ${error.message}` }],
+              isError: true,
+            };
+          }
+        },
+      );
+
+      // --- Automation/Hook Management Tools ---
+
+      // List Hooks
+      server.registerTool(
+        'hookList',
+        {
+          title: 'List Hooks',
+          description: 'List webhooks for a table',
+          inputSchema: {
+            tableId: z.string().describe('Table ID'),
+          },
+        },
+        async ({ tableId }) => {
+          try {
+            const result = await this.hooksService.hookList(context, {
+              tableId,
             });
 
             return {
