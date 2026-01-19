@@ -1,0 +1,81 @@
+---
+description: Governance for Social Pixl (NocoDB) project management workflow and status transitions
+globs: 
+---
+
+# Social Pixl Workflow Governance
+
+This rule defines how the agent interacts with the Social Pixl (NocoDB) PM system to ensure alignment between project status, feature breakdown, and task execution.
+
+## 1. Project-Level Governance
+
+### Parameter Integrity & Data Validation
+- **Mandatory Status**: The `Status` field is **REQUIRED** for every Project, Feature, and Task. An agent must never create or update a record while leaving the Status empty.
+- **Defaulting Logic**: If a Status is missing during a bulk import or creation:
+  - Projects default to `Drafted`.
+  - Features default to `Planned`.
+  - Tasks default to `Todo`.
+- **Field Completeness**: All core parameters (Priority, Assigned To, Description) must be filled before a task moves to `In Progress`. If parameters are missing, the agent must prompt the user to fill them or suggest sensible defaults.
+
+### Status: Drafted (Planning Phase)
+- **Primary Goal**: PRD (Product Requirements Document) generation and feature mapping.
+- **Agent Behavior**: When a project is in `Drafted` status, the agent must focus on discovery. 
+- **Required Action**: Suggest the **Ralph Protocol** to build out the technical requirements and feature list before any code is written.
+- **Transition**: Move to `In Progress` only after the human has approved the Feature list and initial Task breakdown.
+
+### Status: In Review
+- **Trigger**: Entire project feature-set is complete.
+- **Agent Behavior**: Perform a codebase audit. Suggest the **Audit Protocol** or **Security Protocol**.
+
+---
+
+## 2. Feature-Level Governance
+
+Features act as the bridge between high-level project goals and granular tasks.
+- **Status: Planned**: No tasks started.
+- **Status: In Progress**: At least one task is `In Progress`.
+- **Status: In Review**: All linked tasks are `Done` or `In Review`.
+- **Logic**: A feature cannot be `Completed` until a human has verified the `In Review` tasks.
+
+---
+
+## 3. Task-Level Governance (Review Gates)
+
+Tasks must follow strict transition rules based on their size and complexity.
+
+### Size-Based Review Logic
+- **Small Tasks** (e.g., Typo fixes, minor config):
+  - Transition: `In Progress` -> `Done`.
+  - Review: Optional.
+- **Complex Tasks** (e.g., Logic changes, new endpoints, schema mods):
+  - **Transition: MUST pass through `In Review`.**
+  - **Rule**: When a complex task is "finished," move status to `In Review`.
+  - **Checkpoint**: Agent must log a checkpoint in the `.agents/` folder and ask for human or "Audit Protocol" review.
+
+### Status Definitions
+| Status | Meaning | Agent Action |
+| :--- | :--- | :--- |
+| **Todo** | Ready to be picked up | Assign to self when starting. |
+| **Drafted** | Being planned/scoped | Use for PRD/Technical design phase. |
+| **In Progress** | Active coding/work | Log iterations to Social Pixl. |
+| **In Review** | Verification phase | **BLOCKER**: Wait for human or Audit Protocol. |
+| **Done** | Verified and merged | Only move here AFTER review approval. |
+| **Archived** | Obsolete | No further actions. |
+
+---
+
+## 4. Ralph Protocol Alignment
+
+The Ralph Protocol is the iterative engine. Its execution is tied to Social Pixl:
+1. **Initiation**: When the user calls Ralph, the agent checks the `Ralph Status` in Social Pixl.
+2. **Persistence**: Every iteration of Ralph must update the `Current Iteration` and `Checklist Completed` fields in the Task table.
+3. **Completion**: If a task requires review, Ralph must stop at `In Review` and prompt the user for the next protocol (Audit/Test) or manual sign-off.
+
+---
+
+## 5. Automated Suggestions
+
+Always suggest the next logical step based on status:
+- If Project is `Drafted` -> Suggest Ralph Protocol for planning.
+- If Task is `In Review` -> Suggest Audit Protocol or Human Review.
+- If Feature is `Blocked` -> Ask for Human in the Loop intervention.
