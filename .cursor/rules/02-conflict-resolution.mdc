@@ -1,6 +1,0 @@
-# Conflict Resolution Protocol
-
-1. Identify conflict.
-2. Choose winner based on Precedence Ladder.
-3. Sync downward.
-4. Log resolution.

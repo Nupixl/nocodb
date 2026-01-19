@@ -1,8 +1,0 @@
-# MCP Precedence Rule
-
-1. Airtable (Project Identity)
-2. Supabase (Data/Auth)
-3. Vercel (Runtime)
-4. Local Files (Development)
-
-In case of conflicts, the higher-numbered system wins.

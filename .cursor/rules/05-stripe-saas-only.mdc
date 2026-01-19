@@ -1,4 +1,0 @@
-# Stripe Usage Rule
-
-Stripe is used only for SaaS billing workflows.
-Social Pixl itself may use Stripe for its SaaS offering.
