@@ -113,6 +113,7 @@ import { McpTokenService } from '~/services/mcp.service';
 import { McpService } from '~/mcp/mcp.service';
 import { McpController } from '~/mcp/mcp.controller';
 import { InternalController } from '~/controllers/internal.controller';
+import { HooksV3Service } from '~/services/v3/hooks-v3.service';
 import { ViewRowColorV3Service } from '~/services/v3/view-row-color-v3.service';
 import { DependencyService } from '~/services/dependency.service';
 
@@ -136,6 +137,7 @@ import { TablesV3Controller } from '~/controllers/v3/tables-v3.controller';
 import { BulkDataAliasService } from '~/services/bulk-data-alias.service';
 import { CalendarDatasService } from '~/services/calendar-datas.service';
 import { BaseMembersV3Service } from '~/services/v3/base-members-v3.service';
+import { CommentsV3Service } from '~/services/v3/comments-v3.service';
 import { ViewRowColorService } from '~/services/view-row-color.service';
 import { DataAliasNestedService } from '~/services/data-alias-nested.service';
 import { DataTableService } from '~/services/data-table.service';
@@ -286,6 +288,7 @@ export const nocoModuleMetadata = {
     ColumnsService,
     DuplicateDetectionService,
     CommentsService,
+    CommentsV3Service,
     FiltersService,
     FormColumnsService,
     FormsService,
@@ -293,6 +296,7 @@ export const nocoModuleMetadata = {
     GridColumnsService,
     GridsService,
     HooksService,
+    HooksV3Service,
     KanbansService,
     MapsService,
     MetaDiffsService,
@@ -399,6 +403,8 @@ export const nocoModuleMetadata = {
     AttachmentsService,
     BaseUsersService,
     HooksService,
+    HooksV3Service,
+    CommentsV3Service,
     MetaDiffsService,
     SourcesService,
     UtilsService,

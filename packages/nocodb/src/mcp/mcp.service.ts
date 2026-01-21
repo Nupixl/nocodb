@@ -20,7 +20,7 @@ import { ColumnsV3Service } from '~/services/v3/columns-v3.service';
 import { ViewsService } from '~/services/views.service';
 import { KanbansService } from '~/services/kanbans.service';
 import { GridsService } from '~/services/grids.service';
-import { HooksService } from '~/services/v3/hooks-v3.service';
+import { HooksV3Service } from '~/services/v3/hooks-v3.service';
 import { BaseMembersV3Service } from '~/services/v3/base-members-v3.service';
 import { CommentsV3Service } from '~/services/v3/comments-v3.service';
 import { hasMinimumRole } from '~/utils/roleHelper';
@@ -42,7 +42,7 @@ export class McpService {
     protected readonly viewsService: ViewsService,
     protected readonly kanbansService: KanbansService,
     protected readonly gridsService: GridsService,
-    protected readonly hooksService: HooksService,
+    protected readonly hooksService: HooksV3Service,
     protected readonly baseMembersV3Service: BaseMembersV3Service,
     protected readonly commentsV3Service: CommentsV3Service,
   ) {}

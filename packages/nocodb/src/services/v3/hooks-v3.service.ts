@@ -7,7 +7,7 @@ import { IJobsService } from '~/modules/jobs/jobs-service.interface';
 import { builderGenerator } from '~/utils/api-v3-data-transformation.builder';
 
 @Injectable()
-export class HooksService {
+export class HooksV3Service {
   protected builder = builderGenerator<Hook>({
     allowed: [
       'id',
